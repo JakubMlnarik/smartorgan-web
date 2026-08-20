@@ -44,7 +44,8 @@ a:hover {
 
 /* Main container */
 #main-frame {
-    width: 900px;
+    max-width: 900px;
+    width: 100%;
     margin: 30px auto;
     background: #fcfaf5;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
@@ -72,6 +73,8 @@ a:hover {
 
 #main-frame #header #logo img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 #main-frame #header #top-menu {
@@ -109,6 +112,12 @@ a:hover {
 #main-frame #header #top-menu a:has(img) {
     padding: 4px 6px;
     line-height: 0;
+}
+
+/* Content images – make responsive */
+#main-frame #content img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Content area */
@@ -157,12 +166,103 @@ a:hover {
 #main-frame #content .text table {
     border-collapse: collapse;
     margin: 16px 0;
-    width: 70%;
+    width: auto;
+    min-width: 50%;
 }
 
 #main-frame #content .text table td {
     padding: 4px 16px;
     font-size: 13px;
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+
+@media (max-width: 920px) {
+    #main-frame {
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    #main-frame #content {
+        padding: 20px 16px;
+    }
+
+    #main-frame #header .header-top {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px 16px;
+    }
+
+    #main-frame #header #logo {
+        width: 80px;
+    }
+
+    #main-frame #header #top-menu {
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+
+    #main-frame #header #top-menu a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    #main-frame #header #top-menu a:has(img) {
+        padding: 4px 5px;
+    }
+
+    #main-frame #content .text .image {
+        max-width: calc(50% - 14px);
+        height: auto !important;
+    }
+
+    #main-frame #content .text table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+
+    #main-frame #content .text td {
+        white-space: nowrap;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main-frame #header .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #main-frame #header #top-menu a {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
+    #main-frame #content .text .image {
+        max-width: 100%;
+        display: block;
+        margin: 8px auto;
+        height: auto !important;
+    }
+
+    #main-frame #content .text p.images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-frame #content .text h1 {
+        font-size: 19px;
+    }
+
+    #main-frame #content .text h2 {
+        font-size: 16px;
+    }
 }
 
 /* Footer */
