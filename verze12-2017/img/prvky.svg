@@ -1,0 +1,1343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.0 r9654"
+   width="4"
+   height="4"
+   sodipodi:docname="prvky.svg"
+   inkscape:export-filename="/home/jakub/Dokumenty/Ostatni/Varhany/HTML/img/pattern.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4649">
+      <stop
+         style="stop-color:#aa4400;stop-opacity:1;"
+         offset="0"
+         id="stop4651" />
+      <stop
+         style="stop-color:#aa4400;stop-opacity:0;"
+         offset="1"
+         id="stop4653" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4574">
+      <stop
+         style="stop-color:#241c1f;stop-opacity:1;"
+         offset="0"
+         id="stop4576" />
+      <stop
+         style="stop-color:#241c1f;stop-opacity:0;"
+         offset="1"
+         id="stop4578" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4544">
+      <stop
+         style="stop-color:#000080;stop-opacity:1;"
+         offset="0"
+         id="stop4546" />
+      <stop
+         style="stop-color:#000080;stop-opacity:0;"
+         offset="1"
+         id="stop4548" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4443">
+      <stop
+         style="stop-color:#333333;stop-opacity:1;"
+         offset="0"
+         id="stop4445" />
+      <stop
+         style="stop-color:#333333;stop-opacity:0;"
+         offset="1"
+         id="stop4447" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4394">
+      <stop
+         style="stop-color:#333333;stop-opacity:1;"
+         offset="0"
+         id="stop4396" />
+      <stop
+         style="stop-color:#333333;stop-opacity:0;"
+         offset="1"
+         id="stop4398" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3832">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3834" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3836" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3822">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3824" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3826" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3868">
+      <stop
+         style="stop-color:#999999;stop-opacity:1;"
+         offset="0"
+         id="stop3870" />
+      <stop
+         style="stop-color:#999999;stop-opacity:0;"
+         offset="1"
+         id="stop3872" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3773">
+      <stop
+         style="stop-color:#c19999;stop-opacity:1;"
+         offset="0"
+         id="stop3775" />
+      <stop
+         style="stop-color:#cccccc;stop-opacity:0;"
+         offset="1"
+         id="stop3777" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3773"
+       id="linearGradient3779"
+       x1="-694.49762"
+       y1="207.75928"
+       x2="-193.47089"
+       y2="207.75928"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.7964708,0,0,0.55550007,523.84044,-609.90789)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3773-4"
+       id="linearGradient3779-6"
+       x1="-694.49762"
+       y1="207.75928"
+       x2="-193.47089"
+       y2="207.75928"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.7964708,0,0,0.55550007,523.84044,-609.90789)" />
+    <linearGradient
+       id="linearGradient3773-4">
+      <stop
+         style="stop-color:#c19999;stop-opacity:1;"
+         offset="0"
+         id="stop3775-5" />
+      <stop
+         style="stop-color:#cccccc;stop-opacity:0;"
+         offset="1"
+         id="stop3777-5" />
+    </linearGradient>
+    <linearGradient
+       y2="207.75928"
+       x2="-193.47089"
+       y1="207.75928"
+       x1="-694.49762"
+       gradientTransform="matrix(1.7964708,0,0,0.55550007,929.60475,-803.41033)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3812"
+       xlink:href="#linearGradient3773-4"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3868"
+       id="linearGradient3908"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.20009692,0,0,0.33333405,337.49057,-547.44095)"
+       x1="374.86548"
+       y1="-1426.6741"
+       x2="379.86307"
+       y2="-1755.1733" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3822"
+       id="linearGradient3828"
+       x1="-366.87833"
+       y1="915.74072"
+       x2="-366.87833"
+       y2="664.68695"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3832"
+       id="linearGradient3838"
+       x1="-470.22601"
+       y1="639.89691"
+       x2="-470.22601"
+       y2="666.1355"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4394"
+       id="linearGradient4400"
+       x1="517.60217"
+       y1="669.85651"
+       x2="517.60217"
+       y2="782.49146"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4443"
+       id="linearGradient4453"
+       x1="482.25"
+       y1="1014.434"
+       x2="482.25"
+       y2="1043.2592"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-1.7504273e-6,-4e-6)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4443-6"
+       id="linearGradient4453-5"
+       x1="482.25"
+       y1="1014.434"
+       x2="482.25"
+       y2="1043.2592"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-1.4375584e-6,4.2176475e-6)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4443-6">
+      <stop
+         style="stop-color:#333333;stop-opacity:1;"
+         offset="0"
+         id="stop4445-3" />
+      <stop
+         style="stop-color:#333333;stop-opacity:0;"
+         offset="1"
+         id="stop4447-0" />
+    </linearGradient>
+    <linearGradient
+       y2="980.36926"
+       x2="484.45654"
+       y1="1003.9377"
+       x1="484.45654"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4474"
+       xlink:href="#linearGradient4443-6"
+       inkscape:collect="always"
+       gradientTransform="translate(-1.7504273e-6,4.9602374e-5)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4443-0"
+       id="linearGradient4453-3"
+       x1="482.25"
+       y1="1014.434"
+       x2="482.25"
+       y2="1043.2592"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-1.7504273e-6,-4e-6)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4443-0">
+      <stop
+         style="stop-color:#333333;stop-opacity:1;"
+         offset="0"
+         id="stop4445-1" />
+      <stop
+         style="stop-color:#333333;stop-opacity:0;"
+         offset="1"
+         id="stop4447-6" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4544"
+       id="linearGradient4550"
+       x1="538.81537"
+       y1="1020.1124"
+       x2="543.05798"
+       y2="983.69647"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4443"
+       id="linearGradient4562"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-1.7504273e-6,-4e-6)"
+       x1="482.25"
+       y1="1014.434"
+       x2="482.25"
+       y2="1043.2592" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4443-6"
+       id="linearGradient4564"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-1.7504273e-6,4.9602374e-5)"
+       x1="484.45654"
+       y1="1003.9377"
+       x2="484.45654"
+       y2="980.36926" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4443"
+       id="linearGradient4570"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-1.7504273e-6,-4e-6)"
+       x1="482.25"
+       y1="1014.434"
+       x2="482.25"
+       y2="1043.2592" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4574"
+       id="linearGradient4580"
+       x1="486.75464"
+       y1="1006.4548"
+       x2="486.72876"
+       y2="966.79504"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4574-8"
+       id="linearGradient4580-7"
+       x1="486.75464"
+       y1="1006.4548"
+       x2="486.72876"
+       y2="966.79504"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4574-8">
+      <stop
+         style="stop-color:#241c1f;stop-opacity:1;"
+         offset="0"
+         id="stop4576-8" />
+      <stop
+         style="stop-color:#241c1f;stop-opacity:0;"
+         offset="1"
+         id="stop4578-9" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4649"
+       id="linearGradient4655"
+       x1="527.32489"
+       y1="967.86688"
+       x2="527.32489"
+       y2="1010.2217"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="907"
+     id="namedview4"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="-312.17157"
+     inkscape:cy="-1099.7793"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <path
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/paticka.png"
+     sodipodi:nodetypes="sssccccs"
+     inkscape:connector-curvature="0"
+     id="path4402"
+     d="m 1340.7535,718.15094 -859.99997,0 c -11.08,0 -20,-8.92 -20,-20 l 0,-10 0,-6.71573 899.99997,0 c 0,10 0,6.71573 0,16.71573 0,11.08 -8.92,20 -20,20 z"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+  <path
+     style="fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m -515.61731,654.36456 860,0 c 11.08,0 20,8.92 20,20 l 0,10 0,35 -900,0 c 0,-10 0,-35 0,-45 0,-11.08 8.92,-20 20,-20 z"
+     id="rect3055-6"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="sssccccs"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/hlavicka.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
+  <g
+     id="g3904"
+     inkscape:export-xdpi="300"
+     inkscape:export-ydpi="300"
+     inkscape:export-filename="/home/jakub/Dokumenty/Ostatni/Varhany/HTML/img/pattern.png"
+     transform="matrix(-1,0,0,-1,-827.45485,2028.2202)">
+    <rect
+       inkscape:export-filename="/home/jakub/Dokumenty/Ostatni/Varhany/HTML/img/pattern.png"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       ry="0"
+       transform="scale(-1,-1)"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3834"
+       width="10.006"
+       height="300"
+       x="408.72443"
+       y="-1164.1101" />
+    <rect
+       y="-1164.1101"
+       x="408.72443"
+       height="300"
+       width="10.006"
+       id="rect3900"
+       style="fill:url(#linearGradient3908);fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="scale(-1,-1)"
+       ry="0"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:export-filename="/home/jakub/Dokumenty/Ostatni/Varhany/HTML/img/pattern.png" />
+  </g>
+  <path
+     inkscape:export-ydpi="179.99998"
+     inkscape:export-xdpi="179.99998"
+     inkscape:export-filename="/home/jakub/Dokumenty/Ostatni/Varhany/HTML/img/logo.png"
+     inkscape:connector-curvature="0"
+     id="rect4110-6-0-8-9-3"
+     d="m -262.3131,948.29235 0,24.7188 150,0 0,-24.7188 -150,0 z m 125.5,1.25 23.21875,0 0,22.2188 -23.21875,0 0,-22.2188 z m -41.59375,2.7188 c 0.23816,0 2.12604,0.4688 2.4375,0.4688 0.25649,0 2.45474,-0.4688 2.65625,-0.4688 0.20153,0 0.34375,0.1293 0.34375,0.3125 0,0.2015 -0.24137,0.3147 -0.40625,0.4063 -2.67472,1.3923 -2.80172,1.4062 -2.875,1.4062 -0.2015,0 -0.48596,-0.2467 -0.6875,-0.375 -1.81367,-1.2458 -1.8125,-1.1993 -1.8125,-1.4375 0,-0.1832 0.14222,-0.3125 0.34375,-0.3125 z m 16.34375,0.0625 c 0.0815,-0.0211 0.12338,0 0.1875,0 0.51295,0 0.8125,0.3545 0.8125,0.8125 0,1.2091 -1.43522,1.1724 -3.46875,1.5938 -0.1099,0.0183 -0.2209,0.0624 -0.3125,0.0624 -0.34808,0 -0.4375,-0.3738 -0.4375,-0.5937 0,-0.3114 0.28555,-0.4396 0.46875,-0.5313 1.96481,-1.0304 2.50561,-1.2804 2.75,-1.3437 z m -89.21875,0.1563 c 0.0721,-0.0135 0.14039,0 0.1875,0 l 4.6875,0 c 0.49465,0 0.78079,0.0593 0.875,0.7187 l 1.90625,12.125 7.96875,-12.125 c 0.40042,-0.636 0.64577,-0.7187 1.1875,-0.7187 l 4.5,0 c 0.35331,0 0.625,0.0917 0.625,0.4687 0,0.6595 -0.4746,0.6563 -0.875,0.6563 l -0.28125,0 c -1.36616,0 -1.49952,0.006 -1.59375,0.4062 -0.14131,0.4475 -0.25724,0.9275 -0.375,1.375 l -3,12.0625 c 0.44753,0.0472 0.89622,0.0625 1.34375,0.0625 l 0.46875,0 c 0.42397,0 0.5625,0.2097 0.5625,0.4688 0,0.5888 -0.49137,0.6562 -0.65625,0.6562 l -0.0625,0 c -0.37686,0 -0.72736,-0.0625 -3.71875,-0.0625 -1.71947,0 -2.59235,0.0625 -2.875,0.0625 -0.49465,0 -0.625,-0.202 -0.625,-0.4375 0,-0.2356 0.091,-0.6875 0.65625,-0.6875 l 0.40625,0 c 0.82439,0 1.32649,-0.023 1.65625,-0.0938 l 3.34375,-13.4374 -9.25,14.0624 c -0.25909,0.3769 -0.52892,0.5938 -1,0.5938 -0.68307,0 -0.67934,-0.5135 -0.75,-0.9375 l -2.09375,-13.4375 -3.25,13 c 0.44754,0.1884 1.04384,0.25 1.65625,0.25 0.56531,0 0.6875,0.2332 0.6875,0.4688 0,0.1884 -0.0986,0.6562 -0.6875,0.6562 -0.2591,0 -1.05456,-0.0625 -2.65625,-0.0625 -1.60169,0 -2.3659,0.0625 -2.625,0.0625 -0.32976,0 -0.625,-0.0919 -0.625,-0.4688 0,-0.259 0.16253,-0.6091 0.46875,-0.6562 0.32976,-0.0708 1.95149,0.0414 2.28125,-0.4062 0.14132,-0.1885 0.28708,-1.0392 0.6875,-2.5938 l 2.71875,-10.8438 c -0.42402,-0.0471 -0.8337,-0.0624 -1.28125,-0.0624 l -0.46875,0 c -0.37685,0 -0.625,-0.1232 -0.625,-0.5 0,-0.4417 0.28373,-0.5848 0.5,-0.625 z m 59.53125,3.25 c 0.0886,-0.01 0.19343,0 0.3125,0 0.54962,0 0.58834,0.2294 0.625,0.6874 l 1.125,10.0313 c 0.12825,1.1725 0.10884,1.195 0.21875,1.25 0.16488,0.0734 0.67025,0.0625 1,0.0625 0.27481,0 0.53125,0.027 0.53125,0.375 0,0.2015 -0.0656,0.5 -0.46875,0.5 -0.21983,0 -0.86846,-0.0625 -2.1875,-0.0625 l -0.53125,0 c -1.46559,0 -2.19934,0.0625 -2.4375,0.0625 -0.31143,0 -0.4375,-0.1735 -0.4375,-0.375 0,-0.2382 0.1045,-0.5 0.5625,-0.5 l 0.15625,0 c 0.58624,0 0.91808,-0.0571 1.15625,-0.0938 l -0.25,-2.5 -4.25,0 -1.46875,2.4063 c 0.95266,0.3114 1.53125,0 1.53125,0.5313 0,0.2015 -0.0657,0.5312 -0.46875,0.5312 -0.21985,0 -0.84259,-0.0625 -2.125,-0.0625 -1.00757,0 -1.52262,0.0625 -1.6875,0.0625 -0.38472,0 -0.4375,-0.1972 -0.4375,-0.3438 0,-0.8243 1.09263,-0.3652 1.84375,-0.75 0.21983,-0.1282 0.37179,-0.3426 0.5,-0.5624 l 6.5625,-10.75 c 0.21983,-0.371 0.35877,-0.4717 0.625,-0.5 z m -35.4375,0.3437 c 0.64119,0 0.60438,0.0625 3.1875,0.0625 1.66712,0 2.53772,-0.0625 2.8125,-0.0625 0.34809,0 0.4375,0.1918 0.4375,0.375 0,0.4763 -0.36637,0.5 -0.53125,0.5 l -0.375,0 c -0.84272,0 -1.35775,0.0207 -1.6875,0.0937 l -2.65625,10.7188 c 0.21982,0.0184 0.40515,0 0.625,0 l 0.71875,0 c 2.60143,0 3.59263,-1.7714 4.34375,-3.75 0.10993,-0.2931 0.23814,-0.4062 0.53125,-0.4062 0.27481,0 0.5,0.0506 0.5,0.3437 0,0.0915 -0.0464,0.264 -0.15625,0.5937 l -1.375,3.6876 c -0.12825,0.3297 -0.20149,0.4062 -0.53125,0.4062 l -8.84375,0 c -0.36639,0 -0.4375,-0.1972 -0.4375,-0.3438 0,-0.4763 0.35344,-0.5312 0.5,-0.5312 l 0.375,0 c 0.60457,0 0.9806,-0.008 1.21875,-0.0625 l 2.6875,-10.7187 c -0.34809,-0.0367 -0.71443,-0.0313 -1.0625,-0.0313 l -0.34375,0 c -0.34808,0 -0.46875,-0.1918 -0.46875,-0.375 0,-0.2015 0.1282,-0.5 0.53125,-0.5 z m 12.65625,0 c 0.0568,-0.0106 0.0883,0 0.125,0 l 3.53125,0 c 0.34808,0 0.47305,0.0583 0.65625,0.4063 l 4.3125,8.375 1.90625,-7.7188 c -0.34809,-0.1466 -0.80493,-0.1875 -1.28125,-0.1875 -0.23815,0 -0.53125,-0.0637 -0.53125,-0.375 0,-0.513 0.39222,-0.5 0.59375,-0.5 0.20152,0 0.81674,0.0625 2.0625,0.0625 0.82439,0 1.41484,-0.0312 1.78125,-0.0312 0.49463,0 0.6875,0.0507 0.6875,0.3437 0,0.4763 -0.36637,0.5 -0.53125,0.5 -1.64879,0 -1.65299,0.2683 -1.78125,0.7813 l -2.59375,10.4687 c -0.10993,0.3847 -0.22197,0.4375 -0.625,0.4375 -0.36641,0 -0.4418,-0.0453 -0.625,-0.375 l -4.78125,-9.2812 c -0.18321,-0.3481 -0.34804,-0.7015 -0.53125,-1.0313 l -2.40625,9.625 c 0.34807,0.1466 0.80493,0.1875 1.28125,0.1875 0.29311,0 0.53125,0.0453 0.53125,0.375 0,0.1832 -0.0606,0.5 -0.5,0.5 -0.23819,0 -0.76393,-0.0625 -2.15625,-0.0625 -1.1908,0 -1.79847,0.0625 -2,0.0625 -0.23816,0 -0.4375,-0.0506 -0.4375,-0.3438 0,-0.5129 0.41055,-0.5312 0.59375,-0.5312 1.55719,0 1.57003,-0.3297 1.625,-0.5312 l 2.5625,-10.25 c -0.34809,0 -0.67024,-0.0313 -1,-0.0313 l -0.375,0 c -0.2748,0 -0.5,-0.0635 -0.5,-0.375 0,-0.3435 0.23622,-0.4682 0.40625,-0.5 z m 32.46875,0 5.65625,0 c 1.61217,0 4.13791,0.2014 4.6875,2.125 0.0551,0.2015 0.0625,0.4052 0.0625,0.625 0,0.7145 -0.32957,2.6594 -3.71875,3.5937 0.80607,0.3298 1.46875,1.0108 1.46875,2 0,0.5496 -0.34375,2.1681 -0.34375,2.9376 0,0.5862 0.13789,1 0.6875,1 0.58625,0 1.05602,-0.6444 1.3125,-1.4688 0.1099,-0.3114 0.17778,-0.375 0.5625,-0.375 0.40305,0 0.46875,0.2155 0.46875,0.3438 0,0.3663 -0.7025,2.1874 -2.40625,2.1874 -1.46558,0 -3.25,-0.4212 -3.25,-2.125 0,-0.7694 0.53125,-2.1034 0.53125,-2.7812 0,-0.6779 -0.30382,-1.4688 -1.53125,-1.4688 l -1.90625,0 -1.28125,5.0626 c 0.36639,0.0367 0.72737,0.0312 1.09375,0.0312 l 0.3125,0 c 0.32976,0 0.46875,0.1735 0.46875,0.375 0,0.2015 -0.0786,0.5 -0.5,0.5 -0.25648,0 -0.86304,-0.0625 -2.75,-0.0625 -1.9236,0 -2.41809,0.0625 -2.65625,0.0625 -0.42135,0 -0.46875,-0.1972 -0.46875,-0.3438 0,-0.2381 0.10989,-0.5312 0.53125,-0.5312 l 0.3125,0 c 0.62287,0 1.01182,-0.008 1.25,-0.0625 l 2.6875,-10.7187 c -0.34808,-0.0367 -0.67024,-0.0313 -1,-0.0313 l -0.375,0 c -0.3664,0 -0.46875,-0.1918 -0.46875,-0.375 0,-0.2382 0.12281,-0.5 0.5625,-0.5 z m 15.5625,0 c 0.2748,0 1.08827,0.0625 2.71875,0.0625 1.81368,0 2.70687,-0.0625 3,-0.0625 0.38471,0 0.4375,0.2468 0.4375,0.375 0,0.458 -0.32434,0.5 -0.5625,0.5 l -0.34375,0 c -0.6412,0 -1.05601,0.0207 -1.3125,0.0937 l -2.65625,10.6876 c 0.36641,0.0184 0.75861,0.0312 1.125,0.0312 l 0.375,0 c 0.36642,0 0.46875,0.1605 0.46875,0.3438 0,0.1282 -0.0605,0.5312 -0.5,0.5312 -0.29313,0 -1.15292,-0.0625 -2.875,-0.0625 -2.03353,0 -2.55601,0.0625 -2.8125,0.0625 -0.25646,0 -0.5,-0.0507 -0.5,-0.3438 0,-0.2198 0.0915,-0.5129 0.53125,-0.5312 l 0.3125,0 c 0.69617,0 1.10019,-0.008 1.375,-0.0625 l 2.65625,-10.7187 c -0.3664,-0.0368 -0.70902,-0.0313 -1.09375,-0.0313 l -0.34375,0 c -0.34808,0 -0.5,-0.1735 -0.5,-0.375 0,-0.1832 0.0785,-0.5 0.5,-0.5 z m 8.78125,0 c 0.25648,0 1.04948,0.0625 2.625,0.0625 2.12511,0 2.60559,-0.0625 2.84375,-0.0625 0.27481,0 0.46875,0.0635 0.46875,0.375 0,0.2198 -0.10989,0.5 -0.53125,0.5 l -0.25,0 c -1.31906,0 -1.30173,0.0399 -1.375,0.4063 l -1.34375,5.2187 7.25,-5.4687 c -0.80608,-0.2382 -1.3125,0 -1.3125,-0.5313 0,-0.2382 0.0786,-0.5 0.5,-0.5 0.23817,0 0.96435,0.0625 2.375,0.0625 0.71446,0 1.23057,-0.0312 1.46875,-0.0312 0.2015,0 0.4375,0.0507 0.4375,0.3437 0,0.4763 -0.38468,0.5 -0.53125,0.5 -0.95263,0 -1.54522,0.2284 -2.40625,0.9063 0,0 -3.70364,2.8006 -4.125,3.0937 0.60457,1.2824 2.84375,6.4375 2.84375,6.4375 0.16488,0.3481 0.41161,0.375 0.90625,0.375 0.32976,0 0.65625,-0.004 0.65625,0.3438 0,0.2198 -0.0969,0.5312 -0.5,0.5312 -0.21983,0 -0.87386,-0.0625 -2.15625,-0.0625 -1.53887,0 -2.30601,0.0625 -2.5625,0.0625 -0.21985,0 -0.53125,-0.0324 -0.53125,-0.3438 0,-0.7694 0.78227,-0.418 1.625,-0.6562 l -2.28125,-5.1562 -1.96875,1.4687 -0.9375,3.7813 c 0.34807,0.0366 0.71443,0.0312 1.0625,0.0312 l 0.34375,0 c 0.32975,0 0.4375,0.1735 0.4375,0.375 0,0.1832 -0.0656,0.5 -0.46875,0.5 -0.29311,0 -1.12708,-0.0625 -2.8125,-0.0625 -2.14344,0 -2.4752,0.0625 -2.75,0.0625 -0.20151,0 -0.4375,-0.0507 -0.4375,-0.3438 0,-0.2198 0.0785,-0.5312 0.5,-0.5312 l 0.3125,0 c 0.6412,0 1.04308,-0.008 1.28125,-0.0625 l 2.6875,-10.7187 c -0.34806,-0.0368 -0.70149,-0.0313 -1.03125,-0.0313 l -0.34375,0 c -0.29314,0 -0.46875,-0.0819 -0.46875,-0.375 0,-0.2198 0.0786,-0.5 0.5,-0.5 z m -19.78125,0.875 c -0.29313,0 -0.6002,0.0128 -0.875,0.0313 l -1.25,5.0312 1.59375,0 c 2.94952,0 3.30817,-1.1756 3.65625,-2.5312 0.0915,-0.3665 0.1875,-0.7403 0.1875,-1.125 0,-1.3557 -1.50746,-1.4063 -2.625,-1.4063 l -0.6875,0 z m -15.53125,2.3437 -3.0625,5 3.59375,0 -0.53125,-5 z"
+     style="fill:#aa0000;display:inline" />
+  <g
+     inkscape:export-ydpi="179.99998"
+     inkscape:export-xdpi="179.99998"
+     inkscape:export-filename="/home/jakub/Dokumenty/Ostatni/Varhany/HTML/img/logo.png"
+     transform="matrix(0.95119362,0,0,0.95119362,235.50209,177.81377)"
+     id="g4099">
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       id="rect2990-5-4-6-1-2"
+       d="m -381.71407,751.14368 0,44.44339 5.0406,0 0,-44.44339 z"
+       style="fill:#aa0000;fill-rule:evenodd;stroke:none;display:inline"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       inkscape:connector-curvature="0"
+       id="path3789-2-5-4-3-1"
+       d="m -376.67209,797.14025 -2.52466,11.73958 -2.52466,-11.73958 z"
+       inkscape:transform-center-y="9.4186472"
+       style="fill:#aa0000;fill-rule:evenodd;stroke:none;display:inline" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       id="rect2990-6-5-2-9-1-9"
+       d="m -374.79698,744.3279 0,51.25917 5.04061,0 0,-51.25917 z"
+       style="fill:#aa0000;fill-rule:evenodd;stroke:none;display:inline"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       inkscape:connector-curvature="0"
+       id="path3789-5-4-5-5-5-3"
+       d="m -369.75307,797.14025 -2.52466,11.73958 -2.52465,-11.73958 z"
+       inkscape:transform-center-y="9.4186472"
+       style="fill:#aa0000;fill-rule:evenodd;stroke:none;display:inline" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       id="rect2990-6-4-7-4-0-8-8"
+       d="m -388.63145,758.17861 0,37.40846 5.04061,0 0,-37.40846 z"
+       style="fill:#aa0000;fill-rule:evenodd;stroke:none;display:inline"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       inkscape:connector-curvature="0"
+       id="path3789-5-6-4-7-4-1-7"
+       d="m -383.5914,797.14025 -2.52466,11.73958 -2.52466,-11.73958 z"
+       inkscape:transform-center-y="9.4186472"
+       style="fill:#aa0000;fill-rule:evenodd;stroke:none;display:inline" />
+  </g>
+  <g
+     id="text4152-3-8-7-3-7"
+     style="font-size:52.63235474px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#aa0000;fill-opacity:1;stroke:none;display:inline;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
+     transform="matrix(0.32453009,0,0,0.34732492,-176.53304,925.06466)"
+     inkscape:export-filename="/home/jakub/Dokumenty/Ostatni/Varhany/HTML/img/logo.png"
+     inkscape:export-xdpi="179.99998"
+     inkscape:export-ydpi="179.99998">
+    <g
+       id="flowRoot3095-3-6"
+       style="font-size:40px;line-height:125%;fill:#aa0000;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       transform="matrix(0.93645164,0,0,0.87499261,84.535438,56.754031)" />
+    <text
+       xml:space="preserve"
+       style="font-size:77.95272827px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#aa0000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="-150.95193"
+       y="40.186222"
+       id="text4044-5"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0345238,0.96662832)"><tspan
+         sodipodi:role="line"
+         id="tspan4046-5"
+         x="-150.95193"
+         y="40.186222"
+         style="font-size:54.56690979px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#aa0000;font-family:CMU Serif;-inkscape-font-specification:CMU Serif Bold Italic">varhany</tspan></text>
+  </g>
+  <g
+     inkscape:export-ydpi="179.99998"
+     inkscape:export-xdpi="179.99998"
+     inkscape:export-filename="/home/jakub/Dokumenty/Ostatni/Varhany/HTML/img/logo.png"
+     transform="matrix(0.95119362,0,0,0.93699671,215.6909,181.8785)"
+     id="g4052">
+    <g
+       id="g3992"
+       transform="translate(-19.357048,6.6291261)">
+      <rect
+         y="829.00763"
+         x="-351.32248"
+         height="4.0658641"
+         width="14.495689"
+         id="rect3961"
+         style="fill:#aa0000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <rect
+         y="830.38434"
+         x="-336.82678"
+         height="1.3125"
+         width="10.125"
+         id="rect3988"
+         style="fill:#aa0000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
+    <g
+       transform="translate(-19.357048,0.09637085)"
+       id="g4020">
+      <rect
+         style="fill:#aa0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="rect4022"
+         width="14.495689"
+         height="4.0658641"
+         x="-351.32248"
+         y="829.00763" />
+      <rect
+         style="fill:#aa0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="rect4024"
+         width="10.125"
+         height="1.3125"
+         x="-336.82678"
+         y="830.38434" />
+    </g>
+    <g
+       id="g4026"
+       transform="translate(-19.357048,-6.4364091)">
+      <rect
+         y="829.00763"
+         x="-351.32248"
+         height="4.0658641"
+         width="14.495689"
+         id="rect4028"
+         style="fill:#aa0000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <rect
+         y="830.38434"
+         x="-336.82678"
+         height="1.3125"
+         width="10.125"
+         id="rect4030"
+         style="fill:#aa0000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
+  </g>
+  <rect
+     rx="19.192898"
+     ry="19.192898"
+     y="894.26495"
+     x="-63.335587"
+     height="501.74225"
+     width="259.42856"
+     id="rect3055"
+     style="fill:#241c1f;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.98059785000000010;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:1;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <path
+     sodipodi:nodetypes="cccccsssscscsscsscsscccsscccssssscccsssssssssscccscccssssssccccsssccscccsssssssssccccsssssccccssssssccsscssccsssssccsssscsscccsssssssccsccccsssssssccssscsscscssscssssssccsssssssssccssssssssssccssssssscsccsssssssssscccsssssscccssssssccccsssssssssccsssssccscssscccc"
+     inkscape:export-ydpi="179.99998"
+     inkscape:export-xdpi="179.99998"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:connector-curvature="0"
+     id="rect4110-6-0-8-9-3-2"
+     d="m -7,1022.8799 0,24.7188 150,0 0,-24.7188 z m 83.90625,3.9688 c 0.23816,0 2.12604,0.4688 2.4375,0.4688 0.25649,0 2.45474,-0.4688 2.65625,-0.4688 0.20153,0 0.34375,0.1293 0.34375,0.3125 0,0.2015 -0.24137,0.3147 -0.40625,0.4063 -2.67472,1.3923 -2.80172,1.4062 -2.875,1.4062 -0.2015,0 -0.48596,-0.2467 -0.6875,-0.375 -1.81367,-1.2458 -1.8125,-1.1993 -1.8125,-1.4375 0,-0.1832 0.14222,-0.3125 0.34375,-0.3125 z m 16.34375,0.062 c 0.0815,-0.021 0.12338,0 0.1875,0 0.51295,0 0.8125,0.3545 0.8125,0.8125 0,1.2091 -1.43522,1.1724 -3.46875,1.5938 -0.1099,0.018 -0.2209,0.062 -0.3125,0.062 -0.34808,0 -0.4375,-0.3738 -0.4375,-0.5937 0,-0.3114 0.28555,-0.4396 0.46875,-0.5313 1.96481,-1.0304 2.50561,-1.2804 2.75,-1.3437 z m -89.21875,0.1563 c 0.0721,-0.014 0.14039,0 0.1875,0 l 4.6875,0 c 0.49465,0 0.78079,0.059 0.875,0.7187 l 1.90625,12.125 7.96875,-12.125 c 0.40042,-0.636 0.64577,-0.7187 1.1875,-0.7187 l 4.5,0 c 0.35331,0 0.625,0.092 0.625,0.4687 0,0.6595 -0.4746,0.6563 -0.875,0.6563 l -0.28125,0 c -1.36616,0 -1.49952,0.01 -1.59375,0.4062 -0.14131,0.4475 -0.25724,0.9275 -0.375,1.375 l -3,12.0625 c 0.44753,0.047 0.89622,0.062 1.34375,0.062 l 0.46875,0 c 0.42397,0 0.5625,0.2097 0.5625,0.4688 0,0.5888 -0.49137,0.6562 -0.65625,0.6562 l -0.0625,0 c -0.37686,0 -0.72736,-0.062 -3.71875,-0.062 -1.71947,0 -2.59235,0.062 -2.875,0.062 -0.49465,0 -0.625,-0.202 -0.625,-0.4375 0,-0.2356 0.091,-0.6875 0.65625,-0.6875 l 0.40625,0 c 0.82439,0 1.32649,-0.023 1.65625,-0.094 l 3.34375,-13.4374 -9.25,14.0624 c -0.25909,0.3769 -0.52892,0.5938 -1,0.5938 -0.68307,0 -0.67934,-0.5135 -0.75,-0.9375 L 7.25,1028.8487 l -3.25,13 c 0.44754,0.1884 1.04384,0.25 1.65625,0.25 0.56531,0 0.6875,0.2332 0.6875,0.4688 0,0.1884 -0.0986,0.6562 -0.6875,0.6562 -0.2591,0 -1.05456,-0.062 -2.65625,-0.062 -1.60169,0 -2.3659,0.062 -2.625,0.062 -0.32976,0 -0.625,-0.092 -0.625,-0.4688 0,-0.259 0.16253,-0.6091 0.46875,-0.6562 0.32976,-0.071 1.95149,0.041 2.28125,-0.4062 0.14132,-0.1885 0.28708,-1.0392 0.6875,-2.5938 l 2.71875,-10.8438 c -0.42402,-0.047 -0.8337,-0.062 -1.28125,-0.062 l -0.46875,0 c -0.37685,0 -0.625,-0.1232 -0.625,-0.5 0,-0.4417 0.28373,-0.5848 0.5,-0.625 z m 59.53125,3.25 c 0.0886,-0.01 0.19343,0 0.3125,0 0.54962,0 0.58834,0.2294 0.625,0.6874 l 1.125,10.0313 c 0.12825,1.1725 0.10884,1.195 0.21875,1.25 0.16488,0.073 0.67025,0.062 1,0.062 0.27481,0 0.53125,0.027 0.53125,0.375 0,0.2015 -0.0656,0.5 -0.46875,0.5 -0.21983,0 -0.86846,-0.062 -2.1875,-0.062 l -0.53125,0 c -1.46559,0 -2.19934,0.062 -2.4375,0.062 -0.31143,0 -0.4375,-0.1735 -0.4375,-0.375 0,-0.2382 0.1045,-0.5 0.5625,-0.5 l 0.15625,0 c 0.58624,0 0.91808,-0.057 1.15625,-0.094 l -0.25,-2.5 -4.25,0 -1.46875,2.4063 c 0.95266,0.3114 1.53125,0 1.53125,0.5313 0,0.2015 -0.0657,0.5312 -0.46875,0.5312 -0.21985,0 -0.84259,-0.062 -2.125,-0.062 -1.00757,0 -1.52262,0.062 -1.6875,0.062 -0.38472,0 -0.4375,-0.1972 -0.4375,-0.3438 0,-0.8243 1.09263,-0.3652 1.84375,-0.75 0.21983,-0.1282 0.37179,-0.3426 0.5,-0.5624 l 6.5625,-10.75 c 0.21983,-0.371 0.35877,-0.4717 0.625,-0.5 z m -35.4375,0.3437 c 0.64119,0 0.60438,0.062 3.1875,0.062 1.66712,0 2.53772,-0.062 2.8125,-0.062 0.34809,0 0.4375,0.1918 0.4375,0.375 0,0.4763 -0.36637,0.5 -0.53125,0.5 l -0.375,0 c -0.84272,0 -1.35775,0.021 -1.6875,0.094 l -2.65625,10.7188 c 0.21982,0.018 0.40515,0 0.625,0 l 0.71875,0 c 2.60143,0 3.59263,-1.7714 4.34375,-3.75 0.10993,-0.2931 0.23814,-0.4062 0.53125,-0.4062 0.27481,0 0.5,0.051 0.5,0.3437 0,0.091 -0.0464,0.264 -0.15625,0.5937 l -1.375,3.6876 c -0.12825,0.3297 -0.20149,0.4062 -0.53125,0.4062 l -8.84375,0 c -0.36639,0 -0.4375,-0.1972 -0.4375,-0.3438 0,-0.4763 0.35344,-0.5312 0.5,-0.5312 l 0.375,0 c 0.60457,0 0.9806,-0.01 1.21875,-0.062 l 2.6875,-10.7187 c -0.34809,-0.037 -0.71443,-0.031 -1.0625,-0.031 l -0.34375,0 c -0.34808,0 -0.46875,-0.1918 -0.46875,-0.375 0,-0.2015 0.1282,-0.5 0.53125,-0.5 z m 12.65625,0 c 0.0568,-0.011 0.0883,0 0.125,0 l 3.53125,0 c 0.34808,0 0.47305,0.058 0.65625,0.4063 l 4.3125,8.375 1.90625,-7.7188 c -0.34809,-0.1466 -0.80493,-0.1875 -1.28125,-0.1875 -0.23815,0 -0.53125,-0.064 -0.53125,-0.375 0,-0.513 0.39222,-0.5 0.59375,-0.5 0.20152,0 0.81674,0.062 2.0625,0.062 0.82439,0 1.41484,-0.031 1.78125,-0.031 0.49463,0 0.6875,0.051 0.6875,0.3437 0,0.4763 -0.36637,0.5 -0.53125,0.5 -1.64879,0 -1.65299,0.2683 -1.78125,0.7813 l -2.59375,10.4687 c -0.10993,0.3847 -0.22197,0.4375 -0.625,0.4375 -0.36641,0 -0.4418,-0.045 -0.625,-0.375 l -4.78125,-9.2812 c -0.18321,-0.3481 -0.34804,-0.7015 -0.53125,-1.0313 l -2.40625,9.625 c 0.34807,0.1466 0.80493,0.1875 1.28125,0.1875 0.29311,0 0.53125,0.045 0.53125,0.375 0,0.1832 -0.0606,0.5 -0.5,0.5 -0.23819,0 -0.76393,-0.062 -2.15625,-0.062 -1.1908,0 -1.79847,0.062 -2,0.062 -0.23816,0 -0.4375,-0.051 -0.4375,-0.3438 0,-0.5129 0.41055,-0.5312 0.59375,-0.5312 1.55719,0 1.57003,-0.3297 1.625,-0.5312 l 2.5625,-10.25 c -0.34809,0 -0.67024,-0.031 -1,-0.031 l -0.375,0 c -0.2748,0 -0.5,-0.063 -0.5,-0.375 0,-0.3435 0.23622,-0.4682 0.40625,-0.5 z m 32.46875,0 5.65625,0 c 1.61217,0 4.13791,0.2014 4.6875,2.125 0.0551,0.2015 0.0625,0.4052 0.0625,0.625 0,0.7145 -0.32957,2.6594 -3.71875,3.5937 0.80607,0.3298 1.46875,1.0108 1.46875,2 0,0.5496 -0.34375,2.1681 -0.34375,2.9376 0,0.5862 0.13789,1 0.6875,1 0.58625,0 1.05602,-0.6444 1.3125,-1.4688 0.1099,-0.3114 0.17778,-0.375 0.5625,-0.375 0.40305,0 0.46875,0.2155 0.46875,0.3438 0,0.3663 -0.7025,2.1874 -2.40625,2.1874 -1.46558,0 -3.25,-0.4212 -3.25,-2.125 0,-0.7694 0.53125,-2.1034 0.53125,-2.7812 0,-0.6779 -0.30382,-1.4688 -1.53125,-1.4688 l -1.90625,0 -1.28125,5.0626 c 0.36639,0.037 0.72737,0.031 1.09375,0.031 l 0.3125,0 c 0.32976,0 0.46875,0.1735 0.46875,0.375 0,0.2015 -0.0786,0.5 -0.5,0.5 -0.25648,0 -0.86304,-0.062 -2.75,-0.062 -1.9236,0 -2.41809,0.062 -2.65625,0.062 -0.42135,0 -0.46875,-0.1972 -0.46875,-0.3438 0,-0.2381 0.10989,-0.5312 0.53125,-0.5312 l 0.3125,0 c 0.62287,0 1.01182,-0.01 1.25,-0.062 l 2.6875,-10.7187 c -0.34808,-0.037 -0.67024,-0.031 -1,-0.031 l -0.375,0 c -0.3664,0 -0.46875,-0.1918 -0.46875,-0.375 0,-0.2382 0.12281,-0.5 0.5625,-0.5 z m 15.5625,0 c 0.2748,0 1.08827,0.062 2.71875,0.062 1.81368,0 2.70687,-0.062 3,-0.062 0.38471,0 0.4375,0.2468 0.4375,0.375 0,0.458 -0.32434,0.5 -0.5625,0.5 l -0.34375,0 c -0.6412,0 -1.05601,0.021 -1.3125,0.094 l -2.65625,10.6876 c 0.36641,0.018 0.75861,0.031 1.125,0.031 l 0.375,0 c 0.36642,0 0.46875,0.1605 0.46875,0.3438 0,0.1282 -0.0605,0.5312 -0.5,0.5312 -0.29313,0 -1.15292,-0.062 -2.875,-0.062 -2.03353,0 -2.55601,0.062 -2.8125,0.062 -0.25646,0 -0.5,-0.051 -0.5,-0.3438 0,-0.2198 0.0915,-0.5129 0.53125,-0.5312 l 0.3125,0 c 0.69617,0 1.10019,-0.01 1.375,-0.062 L 90.25,1031.5675 c -0.3664,-0.037 -0.70902,-0.031 -1.09375,-0.031 l -0.34375,0 c -0.34808,0 -0.5,-0.1735 -0.5,-0.375 0,-0.1832 0.0785,-0.5 0.5,-0.5 z m 8.78125,0 c 0.25648,0 1.04948,0.062 2.625,0.062 2.12511,0 2.60559,-0.062 2.84375,-0.062 0.27481,0 0.46875,0.063 0.46875,0.375 0,0.2198 -0.10989,0.5 -0.53125,0.5 l -0.25,0 c -1.31906,0 -1.30173,0.04 -1.375,0.4063 l -1.34375,5.2187 7.25,-5.4687 c -0.80608,-0.2382 -1.3125,0 -1.3125,-0.5313 0,-0.2382 0.0786,-0.5 0.5,-0.5 0.23817,0 0.96435,0.062 2.375,0.062 0.71446,0 1.23057,-0.031 1.46875,-0.031 0.2015,0 0.4375,0.051 0.4375,0.3437 0,0.4763 -0.38468,0.5 -0.53125,0.5 -0.95263,0 -1.54522,0.2284 -2.40625,0.9063 0,0 -3.70364,2.8006 -4.125,3.0937 0.60457,1.2824 2.84375,6.4375 2.84375,6.4375 0.16488,0.3481 0.41161,0.375 0.90625,0.375 0.32976,0 0.65625,-0 0.65625,0.3438 0,0.2198 -0.0969,0.5312 -0.5,0.5312 -0.21983,0 -0.87386,-0.062 -2.15625,-0.062 -1.53887,0 -2.30601,0.062 -2.5625,0.062 -0.21985,0 -0.53125,-0.032 -0.53125,-0.3438 0,-0.7694 0.78227,-0.418 1.625,-0.6562 l -2.28125,-5.1562 -1.96875,1.4687 -0.9375,3.7813 c 0.34807,0.037 0.71443,0.031 1.0625,0.031 l 0.34375,0 c 0.32975,0 0.4375,0.1735 0.4375,0.375 0,0.1832 -0.0656,0.5 -0.46875,0.5 -0.29311,0 -1.12708,-0.062 -2.8125,-0.062 -2.14344,0 -2.4752,0.062 -2.75,0.062 -0.20151,0 -0.4375,-0.051 -0.4375,-0.3438 0,-0.2198 0.0785,-0.5312 0.5,-0.5312 l 0.3125,0 c 0.6412,0 1.04308,-0.01 1.28125,-0.062 l 2.6875,-10.7187 c -0.34806,-0.037 -0.70149,-0.031 -1.03125,-0.031 l -0.34375,0 c -0.29314,0 -0.46875,-0.082 -0.46875,-0.375 0,-0.2198 0.0786,-0.5 0.5,-0.5 z m -19.78125,0.875 c -0.29313,0 -0.6002,0.013 -0.875,0.031 l -1.25,5.0312 1.59375,0 c 2.94952,0 3.30817,-1.1756 3.65625,-2.5312 0.0915,-0.3665 0.1875,-0.7403 0.1875,-1.125 0,-1.3557 -1.50746,-1.4063 -2.625,-1.4063 z m -15.53125,2.3437 -3.0625,5 3.59375,0 z"
+     style="fill:#e3dbde;fill-opacity:1;display:inline" />
+  <g
+     style="fill:#e3dbde"
+     inkscape:export-ydpi="179.99998"
+     inkscape:export-xdpi="179.99998"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     transform="matrix(0.95119362,0,0,0.95119362,490.81519,252.40134)"
+     id="g4099-0">
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       id="rect2990-5-4-6-1-2-6"
+       d="m -381.71407,751.14368 0,44.44339 5.0406,0 0,-44.44339 z"
+       style="fill:#e3dbde;fill-rule:evenodd;stroke:none;display:inline"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       inkscape:connector-curvature="0"
+       id="path3789-2-5-4-3-1-1"
+       d="m -376.67209,797.14025 -2.52466,11.73958 -2.52466,-11.73958 z"
+       inkscape:transform-center-y="9.4186472"
+       style="fill:#e3dbde;fill-rule:evenodd;stroke:none;display:inline" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       id="rect2990-6-5-2-9-1-9-5"
+       d="m -374.79698,744.3279 0,51.25917 5.04061,0 0,-51.25917 z"
+       style="fill:#e3dbde;fill-rule:evenodd;stroke:none;display:inline"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       inkscape:connector-curvature="0"
+       id="path3789-5-4-5-5-5-3-5"
+       d="m -369.75307,797.14025 -2.52466,11.73958 -2.52465,-11.73958 z"
+       inkscape:transform-center-y="9.4186472"
+       style="fill:#e3dbde;fill-rule:evenodd;stroke:none;display:inline" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       id="rect2990-6-4-7-4-0-8-8-4"
+       d="m -388.63145,758.17861 0,37.40846 5.04061,0 0,-37.40846 z"
+       style="fill:#e3dbde;fill-rule:evenodd;stroke:none;display:inline"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       inkscape:connector-curvature="0"
+       id="path3789-5-6-4-7-4-1-7-7"
+       d="m -383.5914,797.14025 -2.52466,11.73958 -2.52466,-11.73958 z"
+       inkscape:transform-center-y="9.4186472"
+       style="fill:#e3dbde;fill-rule:evenodd;stroke:none;display:inline" />
+  </g>
+  <g
+     id="text4152-3-8-7-3-7-6"
+     style="font-size:52.63235473999999670px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e3dbde;fill-opacity:1;stroke:none;display:inline;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
+     transform="matrix(0.32453009,0,0,0.34732492,78.78006,999.65223)"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:export-xdpi="179.99998"
+     inkscape:export-ydpi="179.99998">
+    <g
+       id="flowRoot3095-3-6-5"
+       style="font-size:40px;line-height:125%;fill:#e3dbde;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       transform="matrix(0.93645164,0,0,0.87499261,84.535438,56.754031)" />
+    <text
+       xml:space="preserve"
+       style="font-size:77.95272826999998017px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#e3dbde;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="-150.95193"
+       y="40.186222"
+       id="text4044-5-6"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0345238,0.96662832)"><tspan
+         sodipodi:role="line"
+         id="tspan4046-5-9"
+         x="-150.95193"
+         y="40.186222"
+         style="font-size:54.56690979000000397px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#e3dbde;font-family:CMU Serif;-inkscape-font-specification:CMU Serif Bold Italic">varhany</tspan></text>
+  </g>
+  <g
+     transform="matrix(0.95119362,0,0,0.93699671,453.8417,263.17823)"
+     id="g3992-7"
+     style="fill:#000000"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:export-xdpi="179"
+     inkscape:export-ydpi="179">
+    <rect
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3961-4"
+       width="14.495689"
+       height="4.0658641"
+       x="-351.32248"
+       y="829.00763" />
+    <rect
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3988-5"
+       width="10.125"
+       height="1.3125"
+       x="-336.82678"
+       y="830.38434" />
+  </g>
+  <g
+     id="g4020-2"
+     transform="matrix(0.95119362,0,0,0.93699671,453.8417,256.55706)"
+     style="fill:#000000"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:export-xdpi="179"
+     inkscape:export-ydpi="179">
+    <rect
+       y="829.00763"
+       x="-351.32248"
+       height="4.0658641"
+       width="14.495689"
+       id="rect4022-5"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    <rect
+       y="830.38434"
+       x="-336.82678"
+       height="1.3125"
+       width="10.125"
+       id="rect4024-4"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+  </g>
+  <rect
+     y="1026.7134"
+     x="119.666"
+     height="3.8097012"
+     width="13.788207"
+     id="rect4028-4"
+     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:export-xdpi="179"
+     inkscape:export-ydpi="179" />
+  <rect
+     y="1028.0032"
+     x="133.45421"
+     height="1.2298082"
+     width="9.6308355"
+     id="rect4030-4"
+     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:export-xdpi="179"
+     inkscape:export-ydpi="179" />
+  <path
+     sodipodi:nodetypes="cc"
+     inkscape:connector-curvature="0"
+     id="path3121"
+     d="m 119.25,1022.875 0,25"
+     style="fill:none;stroke:#000000;stroke-width:1.29999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:export-xdpi="179"
+     inkscape:export-ydpi="179" />
+  <path
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/hlavicka.png"
+     sodipodi:nodetypes="ssscczccs"
+     inkscape:connector-curvature="0"
+     id="path3820"
+     d="m -515.61731,654.36456 860,0 c 11.08,0 20,8.92 20,20 l 0,10 0,14 c 0,0 -211,-9 -450,-9 -239,0 -450,9 -450,9 0,-10 0,-14 0,-24 0,-11.08 8.92,-20 20,-20 z"
+     style="fill:url(#linearGradient3828);fill-opacity:1;fill-rule:nonzero;stroke:none" />
+  <path
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/hlavicka.png"
+     sodipodi:nodetypes="sssccccs"
+     inkscape:connector-curvature="0"
+     id="path3830"
+     d="m -515.61731,654.36456 860,0 c 11.08,0 20,8.92 20,20 l 0,10 0,-10.26687 -900,0 c 0,-10 0,10.26687 0,0.26687 0,-11.08 8.92,-20 20,-20 z"
+     style="fill:url(#linearGradient3838);fill-opacity:1;fill-rule:nonzero;stroke:none" />
+  <g
+     id="g3977"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:export-xdpi="164.73253"
+     inkscape:export-ydpi="164.73253">
+    <path
+       style="fill:#e3dbde;fill-opacity:1;display:inline"
+       d="m -4.036428,1132.8411 0,24.7188 136.499998,0 0,-24.7188 z"
+       id="rect4110-6-0-8-9-3-2-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+       inkscape:export-xdpi="179.99998"
+       inkscape:export-ydpi="179.99998"
+       sodipodi:nodetypes="ccccc" />
+    <g
+       id="g4099-0-9"
+       transform="matrix(0.95119362,0,0,0.95119362,480.27876,362.36256)"
+       inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+       inkscape:export-xdpi="179.99998"
+       inkscape:export-ydpi="179.99998"
+       style="fill:#e3dbde">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         style="fill:#e3dbde;fill-rule:evenodd;stroke:none;display:inline"
+         d="m -381.71407,751.14368 0,44.44339 5.0406,0 0,-44.44339 z"
+         id="rect2990-5-4-6-1-2-6-1"
+         inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="fill:#e3dbde;fill-rule:evenodd;stroke:none;display:inline"
+         inkscape:transform-center-y="9.4186472"
+         d="m -376.67209,797.14025 -2.52466,11.73958 -2.52466,-11.73958 z"
+         id="path3789-2-5-4-3-1-1-3"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         style="fill:#e3dbde;fill-rule:evenodd;stroke:none;display:inline"
+         d="m -374.79698,744.3279 0,51.25917 5.04061,0 0,-51.25917 z"
+         id="rect2990-6-5-2-9-1-9-5-4"
+         inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="fill:#e3dbde;fill-rule:evenodd;stroke:none;display:inline"
+         inkscape:transform-center-y="9.4186472"
+         d="m -369.75307,797.14025 -2.52466,11.73958 -2.52465,-11.73958 z"
+         id="path3789-5-4-5-5-5-3-5-5"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         style="fill:#e3dbde;fill-rule:evenodd;stroke:none;display:inline"
+         d="m -388.63145,758.17861 0,37.40846 5.04061,0 0,-37.40846 z"
+         id="rect2990-6-4-7-4-0-8-8-4-8"
+         inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="fill:#e3dbde;fill-rule:evenodd;stroke:none;display:inline"
+         inkscape:transform-center-y="9.4186472"
+         d="m -383.5914,797.14025 -2.52466,11.73958 -2.52466,-11.73958 z"
+         id="path3789-5-6-4-7-4-1-7-7-5"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+    </g>
+    <g
+       inkscape:export-ydpi="179.99998"
+       inkscape:export-xdpi="179.99998"
+       inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+       transform="matrix(0.32453009,0,0,0.34732492,74.743632,1111.1134)"
+       style="font-size:52.63235474px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e3dbde;fill-opacity:1;stroke:none;display:inline;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
+       id="text4152-3-8-7-3-7-6-7">
+      <g
+         transform="matrix(0.93645164,0,0,0.87499261,84.535438,56.754031)"
+         style="font-size:40px;line-height:125%;fill:#e3dbde;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         id="flowRoot3095-3-6-5-3" />
+      <text
+         transform="scale(1.0345238,0.96662832)"
+         sodipodi:linespacing="125%"
+         id="text4044-5-6-3"
+         y="40.186222"
+         x="-119.67719"
+         style="font-size:77.95272827px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#e3dbde;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         xml:space="preserve"><tspan
+           style="font-size:53.61385727px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#e3dbde;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
+           y="40.186222"
+           x="-119.67719"
+           id="tspan4046-5-9-8"
+           sodipodi:role="line">varhany</tspan></text>
+    </g>
+    <g
+       inkscape:export-ydpi="179"
+       inkscape:export-xdpi="179"
+       inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+       style="fill:#000000"
+       id="g3992-7-9"
+       transform="matrix(0.95119362,0,0,0.93699671,443.30527,373.13945)">
+      <rect
+         y="829.00763"
+         x="-351.32248"
+         height="4.0658641"
+         width="14.495689"
+         id="rect3961-4-5"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <rect
+         y="830.38434"
+         x="-336.82678"
+         height="1.3125"
+         width="10.125"
+         id="rect3988-5-5"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
+    <g
+       inkscape:export-ydpi="179"
+       inkscape:export-xdpi="179"
+       inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+       style="fill:#000000"
+       transform="matrix(0.95119362,0,0,0.93699671,443.30527,366.51828)"
+       id="g4020-2-3">
+      <rect
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="rect4022-5-8"
+         width="14.495689"
+         height="4.0658641"
+         x="-351.32248"
+         y="829.00763" />
+      <rect
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="rect4024-4-6"
+         width="10.125"
+         height="1.3125"
+         x="-336.82678"
+         y="830.38434" />
+    </g>
+    <rect
+       inkscape:export-ydpi="179"
+       inkscape:export-xdpi="179"
+       inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect4028-4-0"
+       width="13.788207"
+       height="3.8097012"
+       x="109.12957"
+       y="1136.6746" />
+    <rect
+       inkscape:export-ydpi="179"
+       inkscape:export-xdpi="179"
+       inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect4030-4-3"
+       width="9.6308355"
+       height="1.2298082"
+       x="122.91778"
+       y="1137.9644" />
+    <path
+       inkscape:export-ydpi="179"
+       inkscape:export-xdpi="179"
+       inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+       style="fill:none;stroke:#000000;stroke-width:1.29999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 108.71357,1132.8362 0,25"
+       id="path3121-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <rect
+       y="1134.7112"
+       x="-2"
+       height="21.25"
+       width="107.75"
+       id="rect3947"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3964"
+       y="1153.2915"
+       x="3.25"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
+         y="1153.2915"
+         x="3.25"
+         id="tspan3966"
+         sodipodi:role="line">M<tspan
+   id="tspan3972"
+   style="font-size:18px;font-style:normal;-inkscape-font-specification:URW Palladio L Bold">LNAŘÍK</tspan></tspan></text>
+  </g>
+  <path
+     sodipodi:nodetypes="ccccc"
+     inkscape:export-ydpi="179.99998"
+     inkscape:export-xdpi="179.99998"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:connector-curvature="0"
+     id="rect4110-6-0-8-9-3-2-9-9"
+     d="m 93.989958,1282.4167 0,24.7188 24.217512,0 0,-24.7188 z"
+     style="fill:#ffffff;fill-opacity:1;display:inline" />
+  <g
+     style="fill:#ffffff"
+     inkscape:export-ydpi="179.99998"
+     inkscape:export-xdpi="179.99998"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     transform="matrix(0.95119362,0,0,0.95119362,467.43687,511.9382)"
+     id="g4099-0-9-7">
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       id="rect2990-5-4-6-1-2-6-1-5"
+       d="m -381.71407,751.14368 0,44.44339 5.0406,0 0,-44.44339 z"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none;display:inline"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       inkscape:connector-curvature="0"
+       id="path3789-2-5-4-3-1-1-3-4"
+       d="m -376.67209,797.14025 -2.52466,11.73958 -2.52466,-11.73958 z"
+       inkscape:transform-center-y="9.4186472"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none;display:inline" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       id="rect2990-6-5-2-9-1-9-5-4-4"
+       d="m -374.79698,744.3279 0,51.25917 5.04061,0 0,-51.25917 z"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none;display:inline"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       inkscape:connector-curvature="0"
+       id="path3789-5-4-5-5-5-3-5-5-9"
+       d="m -369.75307,797.14025 -2.52466,11.73958 -2.52465,-11.73958 z"
+       inkscape:transform-center-y="9.4186472"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none;display:inline" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       id="rect2990-6-4-7-4-0-8-8-4-8-6"
+       d="m -388.63145,758.17861 0,37.40846 5.04061,0 0,-37.40846 z"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none;display:inline"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/media/SAMSUNG/jakub/Dokumenty/www/logo bez ramu.png"
+       inkscape:connector-curvature="0"
+       id="path3789-5-6-4-7-4-1-7-7-5-7"
+       d="m -383.5914,797.14025 -2.52466,11.73958 -2.52466,-11.73958 z"
+       inkscape:transform-center-y="9.4186472"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none;display:inline" />
+  </g>
+  <g
+     transform="matrix(0.95119362,0,0,0.93699671,429.04917,522.71509)"
+     id="g3992-7-9-3"
+     style="fill:#241c1f"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:export-xdpi="179"
+     inkscape:export-ydpi="179">
+    <rect
+       style="fill:#241c1f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3961-4-5-7"
+       width="14.495689"
+       height="4.0658641"
+       x="-351.32248"
+       y="829.00763" />
+    <rect
+       style="fill:#241c1f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3988-5-5-7"
+       width="10.125"
+       height="1.3125"
+       x="-336.82678"
+       y="830.38434" />
+  </g>
+  <g
+     id="g4020-2-3-6"
+     transform="matrix(0.95119362,0,0,0.93699671,429.04917,516.09392)"
+     style="fill:#241c1f"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:export-xdpi="179"
+     inkscape:export-ydpi="179">
+    <rect
+       y="829.00763"
+       x="-351.32248"
+       height="4.0658641"
+       width="14.495689"
+       id="rect4022-5-8-3"
+       style="fill:#241c1f;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    <rect
+       y="830.38434"
+       x="-336.82678"
+       height="1.3125"
+       width="10.125"
+       id="rect4024-4-6-9"
+       style="fill:#241c1f;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+  </g>
+  <rect
+     y="1286.2502"
+     x="94.873466"
+     height="3.8097012"
+     width="13.788207"
+     id="rect4028-4-0-1"
+     style="fill:#241c1f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:export-xdpi="179"
+     inkscape:export-ydpi="179" />
+  <rect
+     y="1287.54"
+     x="108.66167"
+     height="1.2298082"
+     width="9.6308355"
+     id="rect4030-4-3-0"
+     style="fill:#241c1f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:export-xdpi="179"
+     inkscape:export-ydpi="179" />
+  <path
+     sodipodi:nodetypes="cc"
+     inkscape:connector-curvature="0"
+     id="path3121-3-4"
+     d="m 94.45747,1282.3068 0,20.96"
+     style="fill:none;stroke:#000000;stroke-width:1.19033647;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:export-xdpi="179"
+     inkscape:export-ydpi="179" />
+  <text
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+     x="-10.834527"
+     y="1306.8672"
+     id="text3964-1"
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:export-xdpi="179"
+     inkscape:export-ydpi="179"><tspan
+       sodipodi:role="line"
+       id="tspan3966-8"
+       x="-10.834527"
+       y="1306.8672"
+       style="font-size:20px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold Italic;fill:#ffffff">MLNAŘÍK</tspan></text>
+  <g
+     id="text4152-3-8-7-3-7-6-7-2"
+     style="font-size:52.63235473999999670px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
+     transform="matrix(0.32453009,0,0,0.34732492,60.753748,1266.689)"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/logo-black.png"
+     inkscape:export-xdpi="179.99998"
+     inkscape:export-ydpi="179.99998">
+    <g
+       id="flowRoot3095-3-6-5-3-1"
+       style="font-size:40px;line-height:125%;fill:#ffffff;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       transform="matrix(0.93645164,0,0,0.87499261,84.535438,56.754031)" />
+    <text
+       xml:space="preserve"
+       style="font-size:77.95272826999998017px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="-119.67719"
+       y="40.186222"
+       id="text4044-5-6-3-0"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0345238,0.96662832)"><tspan
+         sodipodi:role="line"
+         id="tspan4046-5-9-8-1"
+         x="-119.67719"
+         y="40.186222"
+         style="font-size:53.61385727000000401px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold Italic">varhany</tspan></text>
+  </g>
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot4233"
+     style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+       id="flowRegion4235"><rect
+         id="rect4237"
+         width="280"
+         height="128.5"
+         x="-35"
+         y="1207.5" /></flowRegion><flowPara
+       id="flowPara4239" /></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot4291"
+     style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+       id="flowRegion4293"><rect
+         id="rect4295"
+         width="114.5"
+         height="142.5"
+         x="93.5"
+         y="1197.5" /></flowRegion><flowPara
+       id="flowPara4297" /></flowRoot>  <path
+     style="fill:url(#linearGradient4400);fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 1340.7535,718.15094 -859.99997,0 c -11.08,0 -20,-8.92 -20,-20 l 0,-10 0,-6.71573 899.99997,0 c 0,10 0,6.71573 0,16.71573 0,11.08 -8.92,20 -20,20 z"
+     id="rect3055-6-5"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="sssccccs"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/paticka.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
+  <path
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/paticka.png"
+     sodipodi:nodetypes="ssczcs"
+     inkscape:connector-curvature="0"
+     id="path4392"
+     d="m 1340.7535,718.15094 -859.99997,0 c -11.08,0 -20,-8.92 -20,-20 13.52258,-0.27948 234.23573,-5.89155 455.83298,-5.79929 221.59729,0.0923 444.07859,5.88885 444.16699,5.79929 0,11.08 -8.92,20 -20,20 z"
+     style="fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+  <path
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/top-b.png"
+     sodipodi:nodetypes="ccccc"
+     inkscape:connector-curvature="0"
+     id="path4552"
+     d="m 482.67045,1009.0796 3,0 0,18 -3,0 z"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+  <path
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/top-b.png"
+     sodipodi:nodetypes="ccccc"
+     inkscape:connector-curvature="0"
+     id="path4554"
+     d="m 485.67045,1009.163 -3,0 0,-18 3,0 z"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+  <path
+     style="fill:url(#linearGradient4580);fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 485.67045,1009.163 -3,0 0,-25 3,0 z"
+     id="rect4404-6-2"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccc"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/top-b.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
+  <path
+     style="fill:url(#linearGradient4655);fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 529.25,1010.75 -3,0 0,-25 3,0 z"
+     id="rect4404-6-2-0"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccc"
+     inkscape:export-filename="/media/AA1D-BABD/HTML/img/menu-b.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
+  <path
+     sodipodi:type="arc"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.83229011;stroke-miterlimit:4;stroke-dasharray:none"
+     id="path3152"
+     sodipodi:cx="-220.26376"
+     sodipodi:cy="1074.9132"
+     sodipodi:rx="37.123104"
+     sodipodi:ry="37.123104"
+     d="m -183.14066,1074.9132 a 37.123104,37.123104 0 1 1 -74.24621,0 37.123104,37.123104 0 1 1 74.24621,0 z"
+     transform="matrix(1.1930936,0,0,1.1930936,49.699762,-214.72712)" />
+  <text
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+     x="-246.07318"
+     y="1062.5389"
+     id="text3922"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3924"
+       x="-246.07318"
+       y="1062.5389"
+       style="font-size:18px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:URW Chancery L;-inkscape-font-specification:URW Chancery L Bold Italic">Salicionál</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+     x="-218.54836"
+     y="1082.4944"
+     id="text3922-2"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3924-0"
+       x="-218.54836"
+       y="1082.4944"
+       style="font-size:18px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:URW Chancery L;-inkscape-font-specification:URW Chancery L Bold Italic">8'</tspan></text>
+  <path
+     sodipodi:type="arc"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.83229011;stroke-miterlimit:4;stroke-dasharray:none"
+     id="path3152-9"
+     sodipodi:cx="-220.26376"
+     sodipodi:cy="1074.9132"
+     sodipodi:rx="37.123104"
+     sodipodi:ry="37.123104"
+     d="m -183.14066,1074.9132 a 37.123104,37.123104 0 1 1 -74.24621,0 37.123104,37.123104 0 1 1 74.24621,0 z"
+     transform="matrix(1.1930936,0,0,1.1930936,-5.9052902,-112.45299)" />
+  <text
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+     x="-301.67822"
+     y="1164.813"
+     id="text3922-6"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3924-1"
+       x="-301.67822"
+       y="1164.813"
+       style="font-size:18px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:URW Chancery L;-inkscape-font-specification:URW Chancery L Bold Italic">Salicionál</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+     x="-274.15341"
+     y="1184.7684"
+     id="text3922-2-0"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3924-0-4"
+       x="-274.15341"
+       y="1184.7684"
+       style="font-size:18px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:URW Chancery L;-inkscape-font-specification:URW Chancery L Bold Italic">8'</tspan></text>
+  <path
+     sodipodi:type="arc"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.83229011;stroke-miterlimit:4;stroke-dasharray:none"
+     id="path3152-2"
+     sodipodi:cx="-220.26376"
+     sodipodi:cy="1074.9132"
+     sodipodi:rx="37.123104"
+     sodipodi:ry="37.123104"
+     d="m -183.14066,1074.9132 a 37.123104,37.123104 0 1 1 -74.24621,0 37.123104,37.123104 0 1 1 74.24621,0 z"
+     transform="matrix(1.1930936,0,0,1.1930936,93.089659,-62.955513)" />
+  <text
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+     x="-202.68327"
+     y="1214.3105"
+     id="text3922-22"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3924-05"
+       x="-202.68327"
+       y="1214.3105"
+       style="font-size:18px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:URW Chancery L;-inkscape-font-specification:URW Chancery L Bold Italic">Salicionál</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+     x="-175.15845"
+     y="1234.266"
+     id="text3922-2-5"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3924-0-2"
+       x="-175.15845"
+       y="1234.266"
+       style="font-size:18px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:URW Chancery L;-inkscape-font-specification:URW Chancery L Bold Italic">8'</tspan></text>
+</svg>
