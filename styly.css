@@ -1,136 +1,185 @@
-html, body {
-	margin : 0;
-	padding : 0;
-	height : 100%;
-	width : 100%;
-	font-family: Verdana, sans-serif;
-	color : black;
-	background: #241C1F;
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background: #f4f4f4;
+    line-height: 1.6;
 }
 
 p {
-	font-size : 12px;
+    font-size: 14px;
+    margin: 0 0 16px;
 }
+
 h1 {
-	font-size : 32px;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 h2 {
-	font-size : 18px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 28px 0 12px;
 }
 
 td {
-	font-size : 12px;
+    font-size: 13px;
 }
 
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
 
+a:hover {
+    color: #1a5276;
+    text-decoration: underline;
+}
+
+/* Main container */
 #hlavniram {
-    position: relative;
     width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #241C1F;
-
+    margin: 30px auto;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
+/* Header area */
 #hlavniram #hlavicka {
-	position: absolute;
-
-        height : 90px;
-	width: 900px;
-
-
+    position: relative;
+    background: #fff;
 }
 
 #hlavniram #hlavicka #logo {
-        position: absolute;
-	bottom: 0px;
-	left: 0px;
-
+    position: absolute;
+    bottom: 12px;
+    left: 20px;
+    z-index: 1;
 }
 
 #hlavniram #hlavicka #top_menu {
-        position: absolute;
-	bottom: 20px;
-	right: 0px;
-    
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    z-index: 1;
 }
 
 #hlavniram #hlavicka #top_menu a {
     display: inline-block;
-    padding: 15px 15px 0px 15px;
+    padding: 8px 14px;
     text-decoration: none;
-    font-weight: bold;
-    font-style: italic;
-    color: #C8B7BE;    
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    border-radius: 4px;
 }
 
-#hlavniram #hlavicka #top_menu a.aktivni {background : url(img/top-b.png) repeat-x; color: white;}
+#hlavniram #hlavicka #top_menu a.aktivni {
+    background: #1a5276;
+    color: #fff;
+}
 
-#hlavniram #hlavicka #top_menu a:hover {background : url(img/top-b.png) repeat-x; color: white;}
+#hlavniram #hlavicka #top_menu a:hover {
+    background: #eaf2f8;
+    color: #1a5276;
+}
+
+#hlavniram #hlavicka #top_menu a.aktivni:hover {
+    background: #154360;
+    color: #fff;
+}
 
 #hlavniram #hlavicka #banner {
-        position: absolute;
-	top: 100px;
-
+    display: block;
+    width: 100%;
 }
 
-#hlavniram #hlavicka #pruh {
-        position: absolute;
-	top: 230px;
-
+#hlavniram #hlavicka #banner img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-#hlavniram #hlavicka .nadpis {
-	position: absolute;
-        font-style: italic;
-	top:-5px;
-	left: 20px;
-	color: white;
-
+/* Title bar */
+#hlavniram #hlavicka .title-bar {
+    background: #1a5276;
+    padding: 18px 24px;
 }
 
+#hlavniram #hlavicka .title-bar h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Content area */
 #hlavniram #obsah {
-	position: relative;
-	top: 295px;
-	width: 900px;
-	background: white;
+    padding: 32px;
 }
 
-
-#obsah .text {
-	font-family: Verdana, sans-serif;
-	position: relative;
-	margin: 10px 20px 20px 20px;
-	padding: 20px 20px 20px 20px;
-	background-color: white;
+#hlavniram #obsah .text {
+    font-size: 14px;
 }
 
-#obsah .text li {    font-size : 12px; 
+#hlavniram #obsah .text h1 {
+    font-size: 22px;
+    color: #1a5276;
+    margin: 32px 0 16px;
 }
 
-
-#obsah .text p.obrazky {
-	text-align: center;
+#hlavniram #obsah .text h2 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin: 28px 0 12px;
 }
 
-#obsah .text .obrazek {
-        border: 1px solid #464646;
-        margin: 5px 5px 5px 5px;
+#hlavniram #obsah .text ul {
+    margin: 0 0 16px;
+    padding-left: 24px;
 }
 
-#obsah #paticka {
-        position: absolute;
-	bottom: 0px;
-	color: #E3DBDE;
-	background : black url(img/paticka.png);	
-	margin : 0 auto;
-	text-align : center;
-	padding-top : 5px;
-	padding-bottom : 5px;
-	width : 900px;
-	font-size : 10px;
+#hlavniram #obsah .text li {
+    font-size: 14px;
+    margin-bottom: 4px;
 }
 
+#hlavniram #obsah .text p.obrazky {
+    text-align: center;
+    margin: 24px 0;
+}
 
+#hlavniram #obsah .text .obrazek {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 6px;
+    vertical-align: middle;
+}
+
+#hlavniram #obsah .text table {
+    border-collapse: collapse;
+    margin: 16px 0;
+    width: 70%;
+}
+
+#hlavniram #obsah .text table td {
+    padding: 4px 16px;
+    font-size: 13px;
+}
+
+/* Footer */
+#hlavniram #paticka {
+    text-align: center;
+    padding: 16px;
+    font-size: 11px;
+    color: #999;
+    border-top: 1px solid #eee;
+}
