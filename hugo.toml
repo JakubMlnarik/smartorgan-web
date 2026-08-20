@@ -1,7 +1,0 @@
-baseURL = "/"
-title = "SmartOrgan"
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true

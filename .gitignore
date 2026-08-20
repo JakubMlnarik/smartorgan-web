@@ -1,8 +1,0 @@
-# Hugo output — regenerated on every build
-/public/
-
-# Hugo cache (created when building)
-.hugo_cache/
-
-# OS junk
-.DS_Store
