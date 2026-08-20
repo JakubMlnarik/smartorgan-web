@@ -31,19 +31,18 @@ TEMPLATE_CS = """<!DOCTYPE html>
 <body>
 <div id="main-frame">
   <div id="header">
-    <div id="logo"><img src="img/logo-transparent.png" alt="logo" width="100"></div>
-
-    <div id="top-menu">
-      <a href="index.html"{active_index}>Úvod</a>
-      <a href="cecilia.htm"{active_cecilia}>Cecilia</a>
-      <a href="organ.htm"{active_organ}>Varhany</a>
-      <a href="services.htm"{active_services}>Služby</a>
-      <a href="contact.htm"{active_contact}>Kontakt / partneři</a>
-      <a href="{cz_href}"><img src="img/flag_cz.gif" alt="Čeština"></a>
-      <a href="{en_href}"><img src="img/flag_en.gif" alt="English"></a>
+    <div class="header-top">
+      <div id="logo"><img src="img/logo-transparent.png" alt="logo" width="100"></div>
+      <div id="top-menu">
+        <a href="index.html"{active_index}>Úvod</a>
+        <a href="cecilia.htm"{active_cecilia}>Cecilia</a>
+        <a href="organ.htm"{active_organ}>Varhany</a>
+        <a href="services.htm"{active_services}>Služby</a>
+        <a href="contact.htm"{active_contact}>Kontakt / partneři</a>
+        <a href="{cz_href}"><img src="img/flag_cz.gif" alt="Čeština"></a>
+        <a href="{en_href}"><img src="img/flag_en.gif" alt="English"></a>
+      </div>
     </div>
-
-    <div class="title-bar"><h1>{h1}</h1></div>
   </div>
 
   <div id="content">
@@ -76,19 +75,18 @@ TEMPLATE_EN = """<!DOCTYPE html>
 <body>
 <div id="main-frame">
   <div id="header">
-    <div id="logo"><img src="img/logo-transparent.png" alt="logo" width="100"></div>
-
-    <div id="top-menu">
-      <a href="index-en.html"{active_index}>Introduction</a>
-      <a href="cecilia-en.htm"{active_cecilia}>Cecilia</a>
-      <a href="organ-en.htm"{active_organ}>Organs</a>
-      <a href="services-en.htm"{active_services}>Services</a>
-      <a href="contact-en.htm"{active_contact}>Contact / partners</a>
-      <a href="{cz_href}"><img src="img/flag_cz.gif" alt="Čeština"></a>
-      <a href="{en_href}"><img src="img/flag_en.gif" alt="English"></a>
+    <div class="header-top">
+      <div id="logo"><img src="img/logo-transparent.png" alt="logo" width="100"></div>
+      <div id="top-menu">
+        <a href="index-en.html"{active_index}>Introduction</a>
+        <a href="cecilia-en.htm"{active_cecilia}>Cecilia</a>
+        <a href="organ-en.htm"{active_organ}>Organs</a>
+        <a href="services-en.htm"{active_services}>Services</a>
+        <a href="contact-en.htm"{active_contact}>Contact / partners</a>
+        <a href="{cz_href}"><img src="img/flag_cz.gif" alt="Čeština"></a>
+        <a href="{en_href}"><img src="img/flag_en.gif" alt="English"></a>
+      </div>
     </div>
-
-    <div class="title-bar"><h1>{h1}</h1></div>
   </div>
 
   <div id="content">

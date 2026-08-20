@@ -54,22 +54,30 @@ a:hover {
 
 /* Header area */
 #main-frame #header {
-    position: relative;
     background: #fff;
 }
 
+#main-frame #header .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 24px;
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
 #main-frame #header #logo {
-    position: absolute;
-    bottom: 12px;
-    left: 20px;
-    z-index: 1;
+    flex-shrink: 0;
+}
+
+#main-frame #header #logo img {
+    display: block;
 }
 
 #main-frame #header #top-menu {
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
-    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 #main-frame #header #top-menu a {
@@ -78,8 +86,9 @@ a:hover {
     text-decoration: none;
     font-size: 13px;
     font-weight: 500;
-    color: #555;
+    color: #2c3e50;
     border-radius: 4px;
+    transition: background 0.15s, color 0.15s;
 }
 
 #main-frame #header #top-menu a.active {
@@ -97,17 +106,9 @@ a:hover {
     color: #fff;
 }
 
-/* Title bar */
-#main-frame #header .title-bar {
-    background: #1a5276;
-    padding: 18px 24px;
-}
-
-#main-frame #header .title-bar h1 {
-    margin: 0;
-    color: #fff;
-    font-size: 22px;
-    font-weight: 600;
+#main-frame #header #top-menu a:has(img) {
+    padding: 4px 6px;
+    line-height: 0;
 }
 
 /* Content area */
