@@ -1,4 +1,7 @@
 baseURL = "/"
-languageCode = "en-us"
 title = "SmartOrgan"
-theme = ""  # no theme — using our own layouts
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
