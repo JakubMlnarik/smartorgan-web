@@ -43,7 +43,7 @@ a:hover {
 }
 
 /* Main container */
-#hlavniram {
+#main-frame {
     width: 900px;
     margin: 30px auto;
     background: #fff;
@@ -53,26 +53,26 @@ a:hover {
 }
 
 /* Header area */
-#hlavniram #hlavicka {
+#main-frame #header {
     position: relative;
     background: #fff;
 }
 
-#hlavniram #hlavicka #logo {
+#main-frame #header #logo {
     position: absolute;
     bottom: 12px;
     left: 20px;
     z-index: 1;
 }
 
-#hlavniram #hlavicka #top_menu {
+#main-frame #header #top-menu {
     position: absolute;
     bottom: 16px;
     right: 16px;
     z-index: 1;
 }
 
-#hlavniram #hlavicka #top_menu a {
+#main-frame #header #top-menu a {
     display: inline-block;
     padding: 8px 14px;
     text-decoration: none;
@@ -82,39 +82,28 @@ a:hover {
     border-radius: 4px;
 }
 
-#hlavniram #hlavicka #top_menu a.aktivni {
+#main-frame #header #top-menu a.active {
     background: #1a5276;
     color: #fff;
 }
 
-#hlavniram #hlavicka #top_menu a:hover {
+#main-frame #header #top-menu a:hover {
     background: #eaf2f8;
     color: #1a5276;
 }
 
-#hlavniram #hlavicka #top_menu a.aktivni:hover {
+#main-frame #header #top-menu a.active:hover {
     background: #154360;
     color: #fff;
 }
 
-#hlavniram #hlavicka #banner {
-    display: block;
-    width: 100%;
-}
-
-#hlavniram #hlavicka #banner img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 /* Title bar */
-#hlavniram #hlavicka .title-bar {
+#main-frame #header .title-bar {
     background: #1a5276;
     padding: 18px 24px;
 }
 
-#hlavniram #hlavicka .title-bar h1 {
+#main-frame #header .title-bar h1 {
     margin: 0;
     color: #fff;
     font-size: 22px;
@@ -122,61 +111,61 @@ a:hover {
 }
 
 /* Content area */
-#hlavniram #obsah {
+#main-frame #content {
     padding: 32px;
 }
 
-#hlavniram #obsah .text {
+#main-frame #content .text {
     font-size: 14px;
 }
 
-#hlavniram #obsah .text h1 {
+#main-frame #content .text h1 {
     font-size: 22px;
     color: #1a5276;
     margin: 32px 0 16px;
 }
 
-#hlavniram #obsah .text h2 {
+#main-frame #content .text h2 {
     font-size: 18px;
     color: #2c3e50;
     margin: 28px 0 12px;
 }
 
-#hlavniram #obsah .text ul {
+#main-frame #content .text ul {
     margin: 0 0 16px;
     padding-left: 24px;
 }
 
-#hlavniram #obsah .text li {
+#main-frame #content .text li {
     font-size: 14px;
     margin-bottom: 4px;
 }
 
-#hlavniram #obsah .text p.obrazky {
+#main-frame #content .text p.images {
     text-align: center;
     margin: 24px 0;
 }
 
-#hlavniram #obsah .text .obrazek {
+#main-frame #content .text .image {
     border: 1px solid #ddd;
     border-radius: 4px;
     margin: 6px;
     vertical-align: middle;
 }
 
-#hlavniram #obsah .text table {
+#main-frame #content .text table {
     border-collapse: collapse;
     margin: 16px 0;
     width: 70%;
 }
 
-#hlavniram #obsah .text table td {
+#main-frame #content .text table td {
     padding: 4px 16px;
     font-size: 13px;
 }
 
 /* Footer */
-#hlavniram #paticka {
+#main-frame #footer {
     text-align: center;
     padding: 16px;
     font-size: 11px;
