@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>//localhost:1313/products/cable-organizer/</loc>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
+  </url><url>
+    <loc>//localhost:1313/products/desk-mat/</loc>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+  </url><url>
+    <loc>//localhost:1313/products/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+  </url><url>
+    <loc>//localhost:1313/products/pen-holder/</loc>
+  </url>
+</urlset>

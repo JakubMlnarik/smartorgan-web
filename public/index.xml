@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Home on SmartOrgan</title>
+		<link>//localhost:1313/</link>
+		<description>Recent content in Home on SmartOrgan</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Cable Organizer Set</title>
+				<link>//localhost:1313/products/cable-organizer/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/products/cable-organizer/</guid>
+				<description>&lt;p&gt;Keep your charging cables tangle-free with this set of 6 silicone cable clips. Stick them anywhere — desk, nightstand, or wall.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Self-adhesive backing&lt;/li&gt;&#xA;&lt;li&gt;6 clips per set&lt;/li&gt;&#xA;&lt;li&gt;Available in black, white, and gray&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title>Desk Mat – Felt</title>
+				<link>//localhost:1313/products/desk-mat/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/products/desk-mat/</guid>
+				<description>&lt;p&gt;A premium wool-felt desk mat that protects your surface and adds a touch of warmth to your workspace.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;100% natural wool felt&lt;/li&gt;&#xA;&lt;li&gt;60 × 40 cm&lt;/li&gt;&#xA;&lt;li&gt;Available in 4 colors&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title>Wooden Pen Holder</title>
+				<link>//localhost:1313/products/pen-holder/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/products/pen-holder/</guid>
+				<description>&lt;p&gt;A handcrafted pen holder made from sustainable bamboo. Holds up to 12 pens and keeps your desk tidy.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Eco-friendly bamboo&lt;/li&gt;&#xA;&lt;li&gt;6 × 8 cm base&lt;/li&gt;&#xA;&lt;li&gt;Fits standard pens and pencils&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+	</channel>
+</rss>
