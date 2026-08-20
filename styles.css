@@ -46,7 +46,7 @@ a:hover {
 #main-frame {
     width: 900px;
     margin: 30px auto;
-    background: #fff;
+    background: #fcfaf5;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     border-radius: 8px;
     overflow: hidden;
@@ -54,7 +54,7 @@ a:hover {
 
 /* Header area */
 #main-frame #header {
-    background: #fff;
+    background: #fcfaf5;
 }
 
 #main-frame #header .header-top {
@@ -62,7 +62,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 10px 24px;
-    background: #fff;
+    background: #fcfaf5;
     border-bottom: 1px solid #e0e0e0;
 }
 
