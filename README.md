@@ -17,7 +17,7 @@ This regenerates all `.html` / `.htm` files in the project root.
 | `build.py` | Generator script with templates + page metadata |
 | `content/` | Page-specific content — just the `<div class="text">` interior |
 | `*.html`, `*.htm` | **Generated** output (10 files) |
-| `styly.css` | Stylesheet (not generated) |
+| `styles.css` | Stylesheet (not generated) |
 
 ## Workflow
 

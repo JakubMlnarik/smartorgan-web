@@ -23,7 +23,7 @@ TEMPLATE_CS = """<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{title}</title>
-  <link rel="stylesheet" href="styly.css">
+  <link rel="stylesheet" href="styles.css">
   <meta name="keywords" content="{keywords}">
   <meta name="description" content="{description}">
 </head>
@@ -68,7 +68,7 @@ TEMPLATE_EN = """<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{title}</title>
-  <link rel="stylesheet" href="styly.css">
+  <link rel="stylesheet" href="styles.css">
   <meta name="keywords" content="{keywords}">
   <meta name="description" content="{description}">
 </head>
