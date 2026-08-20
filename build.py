@@ -53,7 +53,7 @@ TEMPLATE_CS = """<!DOCTYPE html>
     </div>
   </div>
 
-  <div id="footer">Copyright &copy; 2011 | www.smartorgan.eu | All rights reserved | Created by Jakub Mlnařík</div>
+  <div id="footer">Copyright &copy; 2026 | www.smartorgan.eu | All rights reserved | Created by Jakub Mlnarik</div>
 </div>
 
 </body>
@@ -97,7 +97,7 @@ TEMPLATE_EN = """<!DOCTYPE html>
     </div>
   </div>
 
-  <div id="footer">Copyright &copy; 2011 | www.smartorgan.eu | All rights reserved | Created by Jakub Mlnařík</div>
+  <div id="footer">Copyright &copy; 2026 | www.smartorgan.eu | All rights reserved | Created by Jakub Mlnarik</div>
 </div>
 
 </body>
