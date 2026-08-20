@@ -122,14 +122,17 @@ a:hover {
 
 /* Image gallery */
 #main-frame #content .text p.images {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
     margin: 28px 0;
 }
 
 #main-frame #content .text p.images a {
     display: block;
+    width: 200px;
+    flex: 0 1 auto;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -184,6 +187,8 @@ a:hover {
     margin-bottom: 4px;
 }
 
+
+
 #main-frame #content .text table {
     border-collapse: collapse;
     margin: 16px 0;
@@ -234,7 +239,6 @@ a:hover {
     }
 
     #main-frame #content .text p.images {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 10px;
     }
 
@@ -269,7 +273,6 @@ a:hover {
     }
 
     #main-frame #content .text p.images {
-        grid-template-columns: 1fr;
         gap: 14px;
     }
 
