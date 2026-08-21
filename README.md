@@ -2,13 +2,26 @@
 
 A minimal Python script that eliminates HTML redundancy (header, footer, menu, boilerplate) across the site's 10 pages (5 pages × 2 languages).
 
+## Prerequisites
+
+- Python 3
+- [Pillow](https://python-pillow.org/) (for automatic thumbnail generation)
+
+### Setup (recommended: virtual environment)
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+pip install Pillow
+```
+
 ## Usage
 
 ```sh
 python3 build.py
 ```
 
-This regenerates all `.html` / `.htm` files in the project root.
+This regenerates all `.html` / `.htm` files in the project root and automatically generates thumbnail images (`-thumb.jpg`) for every gallery image that references one.
 
 ## File structure
 

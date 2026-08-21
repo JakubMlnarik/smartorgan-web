@@ -12,7 +12,16 @@ Edit content or metadata, then run build.py to regenerate all HTML files.
 """
 
 import os
+import re
 import shutil
+
+try:
+    from PIL import Image
+    HAS_PILLOW = True
+except ImportError:
+    HAS_PILLOW = False
+    print("⚠  Pillow not installed — thumbnails will not be generated.")
+    print("   Install with: pip install Pillow")
 
 # ── Templates ──────────────────────────────────────────────────────────────
 
@@ -112,6 +121,57 @@ def active_class(page_id, current):
     return ' class="active"' if page_id == current else ''
 
 
+THUMB_HEIGHT = 180
+
+
+def generate_thumb(full_path, thumb_path):
+    """Generate a thumbnail from full_path if it doesn't exist or is outdated."""
+    if not HAS_PILLOW:
+        return
+    if os.path.exists(thumb_path):
+        full_mtime = os.path.getmtime(full_path)
+        thumb_mtime = os.path.getmtime(thumb_path)
+        if thumb_mtime >= full_mtime:
+            return  # thumbnail is up-to-date
+    img = Image.open(full_path)
+    ratio = THUMB_HEIGHT / img.height
+    new_width = int(img.width * ratio)
+    thumb = img.resize((new_width, THUMB_HEIGHT), Image.LANCZOS)
+    thumb.save(thumb_path, optimize=True, quality=85)
+    print(f"   🖼  Generated thumbnail: {thumb_path}")
+
+
+def process_content_images(content, img_dir):
+    """Generate thumbnails for -thumb references and add loading='lazy' to all img tags."""
+
+    def replace_img(match):
+        tag = match.group(0)
+
+        # Extract src attribute
+        src_match = re.search(r'src="([^"]+)"', tag)
+        if src_match:
+            src = src_match.group(1)
+
+            # Generate thumbnail if src points to a -thumb file
+            if src.endswith('-thumb.jpg'):
+                # Derive full image path: strip '-thumb' from the basename
+                full_src = src[:-len('-thumb.jpg')] + '.jpg'
+                full_path = os.path.join(img_dir, os.path.basename(full_src))
+                thumb_path = os.path.join(img_dir, os.path.basename(src))
+                if os.path.exists(full_path):
+                    generate_thumb(full_path, thumb_path)
+                else:
+                    print(f"   ⚠  Full image not found: {full_path} (referenced from {src})")
+
+        # Add loading="lazy" if not already present
+        if 'loading=' not in tag:
+            tag = tag.replace('<img', '<img loading="lazy"')
+
+        return tag
+
+    return re.sub(r'<img[^>]+>', replace_img, content)
+
+
 # ── Page definitions ───────────────────────────────────────────────────────
 # Each entry: (filename, lang, title, h1, active_page, keywords, description, cz_href, en_href)
 
@@ -205,6 +265,7 @@ PAGES = [
 def build():
     # Ensure output directory (current dir)
     out_dir = "."
+    img_dir = os.path.join(out_dir, "img")
 
     for filename, lang, title, h1, active, keywords, description, cz_href, en_href in PAGES:
         # Read content snippet
@@ -215,6 +276,9 @@ def build():
 
         with open(content_file, "r", encoding="utf-8") as f:
             content = f.read().rstrip()
+
+        # Process images: generate thumbnails, add loading="lazy"
+        content = process_content_images(content, img_dir)
 
         # Pick template
         template = TEMPLATE_CS if lang == "cs" else TEMPLATE_EN
