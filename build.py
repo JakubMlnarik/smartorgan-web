@@ -38,7 +38,7 @@ TEMPLATE_CS = """<!DOCTYPE html>
         <a href="cecilia.htm"{active_cecilia}>Cecilia</a>
         <a href="organ.htm"{active_organ}>Varhany</a>
         <a href="services.htm"{active_services}>Služby</a>
-        <a href="contact.htm"{active_contact}>Kontakt / partneři</a>
+        <a href="contact.htm"{active_contact}>Kontakt</a>
         <a href="{cz_href}"><img src="img/flag_cz.gif" alt="Čeština"></a>
         <a href="{en_href}"><img src="img/flag_en.gif" alt="English"></a>
       </div>
@@ -82,7 +82,7 @@ TEMPLATE_EN = """<!DOCTYPE html>
         <a href="cecilia-en.htm"{active_cecilia}>Cecilia</a>
         <a href="organ-en.htm"{active_organ}>Organs</a>
         <a href="services-en.htm"{active_services}>Services</a>
-        <a href="contact-en.htm"{active_contact}>Contact / partners</a>
+        <a href="contact-en.htm"{active_contact}>Contact</a>
         <a href="{cz_href}"><img src="img/flag_cz.gif" alt="Čeština"></a>
         <a href="{en_href}"><img src="img/flag_en.gif" alt="English"></a>
       </div>
