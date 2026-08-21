@@ -47,6 +47,7 @@ TEMPLATE_CS = """<!DOCTYPE html>
         <a href="cecilia.htm"{active_cecilia}>Cecilia</a>
         <a href="organ.htm"{active_organ}>Varhany</a>
         <a href="services.htm"{active_services}>Služby</a>
+        <a href="about.htm"{active_about}>O mně</a>
         <a href="contact.htm"{active_contact}>Kontakt</a>
         <a href="{cz_href}" class="lang-switch">CS</a>
         <a href="{en_href}" class="lang-switch">EN</a>
@@ -91,6 +92,7 @@ TEMPLATE_EN = """<!DOCTYPE html>
         <a href="cecilia-en.htm"{active_cecilia}>Cecilia</a>
         <a href="organ-en.htm"{active_organ}>Organs</a>
         <a href="services-en.htm"{active_services}>Services</a>
+        <a href="about-en.htm"{active_about}>About</a>
         <a href="contact-en.htm"{active_contact}>Contact</a>
         <a href="{cz_href}" class="lang-switch">CS</a>
         <a href="{en_href}" class="lang-switch">EN</a>
@@ -217,6 +219,14 @@ PAGES = [
      "Výroba: digitální varhany, MIDI, pedálnice, hrací stoly, cvičné varhany, hauptwerk, grandorgue, opravy varhan, ladění",
      "contact.htm", "contact-en.htm"),
 
+    ("about.htm", "cs",
+     "O mně | Varhany Mlnařík",
+     "O mně",
+     "about",
+     "varhany, digitální varhany, MIDI, jakub mlnařík, smartorgan",
+     "Příběh za projektem Smartorgan",
+     "about.htm", "about-en.htm"),
+
     # ── English pages ──
     ("index-en.html", "en",
      "Organ Mlnarik",
@@ -257,6 +267,14 @@ PAGES = [
      "digital organ, MIDI, pedalboards, consoles, hauptwerk",
      "digital organ, MIDI, pedalboards, consoles, hauptwerk",
      "contact.htm", "contact-en.htm"),
+
+    ("about-en.htm", "en",
+     "About | Organ Mlnarik",
+     "About — my story",
+     "about",
+     "organ building, MIDI, Cecilia, smartorgan, jakub mlnarik, digital organ",
+     "The story behind Smartorgan — from organ builder to software developer and back",
+     "about.htm", "about-en.htm"),
 ]
 
 
@@ -296,6 +314,7 @@ def build():
             active_cecilia=active_class("cecilia", active),
             active_organ=active_class("organ", active),
             active_services=active_class("services", active),
+            active_about=active_class("about", active),
             active_contact=active_class("contact", active),
         )
 
