@@ -47,6 +47,7 @@ TEMPLATE_CS = """<!DOCTYPE html>
         <a href="organ.htm"{active_organ}>Varhany</a>
         <a href="services.htm"{active_services}>Služby</a>
         <a href="cecilia.htm"{active_cecilia}>Cecilia</a>
+        <a href="midi-modules.htm"{active_midi}>MIDI moduly</a>
         <a href="about.htm"{active_about}>O mně</a>
         <a href="contact.htm"{active_contact}>Kontakt</a>
         <a href="{cz_href}" class="lang-switch">CS</a>
@@ -92,6 +93,7 @@ TEMPLATE_EN = """<!DOCTYPE html>
         <a href="organ-en.htm"{active_organ}>Organs</a>
         <a href="services-en.htm"{active_services}>Services</a>
         <a href="cecilia-en.htm"{active_cecilia}>Cecilia</a>
+        <a href="midi-modules-en.htm"{active_midi}>MIDI modules</a>
         <a href="about-en.htm"{active_about}>About</a>
         <a href="contact-en.htm"{active_contact}>Contact</a>
         <a href="{cz_href}" class="lang-switch">CS</a>
@@ -219,6 +221,14 @@ PAGES = [
      "Výroba: digitální varhany, MIDI, pedálnice, hrací stoly, cvičné varhany, hauptwerk, grandorgue, opravy varhan, ladění",
      "contact.htm", "contact-en.htm"),
 
+    ("midi-modules.htm", "cs",
+     "MIDI moduly pro digitální varhany | Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16",
+     "MIDI moduly",
+     "midi",
+     "MIDI moduly, Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16, MIDI scanner, MIDI vstup, MIDI výstup, varhanní MIDI",
+     "MIDI moduly pro stavbu digitálních varhan: Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16. Wi-Fi konfigurace, USB-MIDI, High-Speed Analog MIDI Bus.",
+     "midi-modules.htm", "midi-modules-en.htm"),
+
     ("about.htm", "cs",
      "O mně | Varhany Mlnařík",
      "O mně",
@@ -268,6 +278,14 @@ PAGES = [
      "digital organ, MIDI, pedalboards, consoles, hauptwerk",
      "contact.htm", "contact-en.htm"),
 
+    ("midi-modules-en.htm", "en",
+     "MIDI Modules for Digital Organs | Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16",
+     "MIDI Modules",
+     "midi",
+     "MIDI modules, Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16, MIDI scanner, MIDI input, MIDI output, organ MIDI",
+     "MIDI modules for building digital organs: Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16. Wi-Fi configuration, USB-MIDI, High-Speed Analog MIDI Bus.",
+     "midi-modules.htm", "midi-modules-en.htm"),
+
     ("about-en.htm", "en",
      "About | Organ Mlnarik",
      "About — my story",
@@ -312,6 +330,7 @@ def build():
             en_href=en_href,
             active_index=active_class("index", active),
             active_cecilia=active_class("cecilia", active),
+            active_midi=active_class("midi", active),
             active_organ=active_class("organ", active),
             active_services=active_class("services", active),
             active_about=active_class("about", active),
