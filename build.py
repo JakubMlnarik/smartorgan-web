@@ -39,8 +39,8 @@ TEMPLATE_CS = """<!DOCTYPE html>
         <a href="organ.htm"{active_organ}>Varhany</a>
         <a href="services.htm"{active_services}>Služby</a>
         <a href="contact.htm"{active_contact}>Kontakt</a>
-        <a href="{cz_href}"><img src="img/flag_cz.gif" alt="Čeština"></a>
-        <a href="{en_href}"><img src="img/flag_en.gif" alt="English"></a>
+        <a href="{cz_href}" class="lang-switch">CS</a>
+        <a href="{en_href}" class="lang-switch">EN</a>
       </div>
     </div>
   </div>
@@ -83,8 +83,8 @@ TEMPLATE_EN = """<!DOCTYPE html>
         <a href="organ-en.htm"{active_organ}>Organs</a>
         <a href="services-en.htm"{active_services}>Services</a>
         <a href="contact-en.htm"{active_contact}>Contact</a>
-        <a href="{cz_href}"><img src="img/flag_cz.gif" alt="Čeština"></a>
-        <a href="{en_href}"><img src="img/flag_en.gif" alt="English"></a>
+        <a href="{cz_href}" class="lang-switch">CS</a>
+        <a href="{en_href}" class="lang-switch">EN</a>
       </div>
     </div>
   </div>
