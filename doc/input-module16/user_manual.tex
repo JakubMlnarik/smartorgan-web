@@ -1,0 +1,210 @@
+%% Auto-generated LaTeX version of user_manual.md
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome5}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{float}
+\geometry{margin=1in}
+
+% Disable paragraph indentation throughout the document
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\pagestyle{empty}
+
+% Top Header: Company Info (Left) and Logo (Right)
+\noindent
+\begin{minipage}[c]{0.5\textwidth}
+    \textbf{Mlnarik Organ, s.r.o.} \\
+    Cerhenska 9 \\
+    29001 Sokolec \\
+    Czech Republic
+\end{minipage}
+\begin{minipage}[c]{0.5\textwidth}
+    \raggedleft
+    \includegraphics[height=1.5cm]{logo.png} % Replace with your image file
+\end{minipage}
+
+% Place title directly below the logo (avoid starting a new page)
+\vspace{3cm}
+
+\begin{center}
+    {\huge \textbf{INPUT--MODULE16: User Manual}}\\
+    \vspace{0.3cm}
+    August 2026
+
+    \noindent Applicable to: Firmware Version 1.0
+
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+    \includegraphics[width=1\textwidth]{Input-module16.png}
+\end{center}
+
+\vfill
+
+\newpage
+
+\section{Overview}
+
+INPUT--MODULE16 reads up to 16 switches via direct connection (2 headers~\texttimes~8 inputs each) and generates MIDI NOTE ON/OFF or PROGRAM CHANGE messages. No diode matrix or encoding is required.
+
+It supports both traditional 5-pin DIN MIDI and USB-MIDI output with automatic merging of incoming MIDI data. In addition to standard MIDI capabilities, the module introduces several advanced features such as a High-Speed Analog MIDI Bus and an easy-to-use Wi-Fi configuration interface accessible via a web browser.
+
+\section{Features}
+\begin{itemize}
+    \item Board dimensions 141\texttimes{}34~mm
+    \item Powered via 5~V DC / 0.1~A
+    \item Reads up to 16 switches via direct connection
+    \item MIDI IN (5-pin DIN)
+    \item MIDI OUT (5-pin DIN) with automatic merging of MIDI IN and internal messages
+    \item USB MIDI output (class-compliant)
+    \item Optional High-Speed Analog MIDI Bus -- supports up to 4\texttimes{} the standard MIDI baud rate for expanded bandwidth
+    \item Wi-Fi Configuration Interface -- configure module settings via a web browser by connecting to the module's built-in Wi-Fi access point
+\end{itemize}
+
+\section{Introduction to MIDI Device Connectivity and Latency Considerations}
+
+In practical applications, it is common to use multiple MIDI modules in a setup, often combining devices from various manufacturers. There are two basic approaches to connecting input MIDI devices to an end device such as a computer or Digital Audio Workstation (DAW).
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{Analog_chaining.drawio.png}
+    \caption{Chaining via the analog MIDI bus -- this typically involves using traditional 5-pin DIN connectors (though other connectors may also be used).}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{USB_star.drawio.png}
+    \caption{Connecting in a "star" topology via USB.}
+\end{figure}
+
+\begin{center}
+    \fbox{
+    \begin{minipage}{0.95\linewidth}
+        \faInfoCircle~\textbf{Note: Latency considerations} If you prefer chaining via the analog MIDI bus and use many MIDI devices, latency can become a significant issue. The transmission of a single standard MIDI message takes approximately 1\,ms. As MIDI data is passed through multiple devices in the chain, this latency can accumulate and become noticeable.
+    \end{minipage}
+    }
+\end{center}
+
+One of the key features of the INPUT--MODULE16 is its optional High-Speed Analog MIDI Bus mode. When activated, MIDI messages are transmitted at four times the standard MIDI speed. However, please note that this high-speed mode is not compatible with third-party MIDI devices, as they are designed to operate at the standard MIDI baud rate.
+
+\section{Setup and installation}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{labeled-board.drawio.png}
+    \caption{Overall layout of the board}
+\end{figure}
+
+\subsection{Power}
+\begin{itemize}
+  \item Voltage: 5~V DC (regulated)
+  \item Current Consumption: 0.1~A max
+\end{itemize}
+
+The module can be powered directly via USB. A dedicated external power supply is only required when powering multiple modules together
+
+\begin{center}
+    \fbox{
+    \begin{minipage}{0.95\linewidth}
+        \faInfoCircle~\textbf{Note:}
+        \begin{itemize}
+            \item Use a regulated 5~V supply. Do not exceed 5.3~V. Reverse polarity can damage the device.
+            \item When powering many modules together, use a dedicated power supply with sufficient current capacity or a suitable powered USB hub.
+        \end{itemize}
+    \end{minipage}
+    }
+\end{center}
+
+\subsection{Switch Inputs}
+
+The board provides two 16-pin IDC headers (Inputs~1 and Inputs~2), each with 8 input pins and 8 paired GND pins. Each pair (signal + GND) is adjacent on the header, so you can simply take one pair from a flat ribbon cable, solder one wire to the switch terminal and the other to the switch's ground connection --- no need to create a shared common ground wire. The board handles the pull-up internally, so no external resistors are required.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{switches-wiring.png}
+    \caption{Direct switch wiring diagram}
+\end{figure}
+
+\begin{center}
+    \fbox{
+    \begin{minipage}{0.95\linewidth}
+        \faInfoCircle~\textbf{Note:}
+        \begin{itemize}
+            \item Each header provides 8 input pins, each with its own dedicated GND neighbour.
+            \item The board handles the pull-up internally -- no external resistors needed.
+            \item The module is not designed for diode matrix scanning or velocity sensing.
+        \end{itemize}
+    \end{minipage}
+    }
+\end{center}
+
+\section{Analog MIDI Connection}
+
+The image below shows how to connect to the analog MIDI bus using DIN-5 connectors. However, it is not necessary to use connectors between the modules -- you can also use wires connected directly to the screw terminals. Shielded cables are recommended.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{MIDI-schema.png}
+    \caption{Connection analog MIDI bus}
+\end{figure}
+
+
+\section{Setting Up the Module - Wi-Fi Access Point Mode}
+
+You can conveniently set up the module using any web browser on your computer or mobile phone. The module can start in a special mode where it creates a Wi-Fi access point that you can connect to.
+
+\begin{enumerate}
+    \item Unplug the module from any power source (USB and external power).
+    \item Press and hold the WiFi button.
+    \item Continue holding the button while powering on the module (e.g., by connecting an external power source).
+    \item The Status LED will light up steadily, indicating that the module is now in Wi-Fi access
+    point mode.
+    \item On your computer (with a Wi-Fi adapter) or smartphone, go to the Wi-Fi settings. You
+    should see a new Wi-Fi network named "Input Module16". Connect to it.
+
+    \faInfoCircle~\textbf{Note}: While connected to this network, your device will lose access to the internet.
+    \item Open a web browser (such as Google Chrome) and enter the following IP address in the address bar: 192.168.4.1 -- the fixed IP address of the MIDI module's web server. You should now see the settings page, as shown in the image below.
+    \item Use the dropdown menus to configure all the necessary settings, then press the
+    "Save Settings" button. If needed, you can restore the factory default values by
+    pressing the "Reset to Defaults" button.
+    \item Once you're done, disconnect the module from the power source. Your settings will be saved and automatically applied the next time the module starts.
+
+    \faInfoCircle~\textbf{Note}: While in Wi-Fi access point mode, the module does not transmit MIDI data. MIDI communication is disabled during setup.
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{app-settings-window.png}
+    \caption{Settings page in Wi-Fi Access Point mode}
+\end{figure}
+
+The firmware provides a minimal HTTP-based settings page when the unit runs in Wi-Fi Access Point mode. The page allows configuring the following properties:
+
+\begin{description}
+  \item[MIDI serial bus rate] Toggle between the standard MIDI baud rate (31250) and a higher UART rate (115200). High-speed mode is not compatible with third-party MIDI equipment.
+  \item[Input header 1 / Input header 2] Each header covers 8 inputs. The following settings are available per header:
+    \begin{itemize}
+      \item \textbf{MIDI channel} (range: 1--16)
+      \item \textbf{Base MIDI number} (range: 0--119). The first input maps to this note; subsequent inputs increment the note number.
+      \item \textbf{Message type}: NOTE ON/OFF or PROGRAM CHANGE.
+      \item \textbf{Invert inputs}: NOTE ON/PROGRAM CHANGE when an input is activated or deactivated.
+    \end{itemize}
+\end{description}
+
+
+\section{Status LED behavior}
+\begin{itemize}
+  \item Startup: brief blink sequence
+  \item MIDI activity: short blink when MIDI bytes are transmitted
+  \item AP mode: LED remains steadily lit while the AP is active
+\end{itemize}
+
+\end{document}
