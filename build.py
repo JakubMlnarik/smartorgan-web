@@ -43,10 +43,10 @@ TEMPLATE_CS = """<!DOCTYPE html>
     <div class="header-top">
       <div id="logo"><img src="img/logo-transparent.png" alt="logo" width="100"></div>
       <div id="top-menu">
-        <a href="index.html"{active_index}>Úvod</a>
-        <a href="cecilia.htm"{active_cecilia}>Cecilia</a>
+        <a href="index.html"{active_index}>Domů</a>
         <a href="organ.htm"{active_organ}>Varhany</a>
         <a href="services.htm"{active_services}>Služby</a>
+        <a href="cecilia.htm"{active_cecilia}>Cecilia</a>
         <a href="about.htm"{active_about}>O mně</a>
         <a href="contact.htm"{active_contact}>Kontakt</a>
         <a href="{cz_href}" class="lang-switch">CS</a>
@@ -88,10 +88,10 @@ TEMPLATE_EN = """<!DOCTYPE html>
     <div class="header-top">
       <div id="logo"><img src="img/logo-transparent.png" alt="logo" width="100"></div>
       <div id="top-menu">
-        <a href="index-en.html"{active_index}>Introduction</a>
-        <a href="cecilia-en.htm"{active_cecilia}>Cecilia</a>
+        <a href="index-en.html"{active_index}>Home</a>
         <a href="organ-en.htm"{active_organ}>Organs</a>
         <a href="services-en.htm"{active_services}>Services</a>
+        <a href="cecilia-en.htm"{active_cecilia}>Cecilia</a>
         <a href="about-en.htm"{active_about}>About</a>
         <a href="contact-en.htm"{active_contact}>Contact</a>
         <a href="{cz_href}" class="lang-switch">CS</a>
@@ -181,7 +181,7 @@ PAGES = [
     # ── Czech pages ──
     ("index.html", "cs",
      "Varhany Mlnařík",
-     "Úvod",
+     "Domů",
      "index",
      "digitální varhany, varhany, cvičení, MIDI, pedálnice, hrací stoly, hauptwerk, grandorgue, opravy varhan, ladění",
      "Výroba: digitální varhany, MIDI, pedálnice, hrací stoly, cvičné varhany, hauptwerk, grandorgue, opravy varhan, ladění",
@@ -230,7 +230,7 @@ PAGES = [
     # ── English pages ──
     ("index-en.html", "en",
      "Organ Mlnarik",
-     "Introduction",
+     "Home",
      "index",
      "digital organ, MIDI, pedalboards, consoles, hauptwerk",
      "digital organ, MIDI, pedalboards, consoles, hauptwerk",
