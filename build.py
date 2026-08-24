@@ -50,6 +50,7 @@ TEMPLATE_CS = """<!DOCTYPE html>
         <a href="midi-modules.htm"{active_midi}>MIDI moduly</a>
         <a href="about.htm"{active_about}>O mně</a>
         <a href="contact.htm"{active_contact}>Kontakt</a>
+        <a href="doc/price-list/price-list.pdf">pricelist</a>
         <a href="{cz_href}" class="lang-switch">CS</a>
         <a href="{en_href}" class="lang-switch">EN</a>
       </div>
@@ -96,6 +97,7 @@ TEMPLATE_EN = """<!DOCTYPE html>
         <a href="midi-modules-en.htm"{active_midi}>MIDI modules</a>
         <a href="about-en.htm"{active_about}>About</a>
         <a href="contact-en.htm"{active_contact}>Contact</a>
+        <a href="doc/price-list/price-list.pdf">pricelist</a>
         <a href="{cz_href}" class="lang-switch">CS</a>
         <a href="{en_href}" class="lang-switch">EN</a>
       </div>
