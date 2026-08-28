@@ -1,0 +1,3 @@
+[submodule "RPico-MIDI-projects"]
+	path = RPico-MIDI-projects
+	url = git@github.com:JakubMlnarik/RPico-MIDI-projects.git
