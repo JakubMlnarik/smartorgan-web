@@ -40,19 +40,22 @@ TEMPLATE_CS = """<!DOCTYPE html>
 <body>
 <div id="main-frame">
   <div id="header">
+    <div id="lang-bar">
+      <a href="{cz_href}" class="lang-switch">CS</a>
+      <a href="{en_href}" class="lang-switch">EN</a>
+    </div>
     <div class="header-top">
       <div id="logo"><img src="img/logo-transparent.png" alt="logo" width="100"></div>
       <div id="top-menu">
         <a href="index.html"{active_index}>Domů</a>
+        <a href="midi-modules.htm"{active_midi}>MIDI</a>
+        <a href="keyboards.htm"{active_keyboards}>Klaviatury</a>
         <a href="organ.htm"{active_organ}>Varhany</a>
         <a href="services.htm"{active_services}>Služby</a>
         <a href="cecilia.htm"{active_cecilia}>Cecilia</a>
-        <a href="midi-modules.htm"{active_midi}>MIDI moduly</a>
         <a href="doc/price-list/price-list.pdf">Ceník</a>
         <a href="about.htm"{active_about}>O mně</a>
         <a href="contact.htm"{active_contact}>Kontakt</a>
-        <a href="{cz_href}" class="lang-switch">CS</a>
-        <a href="{en_href}" class="lang-switch">EN</a>
       </div>
     </div>
   </div>
@@ -87,19 +90,22 @@ TEMPLATE_EN = """<!DOCTYPE html>
 <body>
 <div id="main-frame">
   <div id="header">
+    <div id="lang-bar">
+      <a href="{cz_href}" class="lang-switch">CS</a>
+      <a href="{en_href}" class="lang-switch">EN</a>
+    </div>
     <div class="header-top">
       <div id="logo"><img src="img/logo-transparent.png" alt="logo" width="100"></div>
       <div id="top-menu">
         <a href="index-en.html"{active_index}>Home</a>
+        <a href="midi-modules-en.htm"{active_midi}>MIDI</a>
+        <a href="keyboards-en.htm"{active_keyboards}>Keyboards</a>
         <a href="organ-en.htm"{active_organ}>Organs</a>
         <a href="services-en.htm"{active_services}>Services</a>
         <a href="cecilia-en.htm"{active_cecilia}>Cecilia</a>
-        <a href="midi-modules-en.htm"{active_midi}>MIDI modules</a>
         <a href="doc/price-list/price-list.pdf">Pricelist</a>
         <a href="about-en.htm"{active_about}>About</a>
         <a href="contact-en.htm"{active_contact}>Contact</a>
-        <a href="{cz_href}" class="lang-switch">CS</a>
-        <a href="{en_href}" class="lang-switch">EN</a>
       </div>
     </div>
   </div>
@@ -191,6 +197,14 @@ PAGES = [
      "Výroba: digitální varhany, MIDI, pedálnice, hrací stoly, cvičné varhany, hauptwerk, grandorgue, opravy varhan, ladění",
      "index.html", "index-en.html"),
 
+    ("keyboards.htm", "cs",
+     "Varhanní klaviatury | Kinetické klaviatury s Druckpunktem",
+     "Varhanní klaviatury",
+     "keyboards",
+     "varhanní klaviatura, kinetická klaviatura, Druckpunkt, MIDI klaviatura, varhanní manuál, hall senzory",
+     "Mechanické varhanní klaviatury s nastavitelným Druckpunktem a kinetickým projevem. 64 kláves, dřevěné klávesy, hliníkový rám, MIDI výstup.",
+     "keyboards.htm", "keyboards-en.htm"),
+
     ("cecilia.htm", "cs",
      "Varhanní systém Cecilia",
      "Zvukový systém Cecilia",
@@ -247,6 +261,14 @@ PAGES = [
      "digital organ, MIDI, pedalboards, consoles, hauptwerk",
      "digital organ, MIDI, pedalboards, consoles, hauptwerk",
      "index.html", "index-en.html"),
+
+    ("keyboards-en.htm", "en",
+     "Organ Keyboards | Kinetic Keyboards with Druckpunkt",
+     "Organ Keyboards",
+     "keyboards",
+     "organ keyboard, kinetic keyboard, Druckpunkt, MIDI keyboard, organ manual, hall sensors",
+     "Mechanical organ keyboards with adjustable Druckpunkt and kinetic feel. 64 keys, wooden keys, aluminium frame, MIDI output.",
+     "keyboards.htm", "keyboards-en.htm"),
 
     ("cecilia-en.htm", "en",
      "Organ system Cecilia",
@@ -331,6 +353,7 @@ def build():
             cz_href=cz_href,
             en_href=en_href,
             active_index=active_class("index", active),
+            active_keyboards=active_class("keyboards", active),
             active_cecilia=active_class("cecilia", active),
             active_midi=active_class("midi", active),
             active_organ=active_class("organ", active),

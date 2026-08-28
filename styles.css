@@ -58,6 +58,37 @@ a:hover {
     background: #fff;
 }
 
+#main-frame #header #lang-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 24px 0;
+    background: #fff;
+}
+
+#main-frame #header #lang-bar a.lang-switch {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #555;
+    background: #f0f0f0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    line-height: 1.4;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    text-decoration: none;
+}
+
+#main-frame #header #lang-bar a.lang-switch:hover {
+    background: #1a5276;
+    color: #fff;
+    border-color: #1a5276;
+    text-decoration: none;
+}
+
 #main-frame #header .header-top {
     display: flex;
     align-items: center;
@@ -109,28 +140,7 @@ a:hover {
     color: #fff;
 }
 
-#main-frame #header #top-menu a.lang-switch {
-    display: inline-block;
-    padding: 4px 8px;
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #555;
-    background: #f0f0f0;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    line-height: 1.4;
-    transition: background 0.15s, color 0.15s, border-color 0.15s;
-}
-
-#main-frame #header #top-menu a.lang-switch:hover {
-    background: #1a5276;
-    color: #fff;
-    border-color: #1a5276;
-    text-decoration: none;
-}
-
-/* Content images – make responsive */
+/* Content images — make responsive */
 #main-frame #content img {
     max-width: 100%;
     height: auto;
@@ -230,6 +240,10 @@ a:hover {
         padding: 20px 16px;
     }
 
+    #main-frame #header #lang-bar {
+        padding: 6px 16px 0;
+    }
+
     #main-frame #header .header-top {
         flex-wrap: wrap;
         gap: 8px;
@@ -250,7 +264,7 @@ a:hover {
         padding: 6px 10px;
     }
 
-    #main-frame #header #top-menu a.lang-switch {
+    #main-frame #header #lang-bar a.lang-switch {
         font-size: 10px;
         padding: 3px 6px;
     }
@@ -279,6 +293,10 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+    #main-frame #header #lang-bar {
+        padding: 6px 16px 0;
+    }
+
     #main-frame #header .header-top {
         flex-direction: column;
         align-items: flex-start;
@@ -287,6 +305,11 @@ a:hover {
     #main-frame #header #top-menu a {
         font-size: 11px;
         padding: 5px 8px;
+    }
+
+    #main-frame #header #lang-bar a.lang-switch {
+        font-size: 9px;
+        padding: 2px 5px;
     }
 
     #main-frame #content .text p.images {
