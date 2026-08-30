@@ -53,7 +53,6 @@ TEMPLATE_CS = """<!DOCTYPE html>
         <a href="organ.htm"{active_organ}>Varhany</a>
         <a href="services.htm"{active_services}>Služby</a>
         <a href="cecilia.htm"{active_cecilia}>Cecilia</a>
-        <a href="doc/price-list/price-list.pdf">Ceník</a>
         <a href="about.htm"{active_about}>O mně</a>
         <a href="contact.htm"{active_contact}>Kontakt</a>
       </div>
@@ -103,7 +102,6 @@ TEMPLATE_EN = """<!DOCTYPE html>
         <a href="organ-en.htm"{active_organ}>Organs</a>
         <a href="services-en.htm"{active_services}>Services</a>
         <a href="cecilia-en.htm"{active_cecilia}>Cecilia</a>
-        <a href="doc/price-list/price-list.pdf">Pricelist</a>
         <a href="about-en.htm"{active_about}>About</a>
         <a href="contact-en.htm"{active_contact}>Contact</a>
       </div>
