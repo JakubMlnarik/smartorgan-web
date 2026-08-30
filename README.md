@@ -29,7 +29,7 @@ This regenerates all `.html` / `.htm` files in the project root and automaticall
 |---|---|
 | `build.py` | Generator script with templates + page metadata |
 | `content/` | Page-specific content — just the `<div class="text">` interior |
-| `*.html`, `*.htm` | **Generated** output (10 files) |
+| `*.html`, `*.htm`, `*-cz.html`, `*-cz.htm` | **Generated** output (16 files) |
 | `styles.css` | Stylesheet (not generated) |
 
 ## Workflow
@@ -41,8 +41,22 @@ This regenerates all `.html` / `.htm` files in the project root and automaticall
 
 ## Regenerated files
 
-- `index.html` / `index-en.html`
-- `cecilia.htm` / `cecilia-en.htm`
-- `organ.htm` / `organ-en.htm`
-- `services.htm` / `services-en.htm`
-- `contact.htm` / `contact-en.htm`
+### English (default — no suffix)
+- `index.html`
+- `cecilia.htm`
+- `organ.htm`
+- `services.htm`
+- `contact.htm`
+- `keyboards.htm`
+- `midi-modules.htm`
+- `about.htm`
+
+### Czech (with `-cz` suffix)
+- `index-cz.html`
+- `cecilia-cz.htm`
+- `organ-cz.htm`
+- `services-cz.htm`
+- `contact-cz.htm`
+- `keyboards-cz.htm`
+- `midi-modules-cz.htm`
+- `about-cz.htm`

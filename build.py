@@ -47,14 +47,14 @@ TEMPLATE_CS = """<!DOCTYPE html>
     <div class="header-top">
       <div id="logo"><img src="img/logo-transparent.png" alt="logo" width="100"></div>
       <div id="top-menu">
-        <a href="index.html"{active_index}>Domů</a>
-        <a href="midi-modules.htm"{active_midi}>MIDI</a>
-        <a href="keyboards.htm"{active_keyboards}>Klaviatury</a>
-        <a href="organ.htm"{active_organ}>Varhany</a>
-        <a href="services.htm"{active_services}>Služby</a>
-        <a href="cecilia.htm"{active_cecilia}>Cecilia</a>
-        <a href="about.htm"{active_about}>O mně</a>
-        <a href="contact.htm"{active_contact}>Kontakt</a>
+        <a href="index-cz.html"{active_index}>Domů</a>
+        <a href="midi-modules-cz.htm"{active_midi}>MIDI</a>
+        <a href="keyboards-cz.htm"{active_keyboards}>Klaviatury</a>
+        <a href="organ-cz.htm"{active_organ}>Varhany</a>
+        <a href="services-cz.htm"{active_services}>Služby</a>
+        <a href="cecilia-cz.htm"{active_cecilia}>Cecilia</a>
+        <a href="about-cz.htm"{active_about}>O mně</a>
+        <a href="contact-cz.htm"{active_contact}>Kontakt</a>
       </div>
     </div>
   </div>
@@ -96,14 +96,14 @@ TEMPLATE_EN = """<!DOCTYPE html>
     <div class="header-top">
       <div id="logo"><img src="img/logo-transparent.png" alt="logo" width="100"></div>
       <div id="top-menu">
-        <a href="index-en.html"{active_index}>Home</a>
-        <a href="midi-modules-en.htm"{active_midi}>MIDI</a>
-        <a href="keyboards-en.htm"{active_keyboards}>Keyboards</a>
-        <a href="organ-en.htm"{active_organ}>Organs</a>
-        <a href="services-en.htm"{active_services}>Services</a>
-        <a href="cecilia-en.htm"{active_cecilia}>Cecilia</a>
-        <a href="about-en.htm"{active_about}>About</a>
-        <a href="contact-en.htm"{active_contact}>Contact</a>
+        <a href="index.html"{active_index}>Home</a>
+        <a href="midi-modules.htm"{active_midi}>MIDI</a>
+        <a href="keyboards.htm"{active_keyboards}>Keyboards</a>
+        <a href="organ.htm"{active_organ}>Organs</a>
+        <a href="services.htm"{active_services}>Services</a>
+        <a href="cecilia.htm"{active_cecilia}>Cecilia</a>
+        <a href="about.htm"{active_about}>About</a>
+        <a href="contact.htm"{active_contact}>Contact</a>
       </div>
     </div>
   </div>
@@ -186,135 +186,135 @@ def process_content_images(content, img_dir):
 # Each entry: (filename, lang, title, h1, active_page, keywords, description, cz_href, en_href)
 
 PAGES = [
-    # ── Czech pages ──
-    ("index.html", "cs",
+    # ── Czech pages (with -cz suffix) ──
+    ("index-cz.html", "cs",
      "Varhany Mlnařík",
      "Domů",
      "index",
      "digitální varhany, varhany, cvičení, MIDI, pedálnice, hrací stoly, hauptwerk, grandorgue, opravy varhan, ladění",
      "Výroba: digitální varhany, MIDI, pedálnice, hrací stoly, cvičné varhany, hauptwerk, grandorgue, opravy varhan, ladění",
-     "index.html", "index-en.html"),
+     "index-cz.html", "index.html"),
 
-    ("keyboards.htm", "cs",
+    ("keyboards-cz.htm", "cs",
      "Varhanní klaviatury | Kinetické klaviatury s Druckpunktem",
      "Varhanní klaviatury",
      "keyboards",
      "varhanní klaviatura, kinetická klaviatura, Druckpunkt, MIDI klaviatura, varhanní manuál, hall senzory",
      "Mechanické varhanní klaviatury s nastavitelným Druckpunktem a kinetickým projevem. 64 kláves, dřevěné klávesy, hliníkový rám, MIDI výstup.",
-     "keyboards.htm", "keyboards-en.htm"),
+     "keyboards-cz.htm", "keyboards.htm"),
 
-    ("cecilia.htm", "cs",
+    ("cecilia-cz.htm", "cs",
      "Varhanní systém Cecilia",
      "Zvukový systém Cecilia",
      "cecilia",
      "cecilia, MIDI, expandér, varhanní modul",
      "cecilia, MIDI, expandér, varhanní modul",
-     "cecilia.htm", "cecilia-en.htm"),
+     "cecilia-cz.htm", "cecilia.htm"),
 
-    ("organ.htm", "cs",
+    ("organ-cz.htm", "cs",
      "Digitální varhany, pedálnice, MIDI, traktura, zvukové moduly",
      "Varhany - díly i kompletní nástroje",
      "organ",
      "digitální varhany, varhany, cvičení, MIDI, pedálnice, hrací stoly, hauptwerk, grandorgue, opravy varhan, ladění",
      "Výroba: digitální varhany, MIDI, pedálnice, hrací stoly, cvičné varhany, hauptwerk, grandorgue, opravy varhan, ladění",
-     "organ.htm", "organ-en.htm"),
+     "organ-cz.htm", "organ.htm"),
 
-    ("services.htm", "cs",
+    ("services-cz.htm", "cs",
      "Varhany Mlnařík | služby",
      "Služby",
      "services",
      "digitální varhany, varhany, cvičení, MIDI, pedálnice, hrací stoly, hauptwerk, grandorgue, opravy varhan, ladění",
      "Výroba: digitální varhany, MIDI, pedálnice, hrací stoly, cvičné varhany, hauptwerk, grandorgue, opravy varhan, ladění",
-     "services.htm", "services-en.htm"),
+     "services-cz.htm", "services.htm"),
 
-    ("contact.htm", "cs",
+    ("contact-cz.htm", "cs",
      "Kontakty | Varhany Mlnařík",
      "Kontakt",
      "contact",
      "digitální varhany, varhany, cvičení, MIDI, pedálnice, hrací stoly, hauptwerk, grandorgue, opravy varhan, ladění",
      "Výroba: digitální varhany, MIDI, pedálnice, hrací stoly, cvičné varhany, hauptwerk, grandorgue, opravy varhan, ladění",
-     "contact.htm", "contact-en.htm"),
+     "contact-cz.htm", "contact.htm"),
 
-    ("midi-modules.htm", "cs",
+    ("midi-modules-cz.htm", "cs",
      "MIDI moduly pro digitální varhany | Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16",
      "MIDI moduly",
      "midi",
      "MIDI moduly, Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16, MIDI scanner, MIDI vstup, MIDI výstup, varhanní MIDI",
      "MIDI moduly pro stavbu digitálních varhan: Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16. Wi-Fi konfigurace, USB-MIDI, High-Speed Analog MIDI Bus.",
-     "midi-modules.htm", "midi-modules-en.htm"),
+     "midi-modules-cz.htm", "midi-modules.htm"),
 
-    ("about.htm", "cs",
+    ("about-cz.htm", "cs",
      "O mně | Varhany Mlnařík",
      "O mně",
      "about",
      "varhany, digitální varhany, MIDI, jakub mlnařík, smartorgan",
      "Příběh za projektem Smartorgan",
-     "about.htm", "about-en.htm"),
+     "about-cz.htm", "about.htm"),
 
-    # ── English pages ──
-    ("index-en.html", "en",
+    # ── English pages (default, no suffix) ──
+    ("index.html", "en",
      "Organ Mlnarik",
      "Home",
      "index",
      "digital organ, MIDI, pedalboards, consoles, hauptwerk",
      "digital organ, MIDI, pedalboards, consoles, hauptwerk",
-     "index.html", "index-en.html"),
+     "index-cz.html", "index.html"),
 
-    ("keyboards-en.htm", "en",
+    ("keyboards.htm", "en",
      "Organ Keyboards | Kinetic Keyboards with Druckpunkt",
      "Organ Keyboards",
      "keyboards",
      "organ keyboard, kinetic keyboard, Druckpunkt, MIDI keyboard, organ manual, hall sensors",
      "Mechanical organ keyboards with adjustable Druckpunkt and kinetic feel. 64 keys, wooden keys, aluminium frame, MIDI output.",
-     "keyboards.htm", "keyboards-en.htm"),
+     "keyboards-cz.htm", "keyboards.htm"),
 
-    ("cecilia-en.htm", "en",
+    ("cecilia.htm", "en",
      "Organ system Cecilia",
      "Organ sound system Cecilia",
      "cecilia",
      "cecilia, MIDI, expander, organ module, organ unit, sound engine",
      "cecilia, MIDI, expander, organ module, organ unit, sound engine",
-     "cecilia.htm", "cecilia-en.htm"),
+     "cecilia-cz.htm", "cecilia.htm"),
 
-    ("organ-en.htm", "en",
+    ("organ.htm", "en",
      "Digital organs, MIDI consoles",
      "Organs - parts and complete instruments",
      "organ",
      "digital organ, MIDI, pedalboards, consoles, hauptwerk, grandorgue",
      "digital organ, MIDI, pedalboards, consoles, hauptwerk, grandorgue",
-     "organ.htm", "organ-en.htm"),
+     "organ-cz.htm", "organ.htm"),
 
-    ("services-en.htm", "en",
+    ("services.htm", "en",
      "Mlnarik organ | services",
      "Services",
      "services",
      "cecilia, MIDI, expander, organ module, organ unit, sound engine",
      "cecilia, MIDI, expander, organ module, organ unit, sound engine",
-     "services.htm", "services-en.htm"),
+     "services-cz.htm", "services.htm"),
 
-    ("contact-en.htm", "en",
+    ("contact.htm", "en",
      "Contact | Organ Mlnarik",
      "Contact",
      "contact",
      "digital organ, MIDI, pedalboards, consoles, hauptwerk",
      "digital organ, MIDI, pedalboards, consoles, hauptwerk",
-     "contact.htm", "contact-en.htm"),
+     "contact-cz.htm", "contact.htm"),
 
-    ("midi-modules-en.htm", "en",
+    ("midi-modules.htm", "en",
      "MIDI Modules for Digital Organs | Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16",
      "MIDI Modules",
      "midi",
      "MIDI modules, Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16, MIDI scanner, MIDI input, MIDI output, organ MIDI",
      "MIDI modules for building digital organs: Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16. Wi-Fi configuration, USB-MIDI, High-Speed Analog MIDI Bus.",
-     "midi-modules.htm", "midi-modules-en.htm"),
+     "midi-modules-cz.htm", "midi-modules.htm"),
 
-    ("about-en.htm", "en",
+    ("about.htm", "en",
      "About | Organ Mlnarik",
      "About — my story",
      "about",
      "organ building, MIDI, Cecilia, smartorgan, jakub mlnarik, digital organ",
      "The story behind Smartorgan — from organ builder to software developer and back",
-     "about.htm", "about-en.htm"),
+     "about-cz.htm", "about.htm"),
 ]
 
 

@@ -1,3 +1,3 @@
 #!/bin/sh
 # Remove all .htm and .html files from the root directory
-rm -f ./*.htm ./*.html
+rm -f ./*.htm ./*.html ./*-cz.htm ./*-cz.html
