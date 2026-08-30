@@ -14,6 +14,7 @@ Edit content or metadata, then run build.py to regenerate all HTML files.
 import os
 import re
 import shutil
+from datetime import datetime
 
 try:
     from PIL import Image
@@ -318,6 +319,76 @@ PAGES = [
 ]
 
 
+# ── Sitemap ────────────────────────────────────────────────────────────────
+
+SITEMAP_PRIORITIES = {
+    "index": "1.0",
+    "organ": "0.9",
+    "keyboards": "0.8",
+    "midi": "0.8",
+    "cecilia": "0.8",
+    "services": "0.6",
+    "about": "0.5",
+    "contact": "0.5",
+}
+
+SITEMAP_FREQUENCIES = {
+    "index": "monthly",
+    "organ": "monthly",
+    "keyboards": "monthly",
+    "midi": "monthly",
+    "cecilia": "monthly",
+    "services": "yearly",
+    "about": "yearly",
+    "contact": "yearly",
+}
+
+
+def generate_sitemap(pages, base_url, out_dir):
+    """Generate sitemap.xml with hreflang annotations for CS/EN pages."""
+    # Group pages by their active ID to pair CS/EN versions
+    by_id: dict[str, list] = {}
+    for entry in pages:
+        filename, lang, title, h1, active, keywords, description, cz_href, en_href = entry
+        by_id.setdefault(active, []).append((filename, lang, cz_href, en_href))
+
+    lines = []
+    lines.append('<?xml version="1.0" encoding="UTF-8"?>\n')
+    lines.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n')
+    lines.append('        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n')
+
+    for page_id, versions in by_id.items():
+        for filename, lang, cz_href, en_href in versions:
+            content_file = os.path.join("content", filename)
+
+            # lastmod from content file modification time
+            lastmod = ""
+            if os.path.exists(content_file):
+                mtime = os.path.getmtime(content_file)
+                lastmod = datetime.fromtimestamp(mtime).strftime("%Y-%m-%d")
+
+            priority = SITEMAP_PRIORITIES.get(page_id, "0.5")
+            changefreq = SITEMAP_FREQUENCIES.get(page_id, "monthly")
+            url = f"{base_url}/{filename}"
+
+            lines.append("  <url>\n")
+            lines.append(f"    <loc>{url}</loc>\n")
+            if lastmod:
+                lines.append(f"    <lastmod>{lastmod}</lastmod>\n")
+            lines.append(f"    <changefreq>{changefreq}</changefreq>\n")
+            lines.append(f"    <priority>{priority}</priority>\n")
+            lines.append(f'    <xhtml:link rel="alternate" hreflang="cs" href="{base_url}/{cz_href}" />\n')
+            lines.append(f'    <xhtml:link rel="alternate" hreflang="en" href="{base_url}/{en_href}" />\n')
+            lines.append("  </url>\n")
+
+    lines.append('</urlset>\n')
+
+    out_path = os.path.join(out_dir, "sitemap.xml")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+    print(f"✓  Generated {out_path}")
+
+
 # ── Build ──────────────────────────────────────────────────────────────────
 
 def build():
@@ -366,6 +437,17 @@ def build():
             f.write("\n")
 
         print(f"✓  Generated {out_path}")
+
+
+    # Generate sitemap.xml
+    cname_file = os.path.join(out_dir, "CNAME")
+    if os.path.exists(cname_file):
+        with open(cname_file) as f:
+            domain = f.read().strip()
+    else:
+        domain = "smartorgan.cz"
+    base_url = f"https://{domain}"
+    generate_sitemap(PAGES, base_url, out_dir)
 
 
 if __name__ == "__main__":
