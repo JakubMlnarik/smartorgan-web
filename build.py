@@ -11,6 +11,7 @@ is defined in the PAGES list below.
 Edit content or metadata, then run build.py to regenerate all HTML files.
 """
 
+import json
 import os
 import re
 import shutil
@@ -36,17 +37,43 @@ TEMPLATE_CS = """<!DOCTYPE html>
   <link rel="stylesheet" href="styles.css">
   <meta name="keywords" content="{keywords}">
   <meta name="description" content="{description}">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{canonical_url}">
+
+  <!-- hreflang alternates -->
+  <link rel="alternate" hreflang="cs" href="{base_url}/{cz_href}">
+  <link rel="alternate" hreflang="en" href="{base_url}/{en_href}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{og_title}">
+  <meta property="og:description" content="{og_description}">
+  <meta property="og:url" content="{canonical_url}">
+  <meta property="og:image" content="{og_image}">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:site_name" content="Smartorgan / Varhany Mlnařík">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{og_title}">
+  <meta name="twitter:description" content="{og_description}">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+{json_ld}
+  </script>
 </head>
 
 <body>
 <div id="main-frame">
   <div id="header">
     <div id="lang-bar">
-      <a href="{cz_href}" class="lang-switch">CS</a>
-      <a href="{en_href}" class="lang-switch">EN</a>
+      <a href="{cz_href}" class="lang-switch" hreflang="cs">CS</a>
+      <a href="{en_href}" class="lang-switch" hreflang="en">EN</a>
     </div>
     <div class="header-top">
-      <div id="logo"><a href="index-cz.html"><img src="img/logo-transparent.png" alt="logo" width="100"></a></div>
+      <div id="logo"><a href="index-cz.html"><img src="img/logo-transparent.png" alt="Smartorgan — digitální varhany, klaviatury a MIDI moduly" width="100"></a></div>
       <div id="top-menu">
         <a href="index-cz.html"{active_index}>Domů</a>
         <a href="midi-modules-cz.htm"{active_midi}>MIDI</a>
@@ -91,17 +118,43 @@ TEMPLATE_EN = """<!DOCTYPE html>
   <link rel="stylesheet" href="styles.css">
   <meta name="keywords" content="{keywords}">
   <meta name="description" content="{description}">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{canonical_url}">
+
+  <!-- hreflang alternates -->
+  <link rel="alternate" hreflang="cs" href="{base_url}/{cz_href}">
+  <link rel="alternate" hreflang="en" href="{base_url}/{en_href}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{og_title}">
+  <meta property="og:description" content="{og_description}">
+  <meta property="og:url" content="{canonical_url}">
+  <meta property="og:image" content="{og_image}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Smartorgan / Mlnarik Organ">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{og_title}">
+  <meta name="twitter:description" content="{og_description}">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+{json_ld}
+  </script>
 </head>
 
 <body>
 <div id="main-frame">
   <div id="header">
     <div id="lang-bar">
-      <a href="{cz_href}" class="lang-switch">CS</a>
-      <a href="{en_href}" class="lang-switch">EN</a>
+      <a href="{cz_href}" class="lang-switch" hreflang="cs">CS</a>
+      <a href="{en_href}" class="lang-switch" hreflang="en">EN</a>
     </div>
     <div class="header-top">
-      <div id="logo"><a href="index.html"><img src="img/logo-transparent.png" alt="logo" width="100"></a></div>
+      <div id="logo"><a href="index.html"><img src="img/logo-transparent.png" alt="Smartorgan — digital organs, organ keyboards and MIDI modules" width="100"></a></div>
       <div id="top-menu">
         <a href="index.html"{active_index}>Home</a>
         <a href="midi-modules.htm"{active_midi}>MIDI</a>
@@ -195,138 +248,235 @@ def process_content_images(content, img_dir):
     return re.sub(r'<img[^>]+>', replace_img, content)
 
 
+# ── JSON-LD Structured Data ────────────────────────────────────────────────
+
+def generate_json_ld(page_id, lang, title, description, canonical_url, base_url, filename):
+    """Generate JSON-LD structured data block for the page."""
+    org_name_cs = "Varhany Mlnařík / Smartorgan"
+    org_name_en = "Mlnarik Organ / Smartorgan"
+    org_name = org_name_cs if lang == "cs" else org_name_en
+
+    # Breadcrumb list based on page
+    breadcrumb_items = [
+        {"@type": "ListItem", "position": 1, "name": "Domů" if lang == "cs" else "Home", "item": base_url}
+    ]
+
+    page_names = {
+        "index":     ("Domů", "Home"),
+        "keyboards": ("Klaviatury", "Keyboards"),
+        "midi":      ("MIDI moduly", "MIDI Modules"),
+        "organ":     ("Varhany", "Organs"),
+        "cecilia":   ("Cecilia", "Cecilia"),
+        "services":  ("Služby", "Services"),
+        "about":     ("O mně", "About"),
+        "contact":   ("Kontakt", "Contact"),
+    }
+
+    idx = 0 if lang == "cs" else 1
+    if page_id in page_names:
+        breadcrumb_items.append({
+            "@type": "ListItem", "position": 2,
+            "name": page_names[page_id][idx],
+            "item": canonical_url
+        })
+
+    graph = [
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": f"{base_url}/#organization",
+            "name": org_name,
+            "url": base_url,
+            "description": description,
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "availableLanguage": ["Czech", "English"]
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": f"{base_url}/#website",
+            "url": base_url,
+            "name": org_name,
+            "description": description,
+            "publisher": {"@id": f"{base_url}/#organization"}
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "@id": f"{canonical_url}#breadcrumb",
+            "itemListElement": breadcrumb_items
+        }
+    ]
+
+    # Add Product schema for product pages
+    if page_id == "keyboards":
+        graph.append({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Kinetic Organ Keyboard" if lang == "en" else "Kinetická varhanní klaviatura",
+            "description": description,
+            "brand": {"@type": "Brand", "name": "Mlnarik Organ"},
+            "offers": {
+                "@type": "Offer",
+                "price": "1820",
+                "priceCurrency": "EUR",
+                "availability": "https://schema.org/InStock"
+            }
+        })
+    elif page_id == "midi":
+        graph.append({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "MIDI Modules for Digital Organs" if lang == "en" else "MIDI moduly pro digitální varhany",
+            "description": description,
+            "brand": {"@type": "Brand", "name": "Mlnarik Organ"},
+            "offers": {
+                "@type": "AggregateOffer",
+                "priceCurrency": "EUR",
+                "lowPrice": "70",
+                "highPrice": "95",
+                "availability": "https://schema.org/InStock"
+            }
+        })
+
+    return json.dumps(graph, ensure_ascii=False, indent=2)
+
+
 # ── Page definitions ───────────────────────────────────────────────────────
 # Each entry: (filename, lang, title, h1, active_page, keywords, description, cz_href, en_href)
 
 PAGES = [
     # ── Czech pages (with -cz suffix) ──
     ("index-cz.html", "cs",
-     "Varhany Mlnařík",
+     "Varhany Mlnařík | Digitální varhany, klaviatury a MIDI moduly pro Hauptwerk",
      "Domů",
      "index",
-     "digitální varhany, varhany, cvičení, MIDI, pedálnice, hrací stoly, hauptwerk, grandorgue, opravy varhan, ladění",
-     "Výroba: digitální varhany, MIDI, pedálnice, hrací stoly, cvičné varhany, hauptwerk, grandorgue, opravy varhan, ladění",
+     "digitální varhany, varhany, cvičení, MIDI, pedálnice, hrací stoly, hauptwerk, grandorgue, opravy varhan, ladění, varhanní klaviatura",
+     "Výroba digitálních varhan, MIDI modulů a unikátních kinetických klaviatur s Druckpunktem. Pedálnice, hrací stoly, cvičné varhany pro Hauptwerk a GrandOrgue.",
      "index-cz.html", "index.html"),
 
     ("keyboards-cz.htm", "cs",
-     "Varhanní klaviatury | Kinetické klaviatury s Druckpunktem",
+     "Varhanní klaviatury s kinetickým projevem | MIDI klaviatury pro Hauptwerk",
      "Varhanní klaviatury",
      "keyboards",
-     "varhanní klaviatura, kinetická klaviatura, Druckpunkt, MIDI klaviatura, varhanní manuál, hall senzory",
-     "Mechanické varhanní klaviatury s nastavitelným Druckpunktem a kinetickým projevem. 64 kláves, dřevěné klávesy, hliníkový rám, MIDI výstup.",
+     "varhanní klaviatura, kinetická klaviatura, Druckpunkt, MIDI klaviatura, varhanní manuál, hall senzory, hauptwerk klaviatura",
+     "Mechanické varhanní klaviatury s nastavitelným Druckpunktem a kinetickým projevem. 61 kláves, dřevěné klávesy, hliníkový rám, MIDI výstup. Ideální pro Hauptwerk a digitální varhany.",
      "keyboards-cz.htm", "keyboards.htm"),
 
     ("cecilia-cz.htm", "cs",
-     "Varhanní systém Cecilia",
+     "Cecilia — zvukový systém pro digitální varhany | MIDI expandér",
      "Zvukový systém Cecilia",
      "cecilia",
-     "cecilia, MIDI, expandér, varhanní modul",
-     "cecilia, MIDI, expandér, varhanní modul",
+     "cecilia, MIDI, expandér, varhanní modul, zvukový modul, digitální varhany",
+     "Cecilia — výkonný zvukový systém a MIDI expandér pro stavbu digitálních varhan. Ideální doplněk k Hauptwerk a GrandOrgue.",
      "cecilia-cz.htm", "cecilia.htm"),
 
     ("organ-cz.htm", "cs",
-     "Digitální varhany, pedálnice, MIDI, traktura, zvukové moduly",
-     "Varhany - díly i kompletní nástroje",
+     "Digitální varhany na míru | Stavba, opravy, Hauptwerk konzole",
+     "Varhany — díly i kompletní nástroje",
      "organ",
-     "digitální varhany, varhany, cvičení, MIDI, pedálnice, hrací stoly, hauptwerk, grandorgue, opravy varhan, ladění",
-     "Výroba: digitální varhany, MIDI, pedálnice, hrací stoly, cvičné varhany, hauptwerk, grandorgue, opravy varhan, ladění",
+     "digitální varhany, varhany, cvičení, MIDI, pedálnice, hrací stoly, hauptwerk, grandorgue, opravy varhan, ladění, varhanní konzole",
+     "Stavba digitálních varhan na míru, MIDI konzolí a pedálnic. Kompletní nástroje i jednotlivé díly. Specializace na Hauptwerk a samplové technologie.",
      "organ-cz.htm", "organ.htm"),
 
     ("services-cz.htm", "cs",
-     "Varhany Mlnařík | služby",
+     "Služby | Opravy varhan, ladění, poradenství",
      "Služby",
      "services",
-     "digitální varhany, varhany, cvičení, MIDI, pedálnice, hrací stoly, hauptwerk, grandorgue, opravy varhan, ladění",
-     "Výroba: digitální varhany, MIDI, pedálnice, hrací stoly, cvičné varhany, hauptwerk, grandorgue, opravy varhan, ladění",
+     "digitální varhany, varhany, cvičení, MIDI, pedálnice, hrací stoly, hauptwerk, grandorgue, opravy varhan, ladění, poradenství",
+     "Nabízíme opravy varhan, ladění, poradenství při stavbě digitálních varhan a konzolí pro Hauptwerk. Servis MIDI modulů a klaviatur.",
      "services-cz.htm", "services.htm"),
 
     ("contact-cz.htm", "cs",
-     "Kontakty | Varhany Mlnařík",
+     "Kontakt | Varhany Mlnařík — digitální varhany a MIDI",
      "Kontakt",
      "contact",
-     "digitální varhany, varhany, cvičení, MIDI, pedálnice, hrací stoly, hauptwerk, grandorgue, opravy varhan, ladění",
-     "Výroba: digitální varhany, MIDI, pedálnice, hrací stoly, cvičné varhany, hauptwerk, grandorgue, opravy varhan, ladění",
+     "digitální varhany, varhany, MIDI, kontakt, jakub mlnařík, smartorgan",
+     "Kontaktujte nás pro objednávky digitálních varhan, MIDI modulů, klaviatur nebo konzolí pro Hauptwerk.",
      "contact-cz.htm", "contact.htm"),
 
     ("midi-modules-cz.htm", "cs",
-     "MIDI moduly pro digitální varhany | Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16",
+     "MIDI moduly pro digitální varhany | Hall-Scanner64, Matrix-Scanner64 a další",
      "MIDI moduly",
      "midi",
-     "MIDI moduly, Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16, MIDI scanner, MIDI vstup, MIDI výstup, varhanní MIDI",
-     "MIDI moduly pro stavbu digitálních varhan: Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16. Wi-Fi konfigurace, USB-MIDI, High-Speed Analog MIDI Bus.",
+     "MIDI moduly, Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16, MIDI scanner, MIDI vstup, MIDI výstup, varhanní MIDI, hauptwerk MIDI",
+     "MIDI moduly pro stavbu digitálních varhan: Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16. Wi-Fi konfigurace, USB-MIDI, High-Speed Analog MIDI Bus. Ideální pro Hauptwerk projekty.",
      "midi-modules-cz.htm", "midi-modules.htm"),
 
     ("about-cz.htm", "cs",
-     "O mně | Varhany Mlnařík",
+     "O mně | Jakub Mlnařík — digitální varhany a MIDI technologie",
      "O mně",
      "about",
-     "varhany, digitální varhany, MIDI, jakub mlnařík, smartorgan",
-     "Příběh za projektem Smartorgan",
+     "varhany, digitální varhany, MIDI, jakub mlnařík, smartorgan, hauptwerk",
+     "Příběh za projektem Smartorgan — od varhanáře k vývoji MIDI modulů a kinetických klaviatur pro digitální varhany a Hauptwerk.",
      "about-cz.htm", "about.htm"),
 
     # ── English pages (default, no suffix) ──
     ("index.html", "en",
-     "Organ Mlnarik",
+     "Smartorgan | Digital Organs, Organ Keyboards & MIDI Modules for Hauptwerk",
      "Home",
      "index",
-     "digital organ, MIDI, pedalboards, consoles, hauptwerk",
-     "digital organ, MIDI, pedalboards, consoles, hauptwerk",
+     "digital organ, MIDI, pedalboards, consoles, hauptwerk, organ keyboard, MIDI modules, grandorgue",
+     "Digital organs, organ keyboards with kinetic touch, and MIDI modules for Hauptwerk. Custom consoles, pedalboards, and practice organs for organ builders.",
      "index-cz.html", "index.html"),
 
     ("keyboards.htm", "en",
-     "Organ Keyboards | Kinetic Keyboards with Druckpunkt",
+     "Organ Keyboards with Kinetic Touch | MIDI Keyboards for Hauptwerk & Digital Organs",
      "Organ Keyboards",
      "keyboards",
-     "organ keyboard, kinetic keyboard, Druckpunkt, MIDI keyboard, organ manual, hall sensors",
-     "Mechanical organ keyboards with adjustable Druckpunkt and kinetic feel. 64 keys, wooden keys, aluminium frame, MIDI output.",
+     "organ keyboard, kinetic keyboard, Druckpunkt, MIDI keyboard, organ manual, hall sensors, hauptwerk keyboard, digital organ keyboard",
+     "Mechanical organ keyboards with adjustable Druckpunkt and kinetic feel. 61 keys, wooden keys, aluminium frame, MIDI output. Perfect for Hauptwerk and digital organ consoles.",
      "keyboards-cz.htm", "keyboards.htm"),
 
     ("cecilia.htm", "en",
-     "Organ system Cecilia",
+     "Cecilia — Sound System for Digital Organs | MIDI Expander & Organ Module",
      "Organ sound system Cecilia",
      "cecilia",
-     "cecilia, MIDI, expander, organ module, organ unit, sound engine",
-     "cecilia, MIDI, expander, organ module, organ unit, sound engine",
+     "cecilia, MIDI, expander, organ module, organ unit, sound engine, digital organ sound",
+     "Cecilia — a powerful sound system and MIDI expander for building digital organs. A perfect companion for Hauptwerk and GrandOrgue setups.",
      "cecilia-cz.htm", "cecilia.htm"),
 
     ("organ.htm", "en",
-     "Digital organs, MIDI consoles",
-     "Organs - parts and complete instruments",
+     "Digital Organs & MIDI Consoles for Hauptwerk | Custom Organ Building",
+     "Organs — parts and complete instruments",
      "organ",
-     "digital organ, MIDI, pedalboards, consoles, hauptwerk, grandorgue",
-     "digital organ, MIDI, pedalboards, consoles, hauptwerk, grandorgue",
+     "digital organ, MIDI, pedalboards, consoles, hauptwerk, grandorgue, organ console, custom organ",
+     "Custom digital organs, MIDI consoles, and pedalboards for Hauptwerk. Complete instruments and individual components. Sampling technology for authentic pipe organ sound.",
      "organ-cz.htm", "organ.htm"),
 
     ("services.htm", "en",
-     "Mlnarik organ | services",
+     "Services | Organ Repair, Maintenance & Consulting for Digital Organs",
      "Services",
      "services",
-     "cecilia, MIDI, expander, organ module, organ unit, sound engine",
-     "cecilia, MIDI, expander, organ module, organ unit, sound engine",
+     "organ repair, organ maintenance, digital organ service, hauptwerk consulting, MIDI console service",
+     "Organ repair, tuning, maintenance, and consulting for digital organ projects. Specialized in Hauptwerk consoles, MIDI modules, and organ keyboard installations.",
      "services-cz.htm", "services.htm"),
 
     ("contact.htm", "en",
-     "Contact | Organ Mlnarik",
+     "Contact | Mlnarik Organ — Digital Organs, Keyboards & MIDI Modules",
      "Contact",
      "contact",
-     "digital organ, MIDI, pedalboards, consoles, hauptwerk",
-     "digital organ, MIDI, pedalboards, consoles, hauptwerk",
+     "digital organ, MIDI, pedalboards, consoles, hauptwerk, contact, organ builder",
+     "Get in touch for custom digital organs, organ keyboards, MIDI modules, or Hauptwerk console projects. We provide material and technical support.",
      "contact-cz.htm", "contact.htm"),
 
     ("midi-modules.htm", "en",
-     "MIDI Modules for Digital Organs | Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16",
+     "MIDI Modules for Digital Organs | Hall-Scanner64, Matrix-Scanner64 & More",
      "MIDI Modules",
      "midi",
-     "MIDI modules, Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16, MIDI scanner, MIDI input, MIDI output, organ MIDI",
-     "MIDI modules for building digital organs: Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16. Wi-Fi configuration, USB-MIDI, High-Speed Analog MIDI Bus.",
+     "MIDI modules, Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16, MIDI scanner, MIDI input, MIDI output, organ MIDI, hauptwerk MIDI",
+     "MIDI modules for building digital organs: Hall-Scanner64, Input-Module16, Matrix-Scanner64, Output-Module16. Wi-Fi configuration, USB-MIDI, High-Speed Analog MIDI Bus. Ideal for Hauptwerk projects.",
      "midi-modules-cz.htm", "midi-modules.htm"),
 
     ("about.htm", "en",
-     "About | Organ Mlnarik",
+     "About | Jakub Mlnarik — Digital Organs, MIDI Technology & Organ Building",
      "About — my story",
      "about",
-     "organ building, MIDI, Cecilia, smartorgan, jakub mlnarik, digital organ",
-     "The story behind Smartorgan — from organ builder to software developer and back",
+     "organ building, MIDI, Cecilia, smartorgan, jakub mlnarik, digital organ, hauptwerk",
+     "The story behind Smartorgan — from organ builder to MIDI module developer and kinetic keyboard designer for digital organs and Hauptwerk.",
      "about-cz.htm", "about.htm"),
 ]
 
@@ -408,6 +558,15 @@ def build():
     out_dir = "."
     img_dir = os.path.join(out_dir, "img")
 
+    # Determine base URL from CNAME
+    cname_file = os.path.join(out_dir, "CNAME")
+    if os.path.exists(cname_file):
+        with open(cname_file) as f:
+            domain = f.read().strip()
+    else:
+        domain = "smartorgan.cz"
+    base_url = f"https://{domain}"
+
     for filename, lang, title, h1, active, keywords, description, cz_href, en_href in PAGES:
         # Read content snippet
         content_file = os.path.join("content", filename)
@@ -424,6 +583,17 @@ def build():
         # Pick template
         template = TEMPLATE_CS if lang == "cs" else TEMPLATE_EN
 
+        # Canonical URL for this page
+        canonical_url = f"{base_url}/{filename}"
+
+        # OG image (use the same for all pages — the logo)
+        og_image = f"{base_url}/img/logo-transparent.png"
+
+        # JSON-LD structured data
+        json_ld_raw = generate_json_ld(active, lang, title, description, canonical_url, base_url, filename)
+        # Indent each line with 2 extra spaces so it fits inside the <head>
+        json_ld_indented = "\n".join("  " + line for line in json_ld_raw.split("\n"))
+
         # Build the HTML
         html = template.format(
             title=title,
@@ -433,6 +603,12 @@ def build():
             content=content,
             cz_href=cz_href,
             en_href=en_href,
+            canonical_url=canonical_url,
+            base_url=base_url,
+            og_title=title,
+            og_description=description,
+            og_image=og_image,
+            json_ld=json_ld_indented,
             active_index=active_class("index", active),
             active_keyboards=active_class("keyboards", active),
             active_cecilia=active_class("cecilia", active),
@@ -450,15 +626,7 @@ def build():
 
         print(f"✓  Generated {out_path}")
 
-
     # Generate sitemap.xml
-    cname_file = os.path.join(out_dir, "CNAME")
-    if os.path.exists(cname_file):
-        with open(cname_file) as f:
-            domain = f.read().strip()
-    else:
-        domain = "smartorgan.cz"
-    base_url = f"https://{domain}"
     generate_sitemap(PAGES, base_url, out_dir)
 
 
