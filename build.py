@@ -46,7 +46,7 @@ TEMPLATE_CS = """<!DOCTYPE html>
       <a href="{en_href}" class="lang-switch">EN</a>
     </div>
     <div class="header-top">
-      <div id="logo"><img src="img/logo-transparent.png" alt="logo" width="100"></div>
+      <div id="logo"><a href="index-cz.html"><img src="img/logo-transparent.png" alt="logo" width="100"></a></div>
       <div id="top-menu">
         <a href="index-cz.html"{active_index}>Domů</a>
         <a href="midi-modules-cz.htm"{active_midi}>MIDI</a>
@@ -68,7 +68,13 @@ TEMPLATE_CS = """<!DOCTYPE html>
     </div>
   </div>
 
-  <div id="footer">Copyright &copy; 2026 | www.smartorgan.eu | All rights reserved | Created by Jakub Mlnarik</div>
+  <div id="footer">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; 2026 smartorgan.eu</span>
+      <span class="footer-sep">&middot;</span>
+      <span class="footer-author">Created by Jakub Mlnarik</span>
+    </div>
+  </div>
 </div>
 
 </body>
@@ -95,7 +101,7 @@ TEMPLATE_EN = """<!DOCTYPE html>
       <a href="{en_href}" class="lang-switch">EN</a>
     </div>
     <div class="header-top">
-      <div id="logo"><img src="img/logo-transparent.png" alt="logo" width="100"></div>
+      <div id="logo"><a href="index.html"><img src="img/logo-transparent.png" alt="logo" width="100"></a></div>
       <div id="top-menu">
         <a href="index.html"{active_index}>Home</a>
         <a href="midi-modules.htm"{active_midi}>MIDI</a>
@@ -117,7 +123,13 @@ TEMPLATE_EN = """<!DOCTYPE html>
     </div>
   </div>
 
-  <div id="footer">Copyright &copy; 2026 | www.smartorgan.eu | All rights reserved | Created by Jakub Mlnarik</div>
+  <div id="footer">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; 2026 smartorgan.eu</span>
+      <span class="footer-sep">&middot;</span>
+      <span class="footer-author">Created by Jakub Mlnarik</span>
+    </div>
+  </div>
 </div>
 
 </body>
