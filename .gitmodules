@@ -1,6 +1,0 @@
-[submodule "RPico-MIDI-projects"]
-	path = RPico-MIDI-projects
-	url = git@github.com:JakubMlnarik/RPico-MIDI-projects.git
-[submodule "Keyboard-docs"]
-	path = Keyboard-docs
-	url = git@github.com:JakubMlnarik/Keyboard-docs.git
