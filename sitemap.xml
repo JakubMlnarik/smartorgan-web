@@ -8,6 +8,8 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/index-cz.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/index.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/index-de.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/index-nl.html" />
   </url>
   <url>
     <loc>https://smartorgan.cz/index.html</loc>
@@ -16,6 +18,28 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/index-cz.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/index.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/index-de.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/index-nl.html" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/index-de.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/index-cz.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/index.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/index-de.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/index-nl.html" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/index-nl.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/index-cz.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/index.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/index-de.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/index-nl.html" />
   </url>
   <url>
     <loc>https://smartorgan.cz/keyboards-cz.htm</loc>
@@ -24,6 +48,8 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/keyboards-cz.htm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/keyboards.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/keyboards-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/keyboards-nl.htm" />
   </url>
   <url>
     <loc>https://smartorgan.cz/keyboards.htm</loc>
@@ -32,6 +58,28 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/keyboards-cz.htm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/keyboards.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/keyboards-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/keyboards-nl.htm" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/keyboards-de.htm</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/keyboards-cz.htm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/keyboards.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/keyboards-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/keyboards-nl.htm" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/keyboards-nl.htm</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/keyboards-cz.htm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/keyboards.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/keyboards-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/keyboards-nl.htm" />
   </url>
   <url>
     <loc>https://smartorgan.cz/cecilia-cz.htm</loc>
@@ -40,6 +88,8 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/cecilia-cz.htm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/cecilia.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/cecilia-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/cecilia-nl.htm" />
   </url>
   <url>
     <loc>https://smartorgan.cz/cecilia.htm</loc>
@@ -48,6 +98,28 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/cecilia-cz.htm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/cecilia.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/cecilia-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/cecilia-nl.htm" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/cecilia-de.htm</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/cecilia-cz.htm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/cecilia.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/cecilia-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/cecilia-nl.htm" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/cecilia-nl.htm</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/cecilia-cz.htm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/cecilia.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/cecilia-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/cecilia-nl.htm" />
   </url>
   <url>
     <loc>https://smartorgan.cz/organ-cz.htm</loc>
@@ -56,6 +128,8 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/organ-cz.htm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/organ.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/organ-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/organ-nl.htm" />
   </url>
   <url>
     <loc>https://smartorgan.cz/organ.htm</loc>
@@ -64,6 +138,28 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/organ-cz.htm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/organ.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/organ-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/organ-nl.htm" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/organ-de.htm</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/organ-cz.htm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/organ.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/organ-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/organ-nl.htm" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/organ-nl.htm</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/organ-cz.htm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/organ.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/organ-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/organ-nl.htm" />
   </url>
   <url>
     <loc>https://smartorgan.cz/services-cz.htm</loc>
@@ -72,6 +168,8 @@
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/services-cz.htm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/services.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/services-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/services-nl.htm" />
   </url>
   <url>
     <loc>https://smartorgan.cz/services.htm</loc>
@@ -80,6 +178,28 @@
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/services-cz.htm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/services.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/services-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/services-nl.htm" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/services-de.htm</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/services-cz.htm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/services.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/services-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/services-nl.htm" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/services-nl.htm</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/services-cz.htm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/services.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/services-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/services-nl.htm" />
   </url>
   <url>
     <loc>https://smartorgan.cz/contact-cz.htm</loc>
@@ -88,6 +208,8 @@
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/contact-cz.htm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/contact.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/contact-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/contact-nl.htm" />
   </url>
   <url>
     <loc>https://smartorgan.cz/contact.htm</loc>
@@ -96,6 +218,28 @@
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/contact-cz.htm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/contact.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/contact-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/contact-nl.htm" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/contact-de.htm</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/contact-cz.htm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/contact.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/contact-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/contact-nl.htm" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/contact-nl.htm</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/contact-cz.htm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/contact.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/contact-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/contact-nl.htm" />
   </url>
   <url>
     <loc>https://smartorgan.cz/midi-modules-cz.htm</loc>
@@ -104,6 +248,8 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/midi-modules-cz.htm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/midi-modules.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/midi-modules-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/midi-modules-nl.htm" />
   </url>
   <url>
     <loc>https://smartorgan.cz/midi-modules.htm</loc>
@@ -112,6 +258,28 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/midi-modules-cz.htm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/midi-modules.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/midi-modules-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/midi-modules-nl.htm" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/midi-modules-de.htm</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/midi-modules-cz.htm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/midi-modules.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/midi-modules-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/midi-modules-nl.htm" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/midi-modules-nl.htm</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/midi-modules-cz.htm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/midi-modules.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/midi-modules-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/midi-modules-nl.htm" />
   </url>
   <url>
     <loc>https://smartorgan.cz/about-cz.htm</loc>
@@ -120,6 +288,8 @@
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/about-cz.htm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/about.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/about-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/about-nl.htm" />
   </url>
   <url>
     <loc>https://smartorgan.cz/about.htm</loc>
@@ -128,5 +298,27 @@
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/about-cz.htm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/about.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/about-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/about-nl.htm" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/about-de.htm</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/about-cz.htm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/about.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/about-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/about-nl.htm" />
+  </url>
+  <url>
+    <loc>https://smartorgan.cz/about-nl.htm</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://smartorgan.cz/about-cz.htm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartorgan.cz/about.htm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartorgan.cz/about-de.htm" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartorgan.cz/about-nl.htm" />
   </url>
 </urlset>
