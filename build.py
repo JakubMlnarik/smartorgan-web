@@ -505,9 +505,11 @@ def generate_json_ld(page_id, lang, title, description, canonical_url, base_url,
             "@type": "Product",
             "name": product_names["keyboards"].get(lang, product_names["keyboards"]["en"]),
             "description": description,
+            "url": canonical_url,
             "brand": {"@type": "Brand", "name": "Mlnarik Organ"},
             "offers": {
                 "@type": "Offer",
+                "url": canonical_url,
                 "price": "1820",
                 "priceCurrency": "EUR",
                 "availability": "https://schema.org/InStock"
@@ -519,12 +521,15 @@ def generate_json_ld(page_id, lang, title, description, canonical_url, base_url,
             "@type": "Product",
             "name": product_names["midi"].get(lang, product_names["midi"]["en"]),
             "description": description,
+            "url": canonical_url,
             "brand": {"@type": "Brand", "name": "Mlnarik Organ"},
             "offers": {
                 "@type": "AggregateOffer",
+                "url": canonical_url,
                 "priceCurrency": "EUR",
                 "lowPrice": "70",
                 "highPrice": "95",
+                "offerCount": "3",
                 "availability": "https://schema.org/InStock"
             }
         })
