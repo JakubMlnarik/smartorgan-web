@@ -499,48 +499,20 @@ def generate_json_ld(page_id, lang, title, description, canonical_url, base_url,
         },
     }
 
-    if page_id == "keyboards":
+    if page_id in product_names:
+        product_name = product_names[page_id].get(lang, product_names[page_id]["en"])
         graph.append({
             "@context": "https://schema.org",
             "@type": "Product",
-            "name": product_names["keyboards"].get(lang, product_names["keyboards"]["en"]),
+            "name": product_name,
             "description": description,
             "url": canonical_url,
-            "image": f"{base_url}/img/keyboard-view1.jpg",
-            "brand": {"@type": "Brand", "name": "Mlnarik Organ"},
-            "offers": {
-                "@type": "Offer",
-                "url": canonical_url,
-                "price": "1820",
-                "priceCurrency": "EUR",
-                "availability": "https://schema.org/InStock"
-            }
-        })
-    elif page_id == "midi":
-        graph.append({
-            "@context": "https://schema.org",
-            "@type": "Product",
-            "name": product_names["midi"].get(lang, product_names["midi"]["en"]),
-            "description": description,
-            "url": canonical_url,
-            "image": f"{base_url}/img/midi-module.jpg",
-            "brand": {"@type": "Brand", "name": "Mlnarik Organ"},
-            "offers": {
-                "@type": "AggregateOffer",
-                "url": canonical_url,
-                "priceCurrency": "EUR",
-                "lowPrice": "70",
-                "highPrice": "95",
-                "offerCount": "3",
-                "availability": "https://schema.org/InStock"
-            }
         })
 
-    return json.dumps(graph, ensure_ascii=False, indent=2)
+    return json.dumps(graph, indent=2, ensure_ascii=False)
 
 
-# ── Page definitions ───────────────────────────────────────────────────────
-# Each entry: (filename, lang, title, h1, active_page, keywords, description, cz_href, en_href, de_href, nl_href)
+# ── Pages ──────────────────────────────────────────────────────────────────
 
 PAGES = [
     # ── Czech pages (with -cz suffix) ──
@@ -855,7 +827,12 @@ def generate_sitemap(pages, base_url, out_dir):
 
             priority = SITEMAP_PRIORITIES.get(page_id, "0.5")
             changefreq = SITEMAP_FREQUENCIES.get(page_id, "monthly")
-            url = f"{base_url}/{filename}"
+
+            # Use root URL for the English index page to avoid duplicate content
+            if filename == "index.html" and lang == "en":
+                url = base_url + "/"
+            else:
+                url = f"{base_url}/{filename}"
 
             lines.append("  <url>\n")
             lines.append(f"    <loc>{url}</loc>\n")
@@ -911,7 +888,12 @@ def build():
         template = templates.get(lang, TEMPLATE_EN)
 
         # Canonical URL for this page
-        canonical_url = f"{base_url}/{filename}"
+        # Use root URL (without index.html) for the English index page
+        # to avoid duplicate content with https://smartorgan.cz/
+        if filename == "index.html" and lang == "en":
+            canonical_url = base_url + "/"
+        else:
+            canonical_url = f"{base_url}/{filename}"
 
         # OG image (use the same for all pages — the logo)
         og_image = f"{base_url}/img/logo-transparent.png"
