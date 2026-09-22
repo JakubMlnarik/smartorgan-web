@@ -18,7 +18,7 @@ import shutil
 from datetime import datetime
 
 try:
-    from PIL import Image
+    from PIL import Image, ImageOps
     HAS_PILLOW = True
 except ImportError:
     HAS_PILLOW = False
@@ -34,7 +34,8 @@ TEMPLATE_CS = """<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{title}</title>
-  <link rel="icon" type="image/png" href="img/logo-transparent.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512">
   <link rel="stylesheet" href="styles.css">
   <meta name="keywords" content="{keywords}">
   <meta name="description" content="{description}">
@@ -112,7 +113,8 @@ TEMPLATE_EN = """<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{title}</title>
-  <link rel="icon" type="image/png" href="img/logo-transparent.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512">
   <link rel="stylesheet" href="styles.css">
   <meta name="keywords" content="{keywords}">
   <meta name="description" content="{description}">
@@ -190,7 +192,8 @@ TEMPLATE_DE = """<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{title}</title>
-  <link rel="icon" type="image/png" href="img/logo-transparent.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512">
   <link rel="stylesheet" href="styles.css">
   <meta name="keywords" content="{keywords}">
   <meta name="description" content="{description}">
@@ -276,7 +279,8 @@ TEMPLATE_NL = """<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{title}</title>
-  <link rel="icon" type="image/png" href="img/logo-transparent.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512">
   <link rel="stylesheet" href="styles.css">
   <meta name="keywords" content="{keywords}">
   <meta name="description" content="{description}">
@@ -381,6 +385,39 @@ def generate_thumb(full_path, thumb_path):
     thumb = img.resize((new_width, THUMB_HEIGHT), Image.LANCZOS)
     thumb.save(thumb_path, optimize=True, quality=85)
     print(f"   🖼  Generated thumbnail: {thumb_path}")
+
+
+def generate_favicon_assets(img_dir, out_dir):
+    """Generate favicon assets from the logo image."""
+    if not HAS_PILLOW:
+        return
+
+    source_path = os.path.join(img_dir, "logo-transparent.png")
+    png_path = os.path.join(out_dir, "favicon.png")
+    ico_path = os.path.join(out_dir, "favicon.ico")
+
+    if not os.path.exists(source_path):
+        print(f"   ⚠  Favicon source not found: {source_path}")
+        return
+
+    source_mtime = os.path.getmtime(source_path)
+    if (
+        os.path.exists(png_path)
+        and os.path.exists(ico_path)
+        and os.path.getmtime(png_path) >= source_mtime
+        and os.path.getmtime(ico_path) >= source_mtime
+    ):
+        return
+
+    logo = Image.open(source_path).convert("RGBA")
+    canvas_size = 512
+    fitted = ImageOps.contain(logo, (canvas_size, canvas_size), Image.LANCZOS)
+    canvas = Image.new("RGBA", (canvas_size, canvas_size), (0, 0, 0, 0))
+    offset = ((canvas_size - fitted.width) // 2, (canvas_size - fitted.height) // 2)
+    canvas.paste(fitted, offset, fitted)
+    canvas.save(png_path, optimize=True)
+    canvas.save(ico_path, format="ICO", sizes=[(16, 16), (32, 32), (48, 48), (64, 64), (128, 128), (256, 256)])
+    print(f"   🖼  Generated favicon assets: {png_path}, {ico_path}")
 
 
 def process_content_images(content, img_dir):
@@ -864,6 +901,7 @@ def build():
     # Ensure output directory (current dir)
     out_dir = "."
     img_dir = os.path.join(out_dir, "img")
+    generate_favicon_assets(img_dir, out_dir)
 
     # Determine base URL from CNAME
     cname_file = os.path.join(out_dir, "CNAME")
