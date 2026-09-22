@@ -590,11 +590,11 @@ PAGES = [
      "organ-cz.htm", "organ.htm", "organ-de.htm", "organ-nl.htm"),
 
     ("services-cz.htm", "cs",
-     "Služby | Opravy varhan, ladění, poradenství",
+     "Služby | Opravy digitálních varhan Viscount, Ahlborn, Johanus, Eminent",
      "Služby",
      "services",
-     "digitální varhany, varhany, cvičení, MIDI, pedálnice, hrací stoly, hauptwerk, grandorgue, opravy varhan, ladění, poradenství",
-     "Nabízíme opravy varhan, ladění, poradenství při stavbě digitálních varhan a konzolí pro Hauptwerk. Servis MIDI modulů a klaviatur.",
+     "digitální varhany, varhany, opravy digitálních varhan, opravy varhan, Viscount, Ahlborn, Johanus, Eminent, rekonstrukce varhan, MIDI, pedálnice, hrací stoly, hauptwerk, grandorgue, ladění, poradenství",
+     "Opravy a rekonstrukce digitálních varhan Viscount, Ahlborn, Johanus, Eminent. Nabízíme ladění, poradenství při stavbě digitálních varhan a konzolí pro Hauptwerk. Servis MIDI modulů a klaviatur.",
      "services-cz.htm", "services.htm", "services-de.htm", "services-nl.htm"),
 
     ("contact-cz.htm", "cs",
