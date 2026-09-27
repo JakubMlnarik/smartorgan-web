@@ -1,4 +1,4 @@
-# smartorgan.eu — static site generator
+# smartorgan.cz — static site generator
 
 A minimal Python script that eliminates HTML redundancy (header, footer, menu, boilerplate) across the site's 10 pages (5 pages × 2 languages).
 

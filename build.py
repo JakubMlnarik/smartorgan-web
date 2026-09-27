@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Static site generator for smartorgan.eu.
+Static site generator for smartorgan.cz.
 
 Usage:  python3 build.py
 
@@ -95,7 +95,7 @@ TEMPLATE_CS = """<!DOCTYPE html>
 
   <div id="footer">
     <div class="footer-inner">
-      <span class="footer-copy">&copy; 2026 smartorgan.eu</span>
+      <span class="footer-copy">&copy; 2026 smartorgan.cz</span>
       <span class="footer-sep">&middot;</span>
       <span class="footer-author">Created by Jakub Mlnarik</span>
     </div>
@@ -174,7 +174,7 @@ TEMPLATE_EN = """<!DOCTYPE html>
 
   <div id="footer">
     <div class="footer-inner">
-      <span class="footer-copy">&copy; 2026 smartorgan.eu</span>
+      <span class="footer-copy">&copy; 2026 smartorgan.cz</span>
       <span class="footer-sep">&middot;</span>
       <span class="footer-author">Created by Jakub Mlnarik</span>
     </div>
@@ -261,7 +261,7 @@ TEMPLATE_DE = """<!DOCTYPE html>
 
   <div id="footer">
     <div class="footer-inner">
-      <span class="footer-copy">&copy; 2026 smartorgan.eu</span>
+      <span class="footer-copy">&copy; 2026 smartorgan.cz</span>
       <span class="footer-sep">&middot;</span>
       <span class="footer-author">Created by Jakub Mlnarik</span>
     </div>
@@ -348,7 +348,7 @@ TEMPLATE_NL = """<!DOCTYPE html>
 
   <div id="footer">
     <div class="footer-inner">
-      <span class="footer-copy">&copy; 2026 smartorgan.eu</span>
+      <span class="footer-copy">&copy; 2026 smartorgan.cz</span>
       <span class="footer-sep">&middot;</span>
       <span class="footer-author">Created by Jakub Mlnarik</span>
     </div>
