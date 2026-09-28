@@ -784,7 +784,7 @@ def cleanup_generated_outputs(out_dir):
         if entry == "index.html" or entry == "sitemap.xml":
             os.remove(path)
             continue
-        if entry.endswith(".html"):
+        if entry.endswith((".html", ".htm")):
             os.remove(path)
 
 
@@ -866,6 +866,82 @@ def generate_sitemap(pages, base_url, out_dir):
     with open(out_path, "w", encoding="utf-8") as f:
         f.writelines(lines)
     print(f"✓  Generated {out_path}")
+
+
+# ── Redirect stubs for old URL structure ──────────────────────────────────
+# GitHub Pages does not support server-side redirects, so we generate small
+# HTML stub files at the old URLs that redirect via <meta refresh> (0-second
+# delay). Google treats 0-second meta refresh as equivalent to a 301 redirect.
+
+OLD_URL_MAP = {
+    # (old_filename, lang, page_id) -> new URL path
+    # Czech
+    ("index-cz.html", "cs", "index"): "/",
+    ("keyboards-cz.htm", "cs", "keyboards"): "/cs/keyboards.html",
+    ("midi-modules-cz.htm", "cs", "midi"): "/cs/midi-modules.html",
+    ("organ-cz.htm", "cs", "organ"): "/cs/organ.html",
+    ("services-cz.htm", "cs", "services"): "/cs/services.html",
+    ("cecilia-cz.htm", "cs", "cecilia"): "/cs/cecilia.html",
+    ("about-cz.htm", "cs", "about"): "/cs/about.html",
+    ("contact-cz.htm", "cs", "contact"): "/cs/contact.html",
+    # English — note: index.html at root is now the Czech homepage copy,
+    # so no redirect stub is generated for it (it would overwrite the homepage).
+    # The old English index at /index.html is gone; visitors get the Czech homepage.
+    ("keyboards.htm", "en", "keyboards"): "/en/keyboards.html",
+    ("midi-modules.htm", "en", "midi"): "/en/midi-modules.html",
+    ("organ.htm", "en", "organ"): "/en/organ.html",
+    ("services.htm", "en", "services"): "/en/services.html",
+    ("cecilia.htm", "en", "cecilia"): "/en/cecilia.html",
+    ("about.htm", "en", "about"): "/en/about.html",
+    ("contact.htm", "en", "contact"): "/en/contact.html",
+    # German
+    ("index-de.html", "de", "index"): "/de/index.html",
+    ("keyboards-de.htm", "de", "keyboards"): "/de/keyboards.html",
+    ("midi-modules-de.htm", "de", "midi"): "/de/midi-modules.html",
+    ("organ-de.htm", "de", "organ"): "/de/organ.html",
+    ("services-de.htm", "de", "services"): "/de/services.html",
+    ("cecilia-de.htm", "de", "cecilia"): "/de/cecilia.html",
+    ("about-de.htm", "de", "about"): "/de/about.html",
+    ("contact-de.htm", "de", "contact"): "/de/contact.html",
+    # Dutch
+    ("index-nl.html", "nl", "index"): "/nl/index.html",
+    ("keyboards-nl.htm", "nl", "keyboards"): "/nl/keyboards.html",
+    ("midi-modules-nl.htm", "nl", "midi"): "/nl/midi-modules.html",
+    ("organ-nl.htm", "nl", "organ"): "/nl/organ.html",
+    ("services-nl.htm", "nl", "services"): "/nl/services.html",
+    ("cecilia-nl.htm", "nl", "cecilia"): "/nl/cecilia.html",
+    ("about-nl.htm", "nl", "about"): "/nl/about.html",
+    ("contact-nl.htm", "nl", "contact"): "/nl/contact.html",
+}
+
+
+def generate_redirect_stubs(base_url, out_dir):
+    """Generate small HTML stub files at old URLs that redirect to new URLs.
+    
+    GitHub Pages does not support server-side 301 redirects, so we create
+    stub files with a 0-second meta refresh. Google treats this as a
+    permanent redirect and transfers ranking signals to the new URL.
+    """
+    for (old_filename, _lang, _page_id), new_path in OLD_URL_MAP.items():
+        new_url = f"{base_url}{new_path}"
+        html = f"""<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url={new_url}">
+  <link rel="canonical" href="{new_url}">
+  <script>location.replace("{new_url}")</script>
+  <title>Redirecting&hellip;</title>
+</head>
+<body>
+  <a href="{new_url}">Redirecting to {new_url}</a>
+</body>
+</html>
+"""
+        out_path = os.path.join(out_dir, old_filename)
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(html)
+        print(f"✓  Redirect stub: {old_filename} → {new_url}")
 
 
 # ── Build ──────────────────────────────────────────────────────────────────
@@ -1022,6 +1098,7 @@ def build():
         print(f"✓  Generated {root_index_out}")
 
     generate_sitemap(PAGES, base_url, out_dir)
+    generate_redirect_stubs(base_url, out_dir)
 
 
 if __name__ == "__main__":
