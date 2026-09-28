@@ -224,6 +224,12 @@ def generate_json_ld(page_id, lang, title, description, canonical_url, base_url,
         },
     }
 
+    # Product images
+    product_images = {
+        "keyboards": "https://smartorgan.cz/img/keyboard-view1.jpg",
+        "midi": "https://smartorgan.cz/img/MIDI-module.jpg",
+    }
+
     # Price data for product pages
     product_prices = {
         "keyboards": {
@@ -247,6 +253,7 @@ def generate_json_ld(page_id, lang, title, description, canonical_url, base_url,
             "@type": "Product",
             "name": product_name,
             "description": description,
+            "image": product_images.get(page_id),
             "url": canonical_url,
         }
         price_info = product_prices.get(page_id, {}).get(lang, {})
