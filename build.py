@@ -224,15 +224,50 @@ def generate_json_ld(page_id, lang, title, description, canonical_url, base_url,
         },
     }
 
+    # Price data for product pages
+    product_prices = {
+        "keyboards": {
+            "cs": {"price": 44000, "currency": "CZK"},
+            "en": {"price": 1820, "currency": "EUR"},
+            "de": {"price": 1820, "currency": "EUR"},
+            "nl": {"price": 1820, "currency": "EUR"},
+        },
+        "midi": {
+            "cs": {"low_price": 1700, "high_price": 2300, "currency": "CZK", "count": 5},
+            "en": {"low_price": 70, "high_price": 95, "currency": "EUR", "count": 5},
+            "de": {"low_price": 70, "high_price": 95, "currency": "EUR", "count": 5},
+            "nl": {"low_price": 70, "high_price": 95, "currency": "EUR", "count": 5},
+        },
+    }
+
     if page_id in product_names:
         product_name = product_names[page_id].get(lang, product_names[page_id]["en"])
-        graph.append({
+        product_entry = {
             "@context": "https://schema.org",
             "@type": "Product",
             "name": product_name,
             "description": description,
             "url": canonical_url,
-        })
+        }
+        price_info = product_prices.get(page_id, {}).get(lang, {})
+        if page_id == "keyboards":
+            product_entry["offers"] = {
+                "@type": "Offer",
+                "price": price_info["price"],
+                "priceCurrency": price_info["currency"],
+                "availability": "https://schema.org/InStock",
+                "url": canonical_url,
+            }
+        elif page_id == "midi":
+            product_entry["offers"] = {
+                "@type": "AggregateOffer",
+                "lowPrice": price_info["low_price"],
+                "highPrice": price_info["high_price"],
+                "priceCurrency": price_info["currency"],
+                "offerCount": price_info["count"],
+                "availability": "https://schema.org/InStock",
+            }
+        graph.append(product_entry)
 
     return json.dumps(graph, indent=2, ensure_ascii=False)
 
