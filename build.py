@@ -593,16 +593,21 @@ def page_slug(source_filename):
     return parts[-1]
 
 
-def page_public_url(base_url, lang, filename, page_id):
-    """Return the public URL for a page in a given language.
-    
-    Czech index is served at root '/' for .cz domain SEO.
-    All other pages go under /{lang}/{slug}.html.
+def page_public_path(lang, filename, page_id):
+    """Return the root-absolute public path for a page.
+
+    Index pages use directory URLs (/, /en/, /de/, /nl/) so each language has
+    exactly one canonical homepage URL, matching the form Google prefers over
+    .../index.html. All other pages live at /{lang}/{slug}.html.
     """
-    slug = page_slug(filename)
-    if lang == "cs" and page_id == "index":
-        return f"{base_url}/"
-    return f"{base_url}/{lang}/{slug}.html"
+    if page_id == "index":
+        return "/" if lang == "cs" else f"/{lang}/"
+    return f"/{lang}/{page_slug(filename)}.html"
+
+
+def page_public_url(base_url, lang, filename, page_id):
+    """Return the absolute public URL for a page in a given language."""
+    return f"{base_url}{page_public_path(lang, filename, page_id)}"
 
 
 def page_output_path(out_dir, lang, filename, page_id):
@@ -937,7 +942,7 @@ OLD_URL_MAP = {
     ("about.htm", "en", "about"): "/en/about.html",
     ("contact.htm", "en", "contact"): "/en/contact.html",
     # German
-    ("index-de.html", "de", "index"): "/de/index.html",
+    ("index-de.html", "de", "index"): "/de/",
     ("keyboards-de.htm", "de", "keyboards"): "/de/keyboards.html",
     ("midi-modules-de.htm", "de", "midi"): "/de/midi-modules.html",
     ("organ-de.htm", "de", "organ"): "/de/organ.html",
@@ -946,7 +951,7 @@ OLD_URL_MAP = {
     ("about-de.htm", "de", "about"): "/de/about.html",
     ("contact-de.htm", "de", "contact"): "/de/contact.html",
     # Dutch
-    ("index-nl.html", "nl", "index"): "/nl/index.html",
+    ("index-nl.html", "nl", "index"): "/nl/",
     ("keyboards-nl.htm", "nl", "keyboards"): "/nl/keyboards.html",
     ("midi-modules-nl.htm", "nl", "midi"): "/nl/midi-modules.html",
     ("organ-nl.htm", "nl", "organ"): "/nl/organ.html",
@@ -957,16 +962,9 @@ OLD_URL_MAP = {
 }
 
 
-def generate_redirect_stubs(base_url, out_dir):
-    """Generate small HTML stub files at old URLs that redirect to new URLs.
-    
-    GitHub Pages does not support server-side 301 redirects, so we create
-    stub files with a 0-second meta refresh. Google treats this as a
-    permanent redirect and transfers ranking signals to the new URL.
-    """
-    for (old_filename, _lang, _page_id), new_path in OLD_URL_MAP.items():
-        new_url = f"{base_url}{new_path}"
-        html = f"""<!DOCTYPE html>
+def redirect_stub_html(new_url):
+    """Return the HTML for a 0-second meta-refresh redirect stub."""
+    return f"""<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -980,9 +978,25 @@ def generate_redirect_stubs(base_url, out_dir):
 </body>
 </html>
 """
+
+
+def write_redirect_stub(out_path, new_url):
+    """Write a redirect stub file at out_path pointing to new_url."""
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(redirect_stub_html(new_url))
+
+
+def generate_redirect_stubs(base_url, out_dir):
+    """Generate small HTML stub files at old URLs that redirect to new URLs.
+    
+    GitHub Pages does not support server-side 301 redirects, so we create
+    stub files with a 0-second meta refresh. Google treats this as a
+    permanent redirect and transfers ranking signals to the new URL.
+    """
+    for (old_filename, _lang, _page_id), new_path in OLD_URL_MAP.items():
+        new_url = f"{base_url}{new_path}"
         out_path = os.path.join(out_dir, old_filename)
-        with open(out_path, "w", encoding="utf-8") as f:
-            f.write(html)
+        write_redirect_stub(out_path, new_url)
         print(f"✓  Redirect stub: {old_filename} → {new_url}")
 
 
@@ -1033,8 +1047,7 @@ def build():
         content = rewrite_content_links(content, current_out_path, source_output_paths)
 
         home_filename = filename_by_active_lang["index"][lang]
-        home_target_path = page_output_path(out_dir, lang, home_filename, "index")
-        home_url = relative_url(current_out_path, home_target_path)
+        home_url = page_public_path(lang, home_filename, "index")
         home_url_abs = page_public_url(base_url, lang, home_filename, "index")
         canonical_url = page_public_url(base_url, lang, filename, active)
 
@@ -1047,9 +1060,10 @@ def build():
         alternate_urls["x-default"] = alternate_urls["cs"]
 
         lang_switch_links = {
-            target_lang: relative_url(
-                current_out_path,
-                page_output_path(out_dir, target_lang, filename_by_active_lang[active][target_lang], active),
+            target_lang: page_public_path(
+                target_lang,
+                filename_by_active_lang[active][target_lang],
+                active,
             )
             for target_lang in LANGS
         }
@@ -1125,19 +1139,21 @@ def build():
         root_html = root_html.replace('src="../img/', 'src="img/')
         root_html = root_html.replace('href="../doc/', 'href="doc/')
         root_html = root_html.replace('src="../doc/', 'src="doc/')
-        # Fix lang-switch links (were ../en, ../de, ../nl from cs/ context)
-        root_html = root_html.replace('href="../en/', 'href="en/')
-        root_html = root_html.replace('href="../de/', 'href="de/')
-        root_html = root_html.replace('href="../nl/', 'href="nl/')
         # Fix page links: in cs/ folder they point to same-folder, but at root they
-        # need the cs/ prefix for non-index pages
-        for page_id in ["keyboards", "midi-modules", "organ", "services", "cecilia", "about", "contact", "index"]:
+        # need the cs/ prefix for non-index pages. (Homepage and language-switch
+        # links are root-absolute, so they need no rewriting.)
+        for page_id in ["keyboards", "midi-modules", "organ", "services", "cecilia", "about", "contact"]:
             slug = page_id
-            root_html = root_html.replace(f'href="{slug}.html"', f'href="cs/{slug}.html"' if page_id != "index" else 'href="index.html"')
+            root_html = root_html.replace(f'href="{slug}.html"', f'href="cs/{slug}.html"')
         with open(root_index_out, "w", encoding="utf-8") as f:
             f.write(root_html)
             f.write("\n")
         print(f"✓  Generated {root_index_out}")
+
+        # /cs/index.html duplicates the root homepage; turn it into a redirect
+        # to '/' so there is exactly one canonical Czech homepage URL.
+        write_redirect_stub(root_index_src, f"{base_url}/")
+        print(f"✓  Redirect stub: cs/index.html → {base_url}/")
 
     generate_sitemap(PAGES, base_url, out_dir)
     generate_redirect_stubs(base_url, out_dir)
