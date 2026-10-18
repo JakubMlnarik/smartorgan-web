@@ -51,23 +51,42 @@ def active_class(page_id, current):
     return ' class="active"' if page_id == current else ''
 
 
-THUMB_HEIGHT = 180
+# Gallery cells (see p.images in styles.css) are about 337 x 220 CSS px:
+# three per row with a 16px gap inside the 1120px frame. Thumbnails are sized
+# to *cover* that cell at THUMB_DPR device pixels per CSS pixel, so they stay
+# sharp on HiDPI screens. A fixed height was used before, which made portrait
+# shots far too small: the cell is landscape, so object-fit: cover stretches a
+# narrow portrait thumbnail across the full cell width.
+GALLERY_CELL_W = 337
+GALLERY_CELL_H = 220
+THUMB_DPR = 2
+
+
+def _thumb_target_size(img):
+    """Size a thumbnail must have to cover the gallery cell at THUMB_DPR,
+    preserving the source aspect ratio (the CSS crops with object-fit: cover)."""
+    scale = max(
+        (GALLERY_CELL_W * THUMB_DPR) / img.width,
+        (GALLERY_CELL_H * THUMB_DPR) / img.height,
+    )
+    return max(1, round(img.width * scale)), max(1, round(img.height * scale))
 
 
 def generate_thumb(full_path, thumb_path):
-    """Generate a thumbnail from full_path if it doesn't exist or is outdated."""
+    """Generate a gallery thumbnail covering the display cell at high DPR."""
     if not HAS_PILLOW:
         return
-    if os.path.exists(thumb_path):
-        full_mtime = os.path.getmtime(full_path)
-        thumb_mtime = os.path.getmtime(thumb_path)
-        if thumb_mtime >= full_mtime:
-            return  # thumbnail is up-to-date
-    img = Image.open(full_path)
-    ratio = THUMB_HEIGHT / img.height
-    new_width = int(img.width * ratio)
-    thumb = img.resize((new_width, THUMB_HEIGHT), Image.LANCZOS)
-    thumb.save(thumb_path, optimize=True, quality=85)
+    with Image.open(full_path) as img:
+        target_size = _thumb_target_size(img)
+        if os.path.exists(thumb_path) and os.path.getmtime(thumb_path) >= os.path.getmtime(full_path):
+            try:
+                with Image.open(thumb_path) as existing:
+                    if existing.size == target_size:
+                        return  # thumbnail is up-to-date and correctly sized
+            except OSError:
+                pass
+        thumb = img.resize(target_size, Image.LANCZOS)
+        thumb.save(thumb_path, optimize=True, quality=85)
     print(f"   🖼  Generated thumbnail: {thumb_path}")
 
 
@@ -163,6 +182,7 @@ def generate_json_ld(page_id, lang, title, description, canonical_url, base_url,
         "midi":      ("MIDI moduly", "MIDI Modules", "MIDI-Module", "MIDI-modules"),
         "organ":     ("Varhany", "Organs", "Orgeln", "Orgels"),
         "cecilia":   ("Cecilia", "Cecilia", "Cecilia", "Cecilia"),
+        "tabula-magna": ("Tabula Magna", "Tabula Magna", "Tabula Magna", "Tabula Magna"),
         "services":  ("Služby", "Services", "Dienstleistungen", "Diensten"),
         "about":     ("O mně", "About", "Über mich", "Over mij"),
         "contact":   ("Kontakt", "Contact", "Kontakt", "Contact"),
@@ -222,12 +242,19 @@ def generate_json_ld(page_id, lang, title, description, canonical_url, base_url,
             "de": "MIDI-Module für digitale Orgeln",
             "nl": "MIDI-modules voor digitale orgels",
         },
+        "tabula-magna": {
+            "cs": "Tabula Magna — MIDI jednotka rejstříkových tabů pro Hauptwerk",
+            "en": "Tabula Magna — MIDI Stop-Tab Unit for Hauptwerk",
+            "de": "Tabula Magna — MIDI-Registertab-Einheit für Hauptwerk",
+            "nl": "Tabula Magna — MIDI-registertab-eenheid voor Hauptwerk",
+        },
     }
 
     # Product images
     product_images = {
         "keyboards": "https://smartorgan.cz/img/keyboard-view1.jpg",
         "midi": "https://smartorgan.cz/img/MIDI-module.jpg",
+        "tabula-magna": "https://smartorgan.cz/img/tabula-magna-main.jpg",
     }
 
     # Price data for product pages
@@ -304,6 +331,13 @@ PAGES = [
      "cecilia, MIDI, expandér, varhanní modul, zvukový modul, digitální varhany",
      "Cecilia — výkonný zvukový systém a MIDI expandér pro stavbu digitálních varhan. Ideální doplněk k Hauptwerk a GrandOrgue."),
 
+    ("cs/tabula-magna.html", "cs",
+     "Tabula Magna — MIDI jednotka rejstříkových tabů pro Hauptwerk | 40 rejstříkových tabů s LCD",
+     "Tabula Magna",
+     "tabula-magna",
+     "tabula magna, MIDI jednotka rejstříkových tabů, rejstříkové taby, stop tabs, hauptwerk hardware, stolní varhanní kontroler, MIDI stop tab, varhanní rejstříky MIDI, hauptwerk konzole, virtuální varhany, VPO hardware",
+     "Tabula Magna — samostatná MIDI jednotka rejstříkových tabů pro virtuální varhany a Hauptwerk. 40 fyzických rejstříkových tabů s barevnými LCD popisky, které sledují načtený sampl. Jeden USB kabel, žádný ovladač, konfigurace přímo z Hauptwerku."),
+
     ("cs/organ.html", "cs",
      "Digitální varhany na míru | Stavba, opravy, Hauptwerk konzole",
      "Varhany — díly i kompletní nástroje",
@@ -360,6 +394,13 @@ PAGES = [
      "cecilia",
      "cecilia, MIDI, expander, organ module, organ unit, sound engine, digital organ sound",
      "Cecilia — a powerful sound system and MIDI expander for building digital organs. A perfect companion for Hauptwerk and GrandOrgue setups."),
+
+    ("en/tabula-magna.html", "en",
+     "Tabula Magna — MIDI Stop-Tab Unit for Hauptwerk | 40 Labelled Stop Tabs",
+     "Tabula Magna",
+     "tabula-magna",
+     "tabula magna, MIDI stop-tab unit, stop tabs, hauptwerk hardware, table top organ controller, hauptwerk console, organ stop controller, lighted rocker tabs, virtual pipe organ hardware, hauptwerk midi controller",
+     "Tabula Magna — a standalone MIDI stop-tab unit and table-top organ controller for Hauptwerk. 40 physical stop tabs with colour LCD labels that follow the loaded sample set. One USB cable, no driver, configured from Hauptwerk itself."),
 
     ("en/organ.html", "en",
      "Digital Organs & MIDI Consoles for Hauptwerk | Custom Organ Building",
@@ -418,6 +459,13 @@ PAGES = [
      "Cecilia, MIDI, Expander, Orgelmodul, Orgeleinheit, Klangengine, digitaler Orgelklang",
      "Cecilia — ein leistungsstarkes Klangsystem und MIDI-Expander für den Bau digitaler Orgeln. Ein perfekter Begleiter für Hauptwerk- und GrandOrgue-Setups."),
 
+    ("de/tabula-magna.html", "de",
+     "Tabula Magna — MIDI-Registertab-Einheit für Hauptwerk | 40 beschriftete Registertabs",
+     "Tabula Magna",
+     "tabula-magna",
+     "tabula magna, MIDI-Registertab-Einheit, Registertabs, Hauptwerk Hardware, Tisch-Orgelcontroller, Hauptwerk Spieltisch, Orgel-Registercontroller, virtuelle Pfeifenorgel Hardware, Hauptwerk MIDI Controller",
+     "Tabula Magna — eigenständige MIDI-Registertab-Einheit und Tisch-Orgelcontroller für Hauptwerk. 40 physische Registertabs mit farbigen LCD-Beschriftungen, die dem geladenen Sampleset folgen. Ein USB-Kabel, kein Treiber, Konfiguration direkt aus Hauptwerk."),
+
     ("de/organ.html", "de",
      "Digitale Orgeln & MIDI-Spieltische für Hauptwerk | Kundenspezifischer Orgelbau",
      "Orgeln — Teile und komplette Instrumente",
@@ -474,6 +522,13 @@ PAGES = [
      "cecilia",
      "Cecilia, MIDI, expander, orgelmodule, orgeleenheid, geluidsengine, digitale orgelgeluid",
      "Cecilia — een krachtig geluidssysteem en MIDI-expander voor het bouwen van digitale orgels. Een perfecte aanvulling voor Hauptwerk- en GrandOrgue-opstellingen."),
+
+    ("nl/tabula-magna.html", "nl",
+     "Tabula Magna — MIDI-registertab-eenheid voor Hauptwerk | 40 gelabelde registertabs",
+     "Tabula Magna",
+     "tabula-magna",
+     "tabula magna, MIDI-registertab-eenheid, registertabs, Hauptwerk hardware, tafelorgelcontroller, Hauptwerk speeltafel, orgelregistercontroller, virtueel pijporgel hardware, Hauptwerk MIDI controller",
+     "Tabula Magna — zelfstandige MIDI-registertab-eenheid en tafelorgelcontroller voor Hauptwerk. 40 fysieke registertabs met kleurrijke LCD-labels die het geladen sampleset volgen. Eén USB-kabel, geen driver, geconfigureerd vanuit Hauptwerk zelf."),
 
     ("nl/organ.html", "nl",
      "Digitale orgels & MIDI-speeltafels voor Hauptwerk | Op maat gemaakt orgelbouw",
@@ -549,6 +604,7 @@ PAGE_LABELS = {
         "organ": "Varhany",
         "services": "Služby",
         "cecilia": "Cecilia",
+        "tabula-magna": "Tabula Magna",
         "about": "O mně",
         "contact": "Kontakt",
     },
@@ -559,6 +615,7 @@ PAGE_LABELS = {
         "organ": "Organs",
         "services": "Services",
         "cecilia": "Cecilia",
+        "tabula-magna": "Tabula Magna",
         "about": "About",
         "contact": "Contact",
     },
@@ -569,6 +626,7 @@ PAGE_LABELS = {
         "organ": "Orgeln",
         "services": "Dienstleistungen",
         "cecilia": "Cecilia",
+        "tabula-magna": "Tabula Magna",
         "about": "Über mich",
         "contact": "Kontakt",
     },
@@ -579,6 +637,7 @@ PAGE_LABELS = {
         "organ": "Orgels",
         "services": "Diensten",
         "cecilia": "Cecilia",
+        "tabula-magna": "Tabula Magna",
         "about": "Over mij",
         "contact": "Contact",
     },
@@ -668,6 +727,7 @@ def render_html(
     organ_url,
     services_url,
     cecilia_url,
+    tabula_url,
     about_url,
     contact_url,
     json_ld,
@@ -678,6 +738,7 @@ def render_html(
     active_organ,
     active_services,
     active_cecilia,
+    active_tabula,
     active_about,
     active_contact,
 ):
@@ -734,6 +795,7 @@ def render_html(
       <div id="logo"><a href="{home_url}"><img src="{logo_src}" alt="{logo_alt}" width="100"></a></div>
       <div id="top-menu">
         <a href="{home_url}"{active_index}>{home_label}</a>
+        <a href="{tabula_url}"{active_tabula}>{tabula_label}</a>
         <a href="{midi_url}"{active_midi}>{midi_label}</a>
         <a href="{keyboards_url}"{active_keyboards}>{keyboards_label}</a>
         <a href="{organ_url}"{active_organ}>{organ_label}</a>
@@ -801,6 +863,8 @@ def render_html(
         services_label=html.escape(labels["services"]),
         cecilia_url=cecilia_url,
         cecilia_label=html.escape(labels["cecilia"]),
+        tabula_url=tabula_url,
+        tabula_label=html.escape(labels["tabula-magna"]),
         about_url=about_url,
         about_label=html.escape(labels["about"]),
         contact_url=contact_url,
@@ -811,6 +875,7 @@ def render_html(
         active_organ=active_organ,
         active_services=active_services,
         active_cecilia=active_cecilia,
+        active_tabula=active_tabula,
         active_about=active_about,
         active_contact=active_contact,
         content=content,
@@ -843,6 +908,7 @@ SITEMAP_PRIORITIES = {
     "keyboards": "0.8",
     "midi": "0.8",
     "cecilia": "0.3",
+    "tabula-magna": "0.9",
     "services": "0.6",
     "about": "0.5",
     "contact": "0.5",
@@ -854,6 +920,7 @@ SITEMAP_FREQUENCIES = {
     "keyboards": "monthly",
     "midi": "monthly",
     "cecilia": "yearly",
+    "tabula-magna": "monthly",
     "services": "yearly",
     "about": "yearly",
     "contact": "yearly",
@@ -1024,7 +1091,7 @@ def build():
         source_output_paths[filename] = page_output_path(out_dir, lang, filename, active)
         filename_by_active_lang.setdefault(active, {})[lang] = filename
 
-    page_ids = ["index", "keyboards", "midi", "organ", "services", "cecilia", "about", "contact"]
+    page_ids = ["index", "keyboards", "midi", "organ", "services", "cecilia", "tabula-magna", "about", "contact"]
 
     for filename, lang, title, h1, active, keywords, description in PAGES:
         # Read content snippet
@@ -1101,6 +1168,7 @@ def build():
             organ_url=nav_urls["organ"],
             services_url=nav_urls["services"],
             cecilia_url=nav_urls["cecilia"],
+            tabula_url=nav_urls["tabula-magna"],
             about_url=nav_urls["about"],
             contact_url=nav_urls["contact"],
             json_ld=json_ld_indented,
@@ -1111,6 +1179,7 @@ def build():
             active_organ=active_class("organ", active),
             active_services=active_class("services", active),
             active_cecilia=active_class("cecilia", active),
+            active_tabula=active_class("tabula-magna", active),
             active_about=active_class("about", active),
             active_contact=active_class("contact", active),
         )
@@ -1142,7 +1211,7 @@ def build():
         # Fix page links: in cs/ folder they point to same-folder, but at root they
         # need the cs/ prefix for non-index pages. (Homepage and language-switch
         # links are root-absolute, so they need no rewriting.)
-        for page_id in ["keyboards", "midi-modules", "organ", "services", "cecilia", "about", "contact"]:
+        for page_id in ["keyboards", "midi-modules", "organ", "services", "cecilia", "tabula-magna", "about", "contact"]:
             slug = page_id
             root_html = root_html.replace(f'href="{slug}.html"', f'href="cs/{slug}.html"')
         with open(root_index_out, "w", encoding="utf-8") as f:
