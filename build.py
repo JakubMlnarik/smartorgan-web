@@ -51,23 +51,42 @@ def active_class(page_id, current):
     return ' class="active"' if page_id == current else ''
 
 
-THUMB_HEIGHT = 180
+# Gallery cells (see p.images in styles.css) are about 337 x 220 CSS px:
+# three per row with a 16px gap inside the 1120px frame. Thumbnails are sized
+# to *cover* that cell at THUMB_DPR device pixels per CSS pixel, so they stay
+# sharp on HiDPI screens. A fixed height was used before, which made portrait
+# shots far too small: the cell is landscape, so object-fit: cover stretches a
+# narrow portrait thumbnail across the full cell width.
+GALLERY_CELL_W = 337
+GALLERY_CELL_H = 220
+THUMB_DPR = 2
+
+
+def _thumb_target_size(img):
+    """Size a thumbnail must have to cover the gallery cell at THUMB_DPR,
+    preserving the source aspect ratio (the CSS crops with object-fit: cover)."""
+    scale = max(
+        (GALLERY_CELL_W * THUMB_DPR) / img.width,
+        (GALLERY_CELL_H * THUMB_DPR) / img.height,
+    )
+    return max(1, round(img.width * scale)), max(1, round(img.height * scale))
 
 
 def generate_thumb(full_path, thumb_path):
-    """Generate a thumbnail from full_path if it doesn't exist or is outdated."""
+    """Generate a gallery thumbnail covering the display cell at high DPR."""
     if not HAS_PILLOW:
         return
-    if os.path.exists(thumb_path):
-        full_mtime = os.path.getmtime(full_path)
-        thumb_mtime = os.path.getmtime(thumb_path)
-        if thumb_mtime >= full_mtime:
-            return  # thumbnail is up-to-date
-    img = Image.open(full_path)
-    ratio = THUMB_HEIGHT / img.height
-    new_width = int(img.width * ratio)
-    thumb = img.resize((new_width, THUMB_HEIGHT), Image.LANCZOS)
-    thumb.save(thumb_path, optimize=True, quality=85)
+    with Image.open(full_path) as img:
+        target_size = _thumb_target_size(img)
+        if os.path.exists(thumb_path) and os.path.getmtime(thumb_path) >= os.path.getmtime(full_path):
+            try:
+                with Image.open(thumb_path) as existing:
+                    if existing.size == target_size:
+                        return  # thumbnail is up-to-date and correctly sized
+            except OSError:
+                pass
+        thumb = img.resize(target_size, Image.LANCZOS)
+        thumb.save(thumb_path, optimize=True, quality=85)
     print(f"   🖼  Generated thumbnail: {thumb_path}")
 
 
