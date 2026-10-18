@@ -795,12 +795,12 @@ def render_html(
       <div id="logo"><a href="{home_url}"><img src="{logo_src}" alt="{logo_alt}" width="100"></a></div>
       <div id="top-menu">
         <a href="{home_url}"{active_index}>{home_label}</a>
+        <a href="{tabula_url}"{active_tabula}>{tabula_label}</a>
         <a href="{midi_url}"{active_midi}>{midi_label}</a>
         <a href="{keyboards_url}"{active_keyboards}>{keyboards_label}</a>
         <a href="{organ_url}"{active_organ}>{organ_label}</a>
         <a href="{services_url}"{active_services}>{services_label}</a>
         <a href="{cecilia_url}"{active_cecilia}>{cecilia_label}</a>
-        <a href="{tabula_url}"{active_tabula}>{tabula_label}</a>
         <a href="{about_url}"{active_about}>{about_label}</a>
         <a href="{contact_url}"{active_contact}>{contact_label}</a>
       </div>
