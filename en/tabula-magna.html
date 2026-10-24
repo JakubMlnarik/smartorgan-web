@@ -126,7 +126,7 @@
 
 <div style="overflow:hidden;margin-bottom:16px;">
   <a href="../img/tabula-magna-main.jpg"><img loading="lazy" src="../img/tabula-magna-main.jpg" alt="Tabula Magna — 40 physical stop tabs with colour LCD labels for Hauptwerk" style="max-width:340px;height:auto;float:right;margin:0 0 12px 20px;"></a>
-  <p>Tabula Magna is a flat box with an adjustable stand that sits next to the manual assembly, or in another suitable place. Several units can be used at once (typically 2 units, left and right). It presents <strong>40 physical stop tabs</strong> and <strong>5 display widgets</strong>, and connects to your computer with a USB cable. Hauptwerk sees it as a MIDI device &mdash; no driver, no configuration program, and no console rebuild.</p>
+  <p>Tabula Magna is a flat box with an adjustable stand that sits next to the manual assembly, or in another suitable place. Several units can be used at once (typically 2 units, left and right). It presents <strong>40 physical stop tabs</strong> and <strong>5 display widgets</strong>; it connects to your computer with a USB cable. Hauptwerk sees it as a MIDI device &mdash; no driver, no configuration program, and no console rebuild.</p>
   <p>A colour display sits behind the tab rails. It shows the stop names, colours and states that Hauptwerk sends over MIDI, so the labels are never fixed: load a different sample set and the tabs relabel and recolour themselves automatically.</p>
   <p>Tabula Magna is a hardware add-on that gives organ software such as Hauptwerk real, physical stop tabs instead of a touchscreen or a mouse. It is the missing piece between a computer running a virtual pipe organ and the feel of a real organ: it makes stop selection convenient while you work comfortably with the individual organ sample sets. Labels and stop indication are kept perfectly in sync with Hauptwerk.</p>
 </div>
@@ -161,7 +161,7 @@
 <h2>How it works with Hauptwerk</h2>
 <p>Everything is configured once, in Hauptwerk, in four steps:</p>
 <ol>
-  <li><strong>MIDI ports</strong> &mdash; enable the Tabula input and output ports.</li>
+  <li><strong>MIDI ports</strong> &mdash; enable the Tabula Magna input and output ports.</li>
   <li><strong>Stop labels</strong> &mdash; send the stop names and colours to the unit's LCD32 displays.</li>
   <li><strong>Pairing the tabs</strong> &mdash; use Hauptwerk's auto-detect to bind each tab to its stop.</li>
   <li><strong>Outgoing MIDI</strong> &mdash; set what Hauptwerk sends back to light each tab's indication.</li>
@@ -183,9 +183,31 @@
 <h2>Documentation</h2>
 <p><a href="../doc/tabula-magna-user-manual.pdf">📄 Tabula Magna User Manual (PDF)</a></p>
 
-<h2>Interested?</h2>
-<p>Tabula Magna is a completely new product. Contact us for pricing and availability, or to discuss how it fits your Hauptwerk setup.</p>
-<p><a href="contact.html">Contact us &rarr;</a></p>
+<p><strong>Price:</strong> 1 500 EUR (excl. VAT)</p>
+
+<h1>Built-in variant</h1>
+<p>We also offer the product in a version without the frame and stand, for built-in installation in the organ console. Mounting brackets on the sides let you screw the module in from the rear. The brackets are height-adjustable within ± 1 mm to ensure precise alignment. See the following images for the module dimensions and an example of a front-panel solution.</p>
+
+<p class="images">
+  <a href="../img/tabula-bare.jpg"><img loading="lazy" class="image" src="../img/tabula-bare-thumb.jpg" alt="Tabula Magna — built-in unit"></a>
+  <a href="../img/tabula-drawings.jpg"><img loading="lazy" class="image" src="../img/tabula-drawings-thumb.jpg" alt="Tabula Magna — dimensions"></a>
+  <a href="../img/mounting-panel-drawings.jpg"><img loading="lazy" class="image" src="../img/mounting-panel-drawings-thumb.jpg" alt="Example front panel"></a>
+</p>
+
+<p><strong>Price:</strong> 1 200 EUR (excl. VAT)</p>
+
+<h1>FAQ</h1>
+<h2>Can the module dimensions be changed?</h2>
+<p>Unfortunately not. The module is based on a standard 15.6″ LCD panel with fixed dimensions.</p>
+
+<h2>How are the buttons designed?</h2>
+<p>The buttons are designed to be very quiet, with a precise and pleasant action and no play. The button travel is 4 mm and the actuation force is 60 g. The buttons are made by 3D printing from highly durable ASA plastic, which guarantees high resistance, durability and UV stability. The principle is very simple: each button is mounted on a pair of steel pins and held in place by strong magnets. A Hall sensor sits directly beneath the button.</p>
+<p class="images">
+    <a href="../img/button-removed.jpg"><img loading="lazy" class="image" src="../img/button-removed-thumb.jpg" alt="Magnetic buttons" style="transform: rotate(90deg)"></a>
+</p>
+
+<h2>Is the module compatible with software other than Hauptwerk (Sweelinq, GrandOrgue...)?</h2>
+<p>Yes and no. The buttons can be used to switch stops and to control indications from other programs as well. However, Hauptwerk is so far the only software that directly supports the LCD32 SysEx messages used to change the labels above the buttons. Still, it is a very simple protocol, so if needed, SysEx MIDI files can be prepared for each sample set. These files can be applied before starting a given sample set and sent to the unit with a simple tool. There are many free tools available for this purpose. We will be happy to advise on an implementation.</p>
 
     </div>
   </div>
